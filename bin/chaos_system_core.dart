@@ -1,28 +1,39 @@
 import 'dart:ffi';
 import 'dart:math' as math;
 
+late void Function(String) logger;
+
 /// [seatChart] (col, row) (列，排)
-void chaosSystemCore({required List<Person> personList, required Room room}) {
+void chaosSystemCore(
+    {required List<Person> personList,
+    required Room room,
+    void Function(String)? newLogger}) {
+  logger = newLogger ?? print;
   for (var person in personList) {
     person.init(room: room);
   }
   List<Person> arrangeQuene = List.from(personList);
   var loopTimes = 0;
   while (true) {
-    print("第${++loopTimes}次尝试找人安排座位");
+    logger("第${++loopTimes}次尝试找人安排座位");
     // Sort Quene (RankPoint from Small to Big)
     arrangeQuene.sort(
         (person1, person2) => person1.getRankPoint() - person2.getRankPoint());
+    // Redraw Heatmap
+    room.heatmap.clear();
+    for (var person in arrangeQuene) {
+      person.drawHeatmap();
+    }
+    logger("当前热图:\n${room.heatmap}");
     // Resolve one by one
     ArrangedInfo? arrangedInfo;
     for (var resolvingPerson in arrangeQuene) {
       var chosenSeat = resolvingPerson.resolve();
       if (chosenSeat == null) {
-        print("${resolvingPerson.name} 暂时不想决定座位");
+        logger("${resolvingPerson.name} 暂时不想决定座位");
         continue;
       } else {
-        print(
-            "${resolvingPerson.name} 选定了座位：${chosenSeat.location.column}列 ${chosenSeat.location.row}排");
+        logger("${resolvingPerson.name} 选定了座位：$chosenSeat");
         resolvingPerson.resolved = true;
         chosenSeat.empty = false;
         chosenSeat.owner = resolvingPerson;
@@ -34,21 +45,19 @@ void chaosSystemCore({required List<Person> personList, required Room room}) {
     if (arrangedInfo != null) {
       // Clear Person Arranged
       arrangeQuene.remove(arrangedInfo.person);
-      // Update all person & Redraw Heatmap
+      // Update all person
       room.heatmap.clear();
       for (var person in arrangeQuene) {
         person.update(arrangedInfo: arrangedInfo);
-        person.drawHeatmap();
       }
-      print("当前热图:${room.heatmap}");
     }
     // Finish Arrangement
     if (loopTimes >= 200) {
-      print("循环次数过多，终止程序");
+      logger("循环次数过多，终止程序");
       break;
     }
     if (arrangeQuene.isEmpty) {
-      print("座位编排完成，终止程序");
+      logger("座位编排完成，终止程序");
       break;
     }
   }
@@ -89,7 +98,7 @@ class Person {
 
   void drawHeatmap() {
     //TODO
-    if (targetSet.isEmpty) return;
+    if (targetSet.isEmpty || nowDemand == null) return;
     for (var seat in targetSet) {
       if (room.heatmap[seat] == null) continue;
       room.heatmap[seat] = room.heatmap[seat]! + 1 / targetSet.length;
@@ -115,9 +124,9 @@ class Person {
     var finalSeat = room.chooseBestSeat(range: targetSet);
     for (var demand in demandList) {
       if (demand.target.contains(finalSeat)) {
-        print("[提示]$name的需求$demand已被满足");
+        logger("[提示]$name的需求$demand已被满足");
       } else {
-        print("[提示]$name的需求$demand未被满足");
+        logger("[提示]$name的需求$demand未被满足");
       }
     }
     return finalSeat;
@@ -153,9 +162,10 @@ class Heatmap {
   String toString() {
     var str = "";
     data.forEach((key, value) {
-      if (value != 0) str += "[$key:$value]\n";
+      if (value != 0) str += "$key:$value\n";
     });
-    return str;
+
+    return str.substring(0, str.isNotEmpty ? str.length - 1 : 0);
   }
 }
 
@@ -192,6 +202,47 @@ class AbsoluteDemand extends Demand {
   Seat? resolve() {}
   @override
   void drawHeatmap() {}
+}
+
+// 相对需求
+class RelativeDemand extends Demand {
+  Seat? relativeSeat;
+  String relativePerson;
+  bool Function(
+      {required Seat filteringSeat,
+      required Room room,
+      required Seat relativeSeat}) filter;
+  RelativeDemand({required this.relativePerson, required this.filter});
+  @override
+  void init({required Room room, required Person demander}) {
+    this.room = room;
+    this.demander = demander;
+    update();
+  }
+
+  @override
+  void update({ArrangedInfo? arrangedInfo}) {
+    if (arrangedInfo?.person.name == relativePerson) {
+      logger("[提示]$demander的相对需求$this的目标个体已确定座位，监听响应");
+      relativeSeat = arrangedInfo?.seat;
+    }
+    if (relativeSeat != null) {
+      target = room.findSeat((Seat seat) =>
+          filter(filteringSeat: seat, relativeSeat: relativeSeat!, room: room));
+    } else {
+      target = Set.from(room.seats);
+    }
+  }
+
+  @override
+  void drawHeatmap() {
+    // TODO: implement drawHeatmap
+  }
+  @override
+  Seat? resolve() {
+    // TODO: implement resolve
+    throw UnimplementedError();
+  }
 }
 
 class Room {
@@ -265,12 +316,12 @@ class Room {
     return smallRange[math.Random.secure().nextInt(smallRange.length)];
   }
 
-  num getEuclideanDistance(Seat seat1, Seat seat2) {
+  static num getEuclideanDistance(Seat seat1, Seat seat2) {
     return math.sqrt(math.pow(seat1.location.row - seat2.location.row, 2) +
         math.pow(seat1.location.column - seat2.location.column, 2));
   }
 
-  num getManhattanDistance(Seat seat1, Seat seat2) {
+  static num getManhattanDistance(Seat seat1, Seat seat2) {
     return (seat1.location.row - seat2.location.row).abs() +
         (seat1.location.column - seat2.location.column).abs();
   }
@@ -288,7 +339,7 @@ class Seat {
       required this.empty});
   @override
   String toString() {
-    return "[${owner ?? "空座位"}:(${location.column},${location.row})]";
+    return "${owner ?? "空座位"}:(${location.column},${location.row})";
   }
 }
 

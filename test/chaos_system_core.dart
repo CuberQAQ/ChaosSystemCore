@@ -7,6 +7,7 @@ var excelFile = "./template.xlsx";
 var namelistFile = "./names.txt";
 var personJsonFile = "./person.json";
 var outputFile = "./result.xlsx";
+var logFile = "./out.log";
 
 class ExcelSeat extends Seat {
   String excelPostion;
@@ -104,7 +105,7 @@ void main() {
   // // print("names:$names");
 
   var personRawList = json.decode(File(personJsonFile).readAsStringSync());
-  print(personRawList);
+  // print(personRawList);
   // Calculate Names Length and Seats Number
   print('''共有${personRawList.length}个人
 ''');
@@ -121,8 +122,8 @@ void main() {
   // Construct Person Object List
   var personList = <Person>[];
   for (var personRawObj in personRawList) {
-    print(
-        "personRawObjType: ${personRawObj.runtimeType} personRawObj:$personRawObj");
+    // print(
+    // "personRawObjType: ${personRawObj.runtimeType} personRawObj:$personRawObj");
     personList.add(parsePersonObj(personRawObj)!);
   }
 
@@ -135,8 +136,15 @@ void main() {
       Seat(location: Location(column: 3, row: 1), nullable: false, empty: true),
       Room(seats: seats)));
 
-  chaosSystemCore(personList: personList, room: Room(seats: seats));
-
+  String log = '';
+  chaosSystemCore(
+      personList: personList,
+      room: Room(seats: seats),
+      newLogger: (str) {
+        log += str;
+        log += '\n';
+      });
+  File(logFile).writeAsStringSync(log);
   // Write Result
   File(excelFile).copySync(outputFile);
   for (var seat in seats) {
@@ -181,86 +189,161 @@ Person? parsePersonObj(dynamic personRawObj) {
         demandList.add(AbsoluteDemand(filter: (seat, room) {
           for (String absoluteDataRaw in demandRaw["data"]) {
             bool result = true;
-            ParsedAbsoluteData? parsedAbsoluteData =
+            ParsedCoordinateData? parsedCoordinateData =
                 parseDataStr(absoluteDataRaw);
-            if (parsedAbsoluteData == null) {
+            if (parsedCoordinateData == null) {
               print('不符合要求的Absolute Data: "$absoluteDataRaw" in $demandRaw');
               continue;
             }
-            if (parsedAbsoluteData.distanceDemanded) {
+            // 转换列要求值 Analyse Column Demand
+            if (parsedCoordinateData.columnDemanded) {
+              if (parsedCoordinateData.columnRanged) {
+                // 将倒数描述转为正数描述 比如共8排 -1排变为第8排
+                if (parsedCoordinateData.columnBegin != null &&
+                    parsedCoordinateData.columnBegin! < 0) {
+                  parsedCoordinateData.columnBegin =
+                      (parsedCoordinateData.columnBegin ?? 0) +
+                          room.maxCols +
+                          1;
+                }
+                if (parsedCoordinateData.columnEnd != null &&
+                    parsedCoordinateData.columnEnd! < 0) {
+                  parsedCoordinateData.columnEnd =
+                      (parsedCoordinateData.columnEnd ?? 0) + room.maxCols + 1;
+                }
+              } else {
+                // 将倒数描述转为正数描述 比如共8排 -1排变为第8排
+                if (parsedCoordinateData.columnBegin != null &&
+                    parsedCoordinateData.columnBegin! < 0) {
+                  parsedCoordinateData.columnBegin =
+                      (parsedCoordinateData.columnBegin ?? 0) +
+                          room.maxCols +
+                          1;
+                }
+              }
+            }
+
+            // 转换行要求值 Analyse Row Demand
+            if (parsedCoordinateData.rowDemanded) {
+              if (parsedCoordinateData.rowRanged) {
+                // 将倒数描述转为正数描述 比如共8排 -1排变为第8排
+                if (parsedCoordinateData.rowBegin != null &&
+                    parsedCoordinateData.rowBegin! < 0) {
+                  parsedCoordinateData.rowBegin =
+                      (parsedCoordinateData.rowBegin ?? 0) + room.maxRows + 1;
+                }
+                if (parsedCoordinateData.rowEnd != null &&
+                    parsedCoordinateData.rowEnd! < 0) {
+                  parsedCoordinateData.rowEnd =
+                      (parsedCoordinateData.rowEnd ?? 0) + room.maxRows + 1;
+                }
+              } else {
+                // 将倒数描述转为正数描述 比如共8排 -1排变为第8排
+                if (parsedCoordinateData.rowBegin != null &&
+                    parsedCoordinateData.rowBegin! < 0) {
+                  parsedCoordinateData.rowBegin =
+                      (parsedCoordinateData.rowBegin ?? 0) + room.maxRows + 1;
+                }
+              }
+            }
+
+            // 转换距离要求值 & 做出判断  Analyse Distance Demand & Make Judgment
+            if (parsedCoordinateData.distanceDemanded) {
               // With Distance Demanded
               // TODO
-              print("还不支持Distanced Data");
+              var exactDistance = getMinDistance(
+                  area: room.findSeat((seat) {
+                    if (parsedCoordinateData.columnDemanded) {
+                      if (parsedCoordinateData.columnRanged) {
+                        // 检查是否在范围内
+                        if (parsedCoordinateData.columnBegin != null &&
+                            seat.location.column <
+                                parsedCoordinateData.columnBegin!) {
+                          return false;
+                        }
+                        if (parsedCoordinateData.columnEnd != null &&
+                            seat.location.column >
+                                parsedCoordinateData.columnEnd!) {
+                          return false;
+                        }
+                      } else {
+                        if (seat.location.column !=
+                            parsedCoordinateData.columnBegin) {
+                          return false;
+                        }
+                      }
+                    }
+                    if (parsedCoordinateData.rowDemanded) {
+                      if (parsedCoordinateData.rowRanged) {
+                        // 检查是否在范围内
+                        if (parsedCoordinateData.rowBegin != null &&
+                            seat.location.row <
+                                parsedCoordinateData.rowBegin!) {
+                          return false;
+                        }
+                        if (parsedCoordinateData.rowEnd != null &&
+                            seat.location.row > parsedCoordinateData.rowEnd!) {
+                          return false;
+                        }
+                      } else {
+                        if (seat.location.row !=
+                            parsedCoordinateData.rowBegin) {
+                          return false;
+                        }
+                      }
+                    }
+                    return true;
+                  }),
+                  target: seat);
+              if (parsedCoordinateData.distanceRanged) {
+                if (parsedCoordinateData.distanceBegin != null &&
+                    exactDistance! < parsedCoordinateData.distanceBegin!) {
+                  result = false;
+                }
+                if (parsedCoordinateData.distanceEnd != null &&
+                    exactDistance! > parsedCoordinateData.distanceEnd!) {
+                  result = false;
+                }
+              } else {
+                if (parsedCoordinateData.distanceBegin != null &&
+                    exactDistance! != parsedCoordinateData.distanceBegin!) {
+                  result = false;
+                }
+              }
             } else {
               // Without Distance Demanded
-              if (parsedAbsoluteData.columnDemanded) {
-                if (parsedAbsoluteData.columnRanged) {
-                  // 将倒数描述转为正数描述 比如共8排 -1排变为第8排
-                  if (parsedAbsoluteData.columnBegin != null &&
-                      parsedAbsoluteData.columnBegin! < 0) {
-                    parsedAbsoluteData.columnBegin =
-                        (parsedAbsoluteData.columnBegin ?? 0) +
-                            room.maxCols +
-                            1;
-                  }
-                  if (parsedAbsoluteData.columnEnd != null &&
-                      parsedAbsoluteData.columnEnd! < 0) {
-                    parsedAbsoluteData.columnEnd =
-                        (parsedAbsoluteData.columnEnd ?? 0) + room.maxCols + 1;
-                  }
+              if (parsedCoordinateData.columnDemanded) {
+                if (parsedCoordinateData.columnRanged) {
                   // 检查是否在范围内
-                  if (parsedAbsoluteData.columnBegin != null &&
-                      seat.location.column < parsedAbsoluteData.columnBegin!) {
+                  if (parsedCoordinateData.columnBegin != null &&
+                      seat.location.column <
+                          parsedCoordinateData.columnBegin!) {
                     result = false;
                   }
-                  if (parsedAbsoluteData.columnEnd != null &&
-                      seat.location.column > parsedAbsoluteData.columnEnd!) {
+                  if (parsedCoordinateData.columnEnd != null &&
+                      seat.location.column > parsedCoordinateData.columnEnd!) {
                     result = false;
                   }
                 } else {
-                  // 将倒数描述转为正数描述 比如共8排 -1排变为第8排
-                  if (parsedAbsoluteData.columnBegin != null &&
-                      parsedAbsoluteData.columnBegin! < 0) {
-                    parsedAbsoluteData.columnBegin =
-                        (parsedAbsoluteData.columnBegin ?? 0) +
-                            room.maxCols +
-                            1;
-                  }
-                  if (seat.location.column != parsedAbsoluteData.columnBegin) {
+                  if (seat.location.column !=
+                      parsedCoordinateData.columnBegin) {
                     result = false;
                   }
                 }
               }
-              if (parsedAbsoluteData.rowDemanded) {
-                if (parsedAbsoluteData.rowRanged) {
-                  // 将倒数描述转为正数描述 比如共8排 -1排变为第8排
-                  if (parsedAbsoluteData.rowBegin != null &&
-                      parsedAbsoluteData.rowBegin! < 0) {
-                    parsedAbsoluteData.rowBegin =
-                        (parsedAbsoluteData.rowBegin ?? 0) + room.maxRows + 1;
-                  }
-                  if (parsedAbsoluteData.rowEnd != null &&
-                      parsedAbsoluteData.rowEnd! < 0) {
-                    parsedAbsoluteData.rowEnd =
-                        (parsedAbsoluteData.rowEnd ?? 0) + room.maxRows + 1;
-                  }
+              if (parsedCoordinateData.rowDemanded) {
+                if (parsedCoordinateData.rowRanged) {
                   // 检查是否在范围内
-                  if (parsedAbsoluteData.rowBegin != null &&
-                      seat.location.row < parsedAbsoluteData.rowBegin!) {
+                  if (parsedCoordinateData.rowBegin != null &&
+                      seat.location.row < parsedCoordinateData.rowBegin!) {
                     result = false;
                   }
-                  if (parsedAbsoluteData.rowEnd != null &&
-                      seat.location.row > parsedAbsoluteData.rowEnd!) {
+                  if (parsedCoordinateData.rowEnd != null &&
+                      seat.location.row > parsedCoordinateData.rowEnd!) {
                     result = false;
                   }
                 } else {
-                  // 将倒数描述转为正数描述 比如共8排 -1排变为第8排
-                  if (parsedAbsoluteData.rowBegin != null &&
-                      parsedAbsoluteData.rowBegin! < 0) {
-                    parsedAbsoluteData.rowBegin =
-                        (parsedAbsoluteData.rowBegin ?? 0) + room.maxRows + 1;
-                  }
-                  if (seat.location.row != parsedAbsoluteData.rowBegin) {
+                  if (seat.location.row != parsedCoordinateData.rowBegin) {
                     result = false;
                   }
                 }
@@ -271,6 +354,184 @@ Person? parsePersonObj(dynamic personRawObj) {
           return false;
         }));
         break;
+      case "relative":
+        demandList.add(RelativeDemand(
+          relativePerson: demandRaw["target"],
+          filter: (
+              {required Seat filteringSeat,
+              required Seat relativeSeat,
+              required Room room}) {
+            for (String relativeDataRaw in demandRaw["data"]) {
+              bool result = true;
+              ParsedCoordinateData? parsedCoordinateData =
+                  parseDataStr(relativeDataRaw);
+              if (parsedCoordinateData == null) {
+                print('不符合要求的Relative Data: "$relativeDataRaw" in $demandRaw');
+                continue;
+              }
+
+              // 转换列要求值 Analyse Column Demand
+              if (parsedCoordinateData.columnDemanded) {
+                if (parsedCoordinateData.columnRanged) {
+                  // 将相对描述转为绝对描述 比如相对于 (2,3) 的 (-1,2) 将变为 (1,5)
+                  if (parsedCoordinateData.columnBegin != null) {
+                    parsedCoordinateData.columnBegin =
+                        (parsedCoordinateData.columnBegin ?? 0) +
+                            relativeSeat.location.column;
+                  }
+                  if (parsedCoordinateData.columnEnd != null) {
+                    parsedCoordinateData.columnEnd =
+                        (parsedCoordinateData.columnEnd ?? 0) +
+                            relativeSeat.location.column;
+                  }
+                } else {
+                  // 将相对描述转为绝对描述 比如相对于 (2,3) 的 (-1,2) 将变为 (1,5)
+                  if (parsedCoordinateData.columnBegin != null) {
+                    parsedCoordinateData.columnBegin =
+                        (parsedCoordinateData.columnBegin ?? 0) +
+                            relativeSeat.location.column;
+                  }
+                }
+              }
+
+              // 转换行要求值 Analyse Row Demand
+              if (parsedCoordinateData.rowDemanded) {
+                if (parsedCoordinateData.rowRanged) {
+                  // 将倒数描述转为正数描述 比如共8排 -1排变为第8排
+                  if (parsedCoordinateData.rowBegin != null) {
+                    parsedCoordinateData.rowBegin =
+                        (parsedCoordinateData.rowBegin ?? 0) +
+                            relativeSeat.location.row;
+                  }
+                  if (parsedCoordinateData.rowEnd != null) {
+                    parsedCoordinateData.rowEnd =
+                        (parsedCoordinateData.rowEnd ?? 0) +
+                            relativeSeat.location.row;
+                  }
+                } else {
+                  // 将倒数描述转为正数描述 比如共8排 -1排变为第8排
+                  if (parsedCoordinateData.rowBegin != null) {
+                    parsedCoordinateData.rowBegin =
+                        (parsedCoordinateData.rowBegin ?? 0) +
+                            relativeSeat.location.row;
+                  }
+                }
+              }
+
+              // 转换距离要求值 & 做出判断  Analyse Distance Demand & Make Judgment
+              if (parsedCoordinateData.distanceDemanded) {
+                // With Distance Demanded
+                // TODO
+                // TODO
+                var exactDistance = getMinDistance(
+                    area: room.findSeat((seat) {
+                      if (parsedCoordinateData.columnDemanded) {
+                        if (parsedCoordinateData.columnRanged) {
+                          // 检查是否在范围内
+                          if (parsedCoordinateData.columnBegin != null &&
+                              seat.location.column <
+                                  parsedCoordinateData.columnBegin!) {
+                            return false;
+                          }
+                          if (parsedCoordinateData.columnEnd != null &&
+                              seat.location.column >
+                                  parsedCoordinateData.columnEnd!) {
+                            return false;
+                          }
+                        } else {
+                          if (seat.location.column !=
+                              parsedCoordinateData.columnBegin) {
+                            return false;
+                          }
+                        }
+                      }
+                      if (parsedCoordinateData.rowDemanded) {
+                        if (parsedCoordinateData.rowRanged) {
+                          // 检查是否在范围内
+                          if (parsedCoordinateData.rowBegin != null &&
+                              seat.location.row <
+                                  parsedCoordinateData.rowBegin!) {
+                            return false;
+                          }
+                          if (parsedCoordinateData.rowEnd != null &&
+                              seat.location.row >
+                                  parsedCoordinateData.rowEnd!) {
+                            return false;
+                          }
+                        } else {
+                          if (seat.location.row !=
+                              parsedCoordinateData.rowBegin) {
+                            return false;
+                          }
+                        }
+                      }
+                      return true;
+                    }),
+                    target: filteringSeat);
+                if (parsedCoordinateData.distanceRanged) {
+                  if (parsedCoordinateData.distanceBegin != null &&
+                      exactDistance! < parsedCoordinateData.distanceBegin!) {
+                    result = false;
+                  }
+                  if (parsedCoordinateData.distanceEnd != null &&
+                      exactDistance! > parsedCoordinateData.distanceEnd!) {
+                    result = false;
+                  }
+                } else {
+                  if (parsedCoordinateData.distanceBegin != null &&
+                      exactDistance! != parsedCoordinateData.distanceBegin!) {
+                    result = false;
+                  }
+                }
+              } else {
+                // Without Distance Demanded
+                if (parsedCoordinateData.columnDemanded) {
+                  if (parsedCoordinateData.columnRanged) {
+                    // 检查是否在范围内
+                    if (parsedCoordinateData.columnBegin != null &&
+                        filteringSeat.location.column <
+                            parsedCoordinateData.columnBegin!) {
+                      result = false;
+                    }
+                    if (parsedCoordinateData.columnEnd != null &&
+                        filteringSeat.location.column >
+                            parsedCoordinateData.columnEnd!) {
+                      result = false;
+                    }
+                  } else {
+                    if (filteringSeat.location.column !=
+                        parsedCoordinateData.columnBegin) {
+                      result = false;
+                    }
+                  }
+                }
+                if (parsedCoordinateData.rowDemanded) {
+                  if (parsedCoordinateData.rowRanged) {
+                    // 检查是否在范围内
+                    if (parsedCoordinateData.rowBegin != null &&
+                        filteringSeat.location.row <
+                            parsedCoordinateData.rowBegin!) {
+                      result = false;
+                    }
+                    if (parsedCoordinateData.rowEnd != null &&
+                        filteringSeat.location.row >
+                            parsedCoordinateData.rowEnd!) {
+                      result = false;
+                    }
+                  } else {
+                    if (filteringSeat.location.row !=
+                        parsedCoordinateData.rowBegin) {
+                      result = false;
+                    }
+                  }
+                }
+              }
+              if (result == true) return true;
+            }
+            return false;
+          },
+        ));
+        break;
       default:
         print("Unknown Demand Type in $demandRaw");
     }
@@ -280,14 +541,24 @@ Person? parsePersonObj(dynamic personRawObj) {
       name: personRawObj["name"], gender: genderParsed, demandList: demandList);
 }
 
+num? getMinDistance({required Set<Seat> area, required Seat target}) {
+  if (area.isEmpty) return null;
+  num minDistance = -1;
+  for (var areaMember in area) {
+    var distance = Room.getEuclideanDistance(areaMember, target);
+    if (minDistance == -1 || distance < minDistance) minDistance = distance;
+  }
+  return minDistance == -1 ? null : minDistance;
+}
+
 /// str: (-3~,1~4)3 之类
-ParsedAbsoluteData? parseDataStr(String str) {
+ParsedCoordinateData? parseDataStr(String str) {
   str = str.replaceAll(' ', '');
   var regExp = RegExp(
       r'^\((?<columnBegin>-?[0-9]+)?(?<columnRanged>~)?(?<columnEnd>-?[0-9]+)?,(?<rowBegin>-?[0-9]+)?(?<rowRanged>~)?(?<rowEnd>-?[0-9]+)?\)(?<distanceBegin>-?[0-9]+)?(?<distanceRanged>~)?(?<distanceEnd>-?[0-9]+)?$');
   if (!regExp.hasMatch(str)) return null;
   var match = regExp.allMatches(str).first;
-  ParsedAbsoluteData result = ParsedAbsoluteData();
+  ParsedCoordinateData result = ParsedCoordinateData();
   result.columnBegin = num.tryParse(match.namedGroup("columnBegin").toString());
   result.columnEnd = num.tryParse(match.namedGroup("columnEnd").toString());
   result.rowBegin = num.tryParse(match.namedGroup("rowBegin").toString());
@@ -306,7 +577,7 @@ ParsedAbsoluteData? parseDataStr(String str) {
   return result;
 }
 
-class ParsedAbsoluteData {
+class ParsedCoordinateData {
   num? columnBegin;
   num? columnEnd;
   num? rowBegin;
