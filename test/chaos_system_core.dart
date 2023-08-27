@@ -121,8 +121,20 @@ void main() {
   // Construct Person Object List
   var personList = <Person>[];
   for (var personRawObj in personRawList) {
-    personList.add(parsePersonObj(personRawObj));
+    print(
+        "personRawObjType: ${personRawObj.runtimeType} personRawObj:$personRawObj");
+    personList.add(parsePersonObj(personRawObj)!);
   }
+
+  // TODO test
+  AbsoluteDemand testDemand = personList
+      .firstWhere((element) => element.name == "秦浩朗")
+      .demandList
+      .first as AbsoluteDemand;
+  print(testDemand.filter(
+      Seat(location: Location(column: 3, row: 1), nullable: false, empty: true),
+      Room(seats: seats)));
+
   chaosSystemCore(personList: personList, room: Room(seats: seats));
 
   // Write Result
@@ -153,7 +165,7 @@ bool isNullableSeat(Data? cell) {
 
 Person? parsePersonObj(dynamic personRawObj) {
   // Parse Gender
-  var genderRaw = personRawObj.gender;
+  var genderRaw = personRawObj["gender"];
   var genderParsed = Gender.unknown;
   for (var gender in Gender.values) {
     if (gender.toString() == genderRaw) {
@@ -163,19 +175,101 @@ Person? parsePersonObj(dynamic personRawObj) {
 
   // Parse Demand List
   var demandList = <Demand>[];
-  for (var demandRaw in personRawObj?.demands) {
-    switch (demandRaw.type) {
+  for (var demandRaw in personRawObj["demands"]) {
+    switch (demandRaw["type"]) {
       case "absolute":
-        var absoluteDemand = AbsoluteDemand(filter: (seat) {
-          for (String absoluteDataRaw in demandRaw.data) {
+        demandList.add(AbsoluteDemand(filter: (seat, room) {
+          for (String absoluteDataRaw in demandRaw["data"]) {
+            bool result = true;
             ParsedAbsoluteData? parsedAbsoluteData =
                 parseDataStr(absoluteDataRaw);
             if (parsedAbsoluteData == null) {
               print('不符合要求的Absolute Data: "$absoluteDataRaw" in $demandRaw');
               continue;
             }
+            if (parsedAbsoluteData.distanceDemanded) {
+              // With Distance Demanded
+              // TODO
+              print("还不支持Distanced Data");
+            } else {
+              // Without Distance Demanded
+              if (parsedAbsoluteData.columnDemanded) {
+                if (parsedAbsoluteData.columnRanged) {
+                  // 将倒数描述转为正数描述 比如共8排 -1排变为第8排
+                  if (parsedAbsoluteData.columnBegin != null &&
+                      parsedAbsoluteData.columnBegin! < 0) {
+                    parsedAbsoluteData.columnBegin =
+                        (parsedAbsoluteData.columnBegin ?? 0) +
+                            room.maxCols +
+                            1;
+                  }
+                  if (parsedAbsoluteData.columnEnd != null &&
+                      parsedAbsoluteData.columnEnd! < 0) {
+                    parsedAbsoluteData.columnEnd =
+                        (parsedAbsoluteData.columnEnd ?? 0) + room.maxCols + 1;
+                  }
+                  // 检查是否在范围内
+                  if (parsedAbsoluteData.columnBegin != null &&
+                      seat.location.column < parsedAbsoluteData.columnBegin!) {
+                    result = false;
+                  }
+                  if (parsedAbsoluteData.columnEnd != null &&
+                      seat.location.column > parsedAbsoluteData.columnEnd!) {
+                    result = false;
+                  }
+                } else {
+                  // 将倒数描述转为正数描述 比如共8排 -1排变为第8排
+                  if (parsedAbsoluteData.columnBegin != null &&
+                      parsedAbsoluteData.columnBegin! < 0) {
+                    parsedAbsoluteData.columnBegin =
+                        (parsedAbsoluteData.columnBegin ?? 0) +
+                            room.maxCols +
+                            1;
+                  }
+                  if (seat.location.column != parsedAbsoluteData.columnBegin) {
+                    result = false;
+                  }
+                }
+              }
+              if (parsedAbsoluteData.rowDemanded) {
+                if (parsedAbsoluteData.rowRanged) {
+                  // 将倒数描述转为正数描述 比如共8排 -1排变为第8排
+                  if (parsedAbsoluteData.rowBegin != null &&
+                      parsedAbsoluteData.rowBegin! < 0) {
+                    parsedAbsoluteData.rowBegin =
+                        (parsedAbsoluteData.rowBegin ?? 0) + room.maxRows + 1;
+                  }
+                  if (parsedAbsoluteData.rowEnd != null &&
+                      parsedAbsoluteData.rowEnd! < 0) {
+                    parsedAbsoluteData.rowEnd =
+                        (parsedAbsoluteData.rowEnd ?? 0) + room.maxRows + 1;
+                  }
+                  // 检查是否在范围内
+                  if (parsedAbsoluteData.rowBegin != null &&
+                      seat.location.row < parsedAbsoluteData.rowBegin!) {
+                    result = false;
+                  }
+                  if (parsedAbsoluteData.rowEnd != null &&
+                      seat.location.row > parsedAbsoluteData.rowEnd!) {
+                    result = false;
+                  }
+                } else {
+                  // 将倒数描述转为正数描述 比如共8排 -1排变为第8排
+                  if (parsedAbsoluteData.rowBegin != null &&
+                      parsedAbsoluteData.rowBegin! < 0) {
+                    parsedAbsoluteData.rowBegin =
+                        (parsedAbsoluteData.rowBegin ?? 0) + room.maxRows + 1;
+                  }
+                  if (seat.location.row != parsedAbsoluteData.rowBegin) {
+                    result = false;
+                  }
+                }
+              }
+            }
+            if (result == true) return true;
           }
-        });
+          return false;
+        }));
         break;
       default:
         print("Unknown Demand Type in $demandRaw");
@@ -183,14 +277,14 @@ Person? parsePersonObj(dynamic personRawObj) {
   }
 
   return Person(
-      name: personRawObj?.name, gender: genderParsed, demandList: demandList);
+      name: personRawObj["name"], gender: genderParsed, demandList: demandList);
 }
 
 /// str: (-3~,1~4)3 之类
 ParsedAbsoluteData? parseDataStr(String str) {
   str = str.replaceAll(' ', '');
   var regExp = RegExp(
-      r'^\((?<columnBegin>-?[0-9]+)?~?(?<columnEnd>-?[0-9]+)?,(?<rowBegin>-?[0-9]+)?~?(?<rowEnd>-?[0-9]+)?\)(?<distanceBegin>-?[0-9]+)?~?(?<distanceEnd>-?[0-9]+)?$');
+      r'^\((?<columnBegin>-?[0-9]+)?(?<columnRanged>~)?(?<columnEnd>-?[0-9]+)?,(?<rowBegin>-?[0-9]+)?(?<rowRanged>~)?(?<rowEnd>-?[0-9]+)?\)(?<distanceBegin>-?[0-9]+)?(?<distanceRanged>~)?(?<distanceEnd>-?[0-9]+)?$');
   if (!regExp.hasMatch(str)) return null;
   var match = regExp.allMatches(str).first;
   ParsedAbsoluteData result = ParsedAbsoluteData();
@@ -201,6 +295,14 @@ ParsedAbsoluteData? parseDataStr(String str) {
   result.distanceBegin =
       num.tryParse(match.namedGroup("distanceBegin").toString());
   result.distanceEnd = num.tryParse(match.namedGroup("distanceEnd").toString());
+  result.columnRanged = match.namedGroup("columnRanged") != null;
+  result.rowRanged = match.namedGroup("rowRanged") != null;
+  result.distanceRanged = match.namedGroup("distanceRanged") != null;
+  result.columnDemanded =
+      result.columnBegin != null || result.columnEnd != null;
+  result.rowDemanded = result.rowBegin != null || result.rowEnd != null;
+  result.distanceDemanded =
+      result.distanceBegin != null || result.distanceEnd != null;
   return result;
 }
 
@@ -211,4 +313,14 @@ class ParsedAbsoluteData {
   num? rowEnd;
   num? distanceBegin;
   num? distanceEnd;
+  late bool columnRanged;
+  late bool rowRanged;
+  late bool distanceRanged;
+  late bool columnDemanded;
+  late bool rowDemanded;
+  late bool distanceDemanded;
+  @override
+  String toString() {
+    return "{columnDemanded: $columnDemanded, columnBegin: $columnBegin, columnRanged: $columnRanged, columnEnd: $columnEnd, rowDemanded: $rowDemanded, rowBegin: $rowBegin, rowRanged: $rowRanged, rowEnd: $rowEnd, distanceDemanded: $distanceDemanded, distanceBegin: $distanceBegin, distanceRanged: $distanceRanged, distanceEnd: $distanceEnd, }";
+  }
 }

@@ -1,3 +1,4 @@
+import 'dart:ffi';
 import 'dart:math' as math;
 
 /// [seatChart] (col, row) (列，排)
@@ -13,10 +14,9 @@ void chaosSystemCore({required List<Person> personList, required Room room}) {
     arrangeQuene.sort(
         (person1, person2) => person1.getRankPoint() - person2.getRankPoint());
     // Resolve one by one
-    bool arranged = false; // Whether someone has been resolved in for loop
-    Person? arrangedPerson;
+    ArrangedInfo? arrangedInfo;
     for (var resolvingPerson in arrangeQuene) {
-      var chosenSeat = resolvingPerson.resolve(room: room);
+      var chosenSeat = resolvingPerson.resolve();
       if (chosenSeat == null) {
         print("${resolvingPerson.name} 暂时不想决定座位");
         continue;
@@ -26,27 +26,28 @@ void chaosSystemCore({required List<Person> personList, required Room room}) {
         resolvingPerson.resolved = true;
         chosenSeat.empty = false;
         chosenSeat.owner = resolvingPerson;
-        arranged = true;
-        arrangedPerson = resolvingPerson;
+        arrangedInfo = ArrangedInfo(seat: chosenSeat, person: resolvingPerson);
         break;
       }
     }
-    // Clear Person Arranged
-    if(arranged) {
-      arrangeQuene.remove(arrangedPerson);
-    }
-    // Update all person & Redraw Heatmap
-    room.heatmap.clear();
-    for (var person in personList) {
-      person.update(room: room);
-      person.drawHeatmap(room: room);
+    // If arranged success
+    if (arrangedInfo != null) {
+      // Clear Person Arranged
+      arrangeQuene.remove(arrangedInfo.person);
+      // Update all person & Redraw Heatmap
+      room.heatmap.clear();
+      for (var person in arrangeQuene) {
+        person.update(arrangedInfo: arrangedInfo);
+        person.drawHeatmap();
+      }
+      print("当前热图:${room.heatmap}");
     }
     // Finish Arrangement
-    if(loopTimes >= 200) {
+    if (loopTimes >= 200) {
       print("循环次数过多，终止程序");
       break;
     }
-    if(arrangeQuene.isEmpty) {
+    if (arrangeQuene.isEmpty) {
       print("座位编排完成，终止程序");
       break;
     }
@@ -61,53 +62,74 @@ enum Gender {
   transgender,
 }
 
+class ArrangedInfo {
+  Seat seat;
+  Person person;
+  ArrangedInfo({required this.seat, required this.person});
+}
+
 class Person {
   String name;
   Gender gender;
   bool resolved = false;
   List<Demand> demandList;
-  late int nowDemand;
+  late Room room;
+  int? nowDemand;
   int stress = 0;
   late Set<Seat> targetSet;
   Person({required this.name, required this.gender, required this.demandList});
   init({required Room room}) {
-    targetSet = Set.from(room.seats);
+    this.room = room;
+    targetSet = room.getEmptySeat(source: Set.from(room.seats));
+    for (var demand in demandList) {
+      demand.init(room: room, demander: this);
+    }
+    update();
+  }
+
+  void drawHeatmap() {
+    //TODO
+    if (targetSet.isEmpty) return;
+    for (var seat in targetSet) {
+      if (room.heatmap[seat] == null) continue;
+      room.heatmap[seat] = room.heatmap[seat]! + 1 / targetSet.length;
+    }
+  }
+
+  void update({ArrangedInfo? arrangedInfo}) {
+    nowDemand = null;
+
+    targetSet = room.getEmptySeat(source: Set.from(room.seats));
     for (int i = 0; i < demandList.length; ++i) {
       var demand = demandList[i];
-      demand.init(room: room);
+      demand.update(arrangedInfo: arrangedInfo);
       var coTarget = targetSet.intersection(demand.target); // 已有目标和需求目标的交集
-      if(coTarget.isEmpty) {
-        demand.feasibility = false;
-      }
-      else {
-        demand.feasibility = true;
+      if (coTarget.isNotEmpty) {
         nowDemand = i;
         targetSet = coTarget;
       }
     }
   }
-  void drawHeatmap({required Room room}) {}
-  void update({required Room room}) {
-    targetSet = room.getEmptySeat(source: Set.from(room.seats));
-    for (int i = 0; i < demandList.length; ++i) {
-      var demand = demandList[i];
-      demand.update(room: room);
-      var coTarget = targetSet.intersection(demand.target); // 已有目标和需求目标的交集
-      if(coTarget.isEmpty) {
-        demand.feasibility = false;
+
+  Seat? resolve() {
+    var finalSeat = room.chooseBestSeat(range: targetSet);
+    for (var demand in demandList) {
+      if (demand.target.contains(finalSeat)) {
+        print("[提示]$name的需求$demand已被满足");
+      } else {
+        print("[提示]$name的需求$demand未被满足");
       }
-      else {
-        demand.feasibility = true;
-        nowDemand = i;
-        targetSet = coTarget;
-      }
-    } 
+    }
+    return finalSeat;
   }
-  Seat? resolve({required Room room}) {
-    return room.chooseBestSeat(range: targetSet);
-  }
+
   int getRankPoint() {
     return targetSet.length;
+  }
+
+  @override
+  String toString() {
+    return name;
   }
 }
 
@@ -127,50 +149,62 @@ class Heatmap {
   num? operator [](Seat seat) => data[seat];
   void operator []=(Seat seat, num newHeat) => data[seat] = newHeat;
   num? getHeat(Seat seat) => data[seat];
+  @override
+  String toString() {
+    var str = "";
+    data.forEach((key, value) {
+      if (value != 0) str += "[$key:$value]\n";
+    });
+    return str;
+  }
 }
 
 // 需求父抽象类
 abstract class Demand {
-  late bool feasibility;
+  late bool closed;
+  late Person demander;
+  late Room room;
   bool resolved = false;
   late Set<Seat> target;
-  void init({required Room room});
-  void update({required Room room});
-  Seat? resolve({required Room room});
-  void drawHeatmap({required Room room});
+  void init({required Room room, required Person demander});
+  void update({ArrangedInfo? arrangedInfo});
+  Seat? resolve();
+  void drawHeatmap();
 }
 
 // 绝对需求
 class AbsoluteDemand extends Demand {
-  bool Function(Seat) filter;
+  bool Function(Seat, Room) filter;
   AbsoluteDemand({required this.filter});
   @override
-  void init({required Room room}) {
-    target = room.findSeat((Seat seat) => filter(seat));
-    feasibility = target.isNotEmpty;
+  void init({required Room room, required Person demander}) {
+    this.room = room;
+    this.demander = demander;
+    update();
   }
 
   @override
-  void update({required Room room}) {
-    // TODO: implement update
+  void update({ArrangedInfo? arrangedInfo}) {
+    target = room.findSeat((Seat seat) => filter(seat, room));
   }
+
   @override
-  Seat? resolve({required Room room}) {
-    // TODO: implement resolve
-  }
+  Seat? resolve() {}
   @override
-  void drawHeatmap({required Room room}) {
-    // TODO: implement drawHeatmap
-  }
+  void drawHeatmap() {}
 }
 
 class Room {
   List<Seat> seats;
   late Heatmap heatmap;
+  int maxCols = 0;
+  int maxRows = 0;
   Room({required this.seats}) {
-    // 位置查重
+    // 位置查重 & 最大行列
     var locationSet = <(int, int)>{};
     for (var seat in seats) {
+      if (maxRows < seat.location.row) maxRows = seat.location.row;
+      if (maxCols < seat.location.column) maxRows = seat.location.column;
       if (!locationSet.add((seat.location.row, seat.location.column))) {
         throw Exception("给定的seats中存在位置重复");
       }
@@ -195,21 +229,40 @@ class Room {
     }
     return targetList;
   }
+
   Set<Seat> getEmptySeat({required Set<Seat> source}) {
     source.removeWhere((Seat element) => !element.empty);
     return source;
   }
-  // TODO
+
+  // rank越小越容易被抽中
   Seat? chooseBestSeat(
-      {required Set<Seat> range, int Function(Seat, Seat, Room)? getRankFunc}) {
+      {required Set<Seat> range, int Function(Seat, Room)? getRankFunc}) {
     if (range.isEmpty) return null;
-    List<Seat> targetList = List.from(seats);
+    List<Seat> targetList = List.from(range);
+
     targetList.sort((Seat seat1, Seat seat2) {
       return (getRankFunc != null)
-          ? getRankFunc(seat1, seat2, this)
+          ? (getRankFunc(seat1, this) - getRankFunc(seat2, this))
           : (((heatmap[seat1] ?? 0) - (heatmap[seat2] ?? 0)) * 10000).toInt();
     });
-    return targetList.first;
+
+    Map<int, List<Seat>> map = {};
+    Set<int> mapKeys = {};
+    for (var seat in range) {
+      int rank = getRankFunc != null
+          ? getRankFunc(seat, this)
+          : ((heatmap[seat] ?? 0) * 10000).toInt();
+      if (mapKeys.add(rank)) {
+        map[rank] = [seat];
+      } else {
+        map[rank]!.add(seat);
+      }
+    }
+    List<int> sortedMapKeys = List<int>.from(mapKeys);
+    sortedMapKeys.sort((rank1, rank2) => rank1 - rank2);
+    var smallRange = map[sortedMapKeys.first]!;
+    return smallRange[math.Random.secure().nextInt(smallRange.length)];
   }
 
   num getEuclideanDistance(Seat seat1, Seat seat2) {
@@ -233,6 +286,10 @@ class Seat {
       required this.nullable,
       this.owner,
       required this.empty});
+  @override
+  String toString() {
+    return "[${owner ?? "空座位"}:(${location.column},${location.row})]";
+  }
 }
 
 class Location {
