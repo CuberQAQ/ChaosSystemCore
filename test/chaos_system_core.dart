@@ -1,13 +1,12 @@
+import 'dart:convert';
 import 'dart:io';
-
-import 'package:chaos_system_core/chaos_system_core.dart';
 import 'package:excel/excel.dart';
-import 'package:test/test.dart';
-
 import '../bin/chaos_system_core.dart';
 
 var excelFile = "./template.xlsx";
 var namelistFile = "./names.txt";
+var personJsonFile = "./person.json";
+var outputFile = "./result.xlsx";
 
 class ExcelSeat extends Seat {
   String excelPostion;
@@ -55,7 +54,7 @@ void main() {
   availableRowsIndexesList.sort((a, b) => a - b);
   // print("availableColsIndexes = $availableColsIndexesList");
   // print("availableRowsIndexes = $availableRowsIndexesList");
-  var seats = <Seat>[]; // (col, row) (列，排)
+  var seats = <ExcelSeat>[]; // (col, row) (列，排)
 
   for (int factColIndex = 1;
       factColIndex <= availableColsIndexesList.length;
@@ -67,7 +66,6 @@ void main() {
           [availableColsIndexesList[factColIndex - 1]];
       // print("now: row=$factRowIndex col=$factColIndex");
       if (cell == null || !isAvailableCell(cell)) {
-
       } else {
         seats.add(ExcelSeat(
             location: Location(row: factRowIndex, column: factColIndex),
@@ -91,39 +89,50 @@ void main() {
   print('''共检测到$availableSeatNumber个座位，其中$nullableSeatNumber个座位可选
 ''');
 
-  // Get Name List
-  var nameRawList = File(namelistFile).readAsLinesSync();
-  var names = <String>{};
-  for (int i = 0; i < nameRawList.length; ++i) {
-    var text = nameRawList[i].trim();
-    if (text == "") {
-      print("[提示] 姓名列表第${i + 1}行为空，可删除");
-    }
-    if (!names.add(text)) {
-      print("[警告] 姓名列表第${i + 1}行为重复名字，可删除");
-    }
-  }
-  // print("names:$names");
+  // // Get Name List
+  // var nameRawList = File(namelistFile).readAsLinesSync();
+  // var names = <String>{};
+  // for (int i = 0; i < nameRawList.length; ++i) {
+  //   var text = nameRawList[i].trim();
+  //   if (text == "") {
+  //     print("[提示] 姓名列表第${i + 1}行为空，可删除");
+  //   }
+  //   if (!names.add(text)) {
+  //     print("[警告] 姓名列表第${i + 1}行为重复名字，可删除");
+  //   }
+  // }
+  // // print("names:$names");
 
+  var personRawList = json.decode(File(personJsonFile).readAsStringSync());
+  print(personRawList);
   // Calculate Names Length and Seats Number
-  print('''共有${names.length}个人
+  print('''共有${personRawList.length}个人
 ''');
 
-  if (names.length > availableSeatNumber) {
-    print("[错误] 座位不够，还少${names.length - availableSeatNumber}个座位");
+  if (personRawList.length > availableSeatNumber) {
+    print("[错误] 座位不够，还少${personRawList.length - availableSeatNumber}个座位");
     return;
-  } else if (names.length == availableSeatNumber) {
+  } else if (personRawList.length == availableSeatNumber) {
     print("[提示] 座位数量刚好够");
-  } else if (names.length < availableSeatNumber) {
-    print("[提示] 将空出${availableSeatNumber - names.length}个座位");
+  } else if (personRawList.length < availableSeatNumber) {
+    print("[提示] 将空出${availableSeatNumber - personRawList.length}个座位");
   }
 
   // Construct Person Object List
   var personList = <Person>[];
-  for (var element in names) {
-    personList.add(Person(name: element, gender: Gender.unknown, demandList: []));
+  for (var personRawObj in personRawList) {
+    personList.add(parsePersonObj(personRawObj));
   }
   chaosSystemCore(personList: personList, room: Room(seats: seats));
+
+  // Write Result
+  File(excelFile).copySync(outputFile);
+  for (var seat in seats) {
+    sheetObj.updateCell(
+        CellIndex.indexByString(seat.excelPostion), seat.owner ?? "empty");
+  }
+  File(outputFile).writeAsBytesSync(excel.encode()!);
+  print("排座完成！");
 }
 
 bool isAvailableCell(Data? cell) {
@@ -140,4 +149,66 @@ bool isNullableSeat(Data? cell) {
   if (cell == null) return false;
   if (cell.value.toString().trim() == "???") return true;
   return false;
+}
+
+Person? parsePersonObj(dynamic personRawObj) {
+  // Parse Gender
+  var genderRaw = personRawObj.gender;
+  var genderParsed = Gender.unknown;
+  for (var gender in Gender.values) {
+    if (gender.toString() == genderRaw) {
+      genderParsed = gender;
+    }
+  }
+
+  // Parse Demand List
+  var demandList = <Demand>[];
+  for (var demandRaw in personRawObj?.demands) {
+    switch (demandRaw.type) {
+      case "absolute":
+        var absoluteDemand = AbsoluteDemand(filter: (seat) {
+          for (String absoluteDataRaw in demandRaw.data) {
+            ParsedAbsoluteData? parsedAbsoluteData =
+                parseDataStr(absoluteDataRaw);
+            if (parsedAbsoluteData == null) {
+              print('不符合要求的Absolute Data: "$absoluteDataRaw" in $demandRaw');
+              continue;
+            }
+          }
+        });
+        break;
+      default:
+        print("Unknown Demand Type in $demandRaw");
+    }
+  }
+
+  return Person(
+      name: personRawObj?.name, gender: genderParsed, demandList: demandList);
+}
+
+/// str: (-3~,1~4)3 之类
+ParsedAbsoluteData? parseDataStr(String str) {
+  str = str.replaceAll(' ', '');
+  var regExp = RegExp(
+      r'^\((?<columnBegin>-?[0-9]+)?~?(?<columnEnd>-?[0-9]+)?,(?<rowBegin>-?[0-9]+)?~?(?<rowEnd>-?[0-9]+)?\)(?<distanceBegin>-?[0-9]+)?~?(?<distanceEnd>-?[0-9]+)?$');
+  if (!regExp.hasMatch(str)) return null;
+  var match = regExp.allMatches(str).first;
+  ParsedAbsoluteData result = ParsedAbsoluteData();
+  result.columnBegin = num.tryParse(match.namedGroup("columnBegin").toString());
+  result.columnEnd = num.tryParse(match.namedGroup("columnEnd").toString());
+  result.rowBegin = num.tryParse(match.namedGroup("rowBegin").toString());
+  result.rowEnd = num.tryParse(match.namedGroup("rowEnd").toString());
+  result.distanceBegin =
+      num.tryParse(match.namedGroup("distanceBegin").toString());
+  result.distanceEnd = num.tryParse(match.namedGroup("distanceEnd").toString());
+  return result;
+}
+
+class ParsedAbsoluteData {
+  num? columnBegin;
+  num? columnEnd;
+  num? rowBegin;
+  num? rowEnd;
+  num? distanceBegin;
+  num? distanceEnd;
 }
