@@ -356,8 +356,8 @@ Person? parsePersonObj(dynamic personRawObj) {
         }));
         break;
       case "relative":
-        demandList.add(RelativeDemand(
-          relativePerson: demandRaw["target"],
+        demandList.add(RelativeDemandWithSemiConfirm(
+          relativePersonName: demandRaw["target"],
           filter: (
               {required Seat filteringSeat,
               required Seat relativeSeat,

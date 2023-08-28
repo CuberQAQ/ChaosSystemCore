@@ -1,5 +1,8 @@
 import 'dart:math' as math;
 
+const maxUpdateLoopTimes = 10;
+const maxStress = 5; // TODO
+
 class ChaosSystemCore {
   List<Person> personList;
   Room room;
@@ -7,8 +10,22 @@ class ChaosSystemCore {
   ChaosSystemCore(
       {required this.personList, required this.room, this.logger = print});
   void arrange() {
+    // Init All Person
+    logger("[提示]初始化...");
     for (var person in personList) {
       person.init(room: room, core: this);
+    }
+    // Update All Person
+    for (int times = 1; times <= maxUpdateLoopTimes; ++times) {
+      bool dirty = false;
+      logger("[提示]第$times次update所有人");
+      for (var person in personList) {
+        if (person.update() == true) dirty = true;
+      }
+      if (times == maxUpdateLoopTimes) {
+        logger("[错误]update次数超过最大深度，终止update");
+      }
+      if (!dirty) break;
     }
     List<Person> arrangeQuene = List.from(personList);
     var loopTimes = 0;
@@ -45,10 +62,23 @@ class ChaosSystemCore {
       if (arrangedInfo != null) {
         // Clear Person Arranged
         arrangeQuene.remove(arrangedInfo.person);
-        // Update all person
+        // Call All person to Process Arrangement
         room.heatmap.clear();
         for (var person in arrangeQuene) {
-          person.update(arrangedInfo: arrangedInfo);
+          person.processArranged(arrangedInfo: arrangedInfo);
+        }
+        // TODO Update All Person 是否要放在arranged!=null外面？？
+        // Update All Person
+        for (int times = 1; times <= maxUpdateLoopTimes; ++times) {
+          bool dirty = false;
+          logger("[提示]第$times次update所有人");
+          for (var person in arrangeQuene) {
+            if (person.update() == true) dirty = true;
+          }
+          if (times == maxUpdateLoopTimes) {
+            logger("[错误]update次数超过最大深度，终止update");
+          }
+          if (!dirty) break;
         }
       }
       // Finish Arrangement
@@ -107,7 +137,17 @@ class Person {
     for (var demand in demandList) {
       demand.init(room: room, demander: this, core: core);
     }
-    update();
+    // Flash Demand
+    nowDemand = null;
+    targetSet = room.getEmptySeat(source: Set.from(room.seats));
+    for (int i = 0; i < demandList.length; ++i) {
+      var demand = demandList[i];
+      var coTarget = targetSet.intersection(demand.target); // 已有目标和需求目标的交集
+      if (coTarget.isNotEmpty) {
+        nowDemand = i;
+        targetSet = coTarget;
+      }
+    }
   }
 
   void drawHeatmap() {
@@ -115,19 +155,32 @@ class Person {
     demandList[nowDemand!].drawHeatmap(targetSet);
   }
 
-  void update({ArrangedInfo? arrangedInfo}) {
-    nowDemand = null;
+  void processArranged({required ArrangedInfo arrangedInfo}) {
+    if (demandList.isNotEmpty) {
+      for (int i = 0; i < demandList.length; ++i) {
+        var demand = demandList[i];
+        demand.processArranged(arrangedInfo: arrangedInfo);
+      }
+    } else {
+      targetSet = room?.getEmptySeat(source: Set.from(room?.seats ?? [])) ?? {};
+    }
+  }
 
+  // 返回true说明发生了target的的变动，core会再次进行一轮update以保证针对他人的需求被正确更新
+  bool update() {
     targetSet = room?.getEmptySeat(source: Set.from(room?.seats ?? [])) ?? {};
+    nowDemand = null;
+    bool result = false;
     for (int i = 0; i < demandList.length; ++i) {
       var demand = demandList[i];
-      demand.update(arrangedInfo: arrangedInfo);
+      if (demand.update()) result = true;
       var coTarget = targetSet.intersection(demand.target); // 已有目标和需求目标的交集
       if (coTarget.isNotEmpty) {
         nowDemand = i;
         targetSet = coTarget;
       }
     }
+    return result;
   }
 
   Seat? resolve() {
@@ -155,7 +208,12 @@ class Person {
   }
 
   int getRankPoint() {
-    return targetSet.length;
+    // rankPoint决定了arrangeList的排序
+    if (targetSet.length <= 3) {
+      return targetSet.length;
+    } else {
+      return targetSet.length + math.pow(2, stress).toInt() - 1;
+    }
   }
 
   @override
@@ -201,7 +259,8 @@ abstract class Demand {
   late Set<Seat> target;
   void init(
       {required Room room, required Person demander, ChaosSystemCore? core});
-  void update({ArrangedInfo? arrangedInfo});
+  void processArranged({required ArrangedInfo arrangedInfo});
+  bool update();
   Seat? resolve(Set<Seat> range);
   void drawHeatmap(Set<Seat> range);
   bool judgment(Seat finalSeat);
@@ -217,17 +276,24 @@ class AbsoluteDemand extends Demand {
     this.room = room;
     this.demander = demander;
     this.core = core;
-    update();
+    target = room.getEmptySeat(
+        source: room.findSeat((Seat seat) => filter(seat, room)));
   }
 
   @override
-  void update({ArrangedInfo? arrangedInfo}) {
-    if (arrangedInfo == null || target.contains(arrangedInfo.seat)) {
+  void processArranged({required ArrangedInfo arrangedInfo}) {
+    if (target.contains(arrangedInfo.seat)) {
       target = room?.getEmptySeat(
               source:
                   room?.findSeat((Seat seat) => filter(seat, room!)) ?? {}) ??
           {};
     }
+  }
+
+  @override
+  bool update() {
+    // TODO: implement update
+    return false;
   }
 
   @override
@@ -252,27 +318,39 @@ class AbsoluteDemand extends Demand {
 // 相对需求
 class RelativeDemand extends Demand {
   Seat? relativeSeat;
-  String relativePerson;
+  String relativePersonName;
+  Person? relativePerson;
   bool Function(
       {required Seat filteringSeat,
       required Room room,
       required Seat relativeSeat}) filter;
-  RelativeDemand({required this.relativePerson, required this.filter});
+  RelativeDemand({required this.relativePersonName, required this.filter});
+
   @override
   void init(
       {required Room room, required Person demander, ChaosSystemCore? core}) {
-    this.core = core;
     this.room = room;
+    if (core != null) {
+      this.core = core;
+      var temp =
+          core.personList.where((person) => relativePersonName == person.name);
+      if (temp.isEmpty) {
+        // TODO 处理不存在
+        core.logger(
+            "[错误]$demander的需求$this中指定的relativePerson:$relativePersonName不存在");
+      } else {
+        relativePerson = temp.first;
+      }
+    }
     this.demander = demander;
-    target = Set.from(room.seats);
-    update();
+    target = room.getEmptySeat(source: Set.from(room.seats));
   }
 
   @override
-  void update({ArrangedInfo? arrangedInfo}) {
-    if (arrangedInfo?.person.name == relativePerson) {
+  void processArranged({required ArrangedInfo arrangedInfo}) {
+    if (arrangedInfo.person.name == relativePersonName) {
       (core?.logger ?? print)("[提示]$demander的相对需求$this的目标个体已确定座位，监听响应");
-      relativeSeat = arrangedInfo?.seat;
+      relativeSeat = arrangedInfo.seat;
       target = room?.getEmptySeat(
               source: room?.findSeat((Seat seat) => filter(
                       filteringSeat: seat,
@@ -280,7 +358,7 @@ class RelativeDemand extends Demand {
                       room: room!)) ??
                   {}) ??
           {};
-    } else if (relativeSeat != null && target.contains(arrangedInfo?.seat)) {
+    } else if (relativeSeat != null && target.contains(arrangedInfo.seat)) {
       target = room?.getEmptySeat(
               source: room?.findSeat((Seat seat) => filter(
                       filteringSeat: seat,
@@ -289,13 +367,20 @@ class RelativeDemand extends Demand {
                   {}) ??
           {};
     } else {
-      target = room?.getEmptySeat(source: Set.from(room!.seats)) ?? {};
+      target = room?.getEmptySeat(source: target) ?? {};
     }
+  }
+
+  @override
+  bool update() {
+    // TODO: implement update
+    return false;
   }
 
   @override
   void drawHeatmap(Set<Seat> range) {
     // TODO: 开发不均匀热图
+    if (relativeSeat == null) return;
     for (var seat in range) {
       if (room?.heatmap[seat] == null) continue;
       room!.heatmap[seat] = room!.heatmap[seat]! + 1 / range.length;
@@ -311,7 +396,7 @@ class RelativeDemand extends Demand {
   @override
   bool judgment(Seat finalSeat) {
     if (relativeSeat == null) {
-      if (demander != null && demander!.stress >= 5) {
+      if (demander != null && demander!.stress >= maxStress) {
         (core?.logger ?? print)(
             "[提示]$demander选定的位置本不满足$this（监听对象还未确定位置），但迫于压力$demander只能先选择座位$filter");
         return true;
@@ -326,7 +411,146 @@ class RelativeDemand extends Demand {
   }
 }
 
-// 妥协相对需求
+// TODO @beta 带半确定状态的相对需求
+class RelativeDemandWithSemiConfirm extends Demand {
+  Seat? relativeSeat;
+  Set<Seat>? tempRelativeTarget;
+  Person? relativePerson;
+  String relativePersonName;
+  bool Function(
+      {required Seat filteringSeat,
+      required Room room,
+      required Seat relativeSeat}) filter;
+  RelativeDemandWithSemiConfirm(
+      {required this.relativePersonName, required this.filter});
+
+  @override
+  void init(
+      {required Room room, required Person demander, ChaosSystemCore? core}) {
+    this.room = room;
+    if (core != null) {
+      this.core = core;
+      var temp =
+          core.personList.where((person) => relativePersonName == person.name);
+      if (temp.isEmpty) {
+        // TODO 处理不存在
+        core.logger(
+            "[错误]$demander的需求$this中指定的relativePerson:$relativePersonName不存在");
+      } else {
+        relativePerson = temp.first;
+      }
+    }
+    this.demander = demander;
+    target = room.getEmptySeat(source: Set.from(room.seats));
+  }
+
+  @override
+  void processArranged({required ArrangedInfo arrangedInfo}) {
+    if (arrangedInfo.person.name == relativePersonName) {
+      (core?.logger ?? print)("[提示]$demander的相对需求$this的目标个体已确定座位，监听响应");
+      relativeSeat = arrangedInfo.seat;
+      target = room?.getEmptySeat(
+              source: room?.findSeat((Seat seat) => filter(
+                      filteringSeat: seat,
+                      relativeSeat: relativeSeat!,
+                      room: room!)) ??
+                  {}) ??
+          {};
+    } else if (relativeSeat != null && target.contains(arrangedInfo.seat)) {
+      target = room?.getEmptySeat(
+              source: room?.findSeat((Seat seat) => filter(
+                      filteringSeat: seat,
+                      relativeSeat: relativeSeat!,
+                      room: room!)) ??
+                  {}) ??
+          {};
+    } else {
+      target = room?.getEmptySeat(source: target) ?? {};
+    }
+  }
+
+  @override
+  bool update() {
+    // TODO: 目前采用暴力解法 需要优化
+    tempRelativeTarget ??= {};
+    Set<Seat> rawSemiTarget = Set.from(target);
+    if (relativePerson != null) {
+      // // 判断 relativePerson.targetSet 是否不等于 tempRelativeTarget (不互为子集)
+      // if (!relativePerson!.targetSet.containsAll(tempRelativeTarget!) ||
+      //     !tempRelativeTarget!.containsAll(relativePerson!.targetSet)) {
+      //   // 不相等 更新
+      //   tempRelativeTarget = Set.from(relativePerson!.targetSet);
+      // }
+      tempRelativeTarget = Set.from(relativePerson!.targetSet);
+    }
+
+    if (room == null) {
+      (core?.logger ?? print)("[错误]$demander的需求$this缺少room属性");
+      return false;
+    }
+    // 更新semiTarget
+    Map<Seat, int> rateMap = {for (var seat in target) seat: 0};
+    for (var relativeTargetSeat in tempRelativeTarget!) {
+      for (var targetSeat in target) {
+        if (filter(
+            filteringSeat: targetSeat,
+            relativeSeat: relativeTargetSeat,
+            room: room!)) {
+          // 符合要求
+          rateMap[targetSeat] = rateMap[targetSeat]! + 1; // 只能这样写
+        }
+      }
+    }
+    // TODO rateMap投入使用
+    // 生成semiTarget
+    target = {};
+    rateMap.forEach((key, value) {
+      if (value > 0) target.add(key);
+    });
+    // 判断semiTarget是否有变动
+    return !target.containsAll(rawSemiTarget) ||
+        !rawSemiTarget.containsAll(target);
+  }
+
+  @override
+  void drawHeatmap(Set<Seat> range) {
+    // TODO: 开发不均匀热图
+    if (relativePerson == null ||
+        range.containsAll(room!.getEmptySeat(source: Set.from(room!.seats)))) {
+      return;
+    }
+    for (var seat in range) {
+      if (room?.heatmap[seat] == null) continue;
+      room!.heatmap[seat] = room!.heatmap[seat]! + 1 / range.length;
+    }
+  }
+
+  @override
+  Seat? resolve(Set<Seat> range) {
+    // TODO: 融入最近理论？
+    return room?.chooseBestSeat(range: range);
+  }
+
+  @override
+  bool judgment(Seat finalSeat) {
+    if (relativeSeat == null) {
+      if (demander != null && demander!.stress >= maxStress) {
+        (core?.logger ?? print)(
+            "[提示]$demander选定的位置本不满足$this（监听对象还未确定位置），但迫于压力$demander只能先选择座位$filter");
+        return true;
+      } else {
+        (core?.logger ??
+            print)("[提示]$demander选定的位置不满足$this（监听对象还未确定位置），拒绝接受座位");
+        return false;
+      }
+    } else {
+      return true;
+    }
+  }
+}
+
+/// 妥协相对需求
+/// 其目的是为
 class RelativeCompromiserDemand extends Demand {
   @override
   void init(
@@ -350,8 +574,14 @@ class RelativeCompromiserDemand extends Demand {
   }
 
   @override
-  void update({ArrangedInfo? arrangedInfo}) {
+  void processArranged({required ArrangedInfo arrangedInfo}) {
     // TODO: implement update
+  }
+
+  @override
+  bool update() {
+    // TODO: implement update
+    throw UnimplementedError();
   }
 }
 

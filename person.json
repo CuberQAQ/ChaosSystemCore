@@ -5,7 +5,7 @@
     "demands": [
       { "type": "absolute", "data": ["(2~,)"] },
       { "type": "absolute", "data": ["(3~5,)"] },
-      { "type": "absolute", "data": ["(40,5)"] }
+      { "type": "absolute", "data": ["(4,5)"] }
     ]
   },
   { "name": "韩凤阁", "gender": "unknown", "demands": [] },
@@ -13,7 +13,10 @@
   {
     "name": "孙江坤",
     "gender": "unknown",
-    "demands": [{ "type": "relative", "target": "古恩宇", "data": ["(0,0)1"] }]
+    "demands": [
+      { "type": "absolute", "data": ["(2~,)"] },
+      { "type": "relative", "target": "古恩宇", "data": ["(0,0)1"] }
+    ]
   },
   { "name": "古恩宇", "gender": "unknown", "demands": [] },
   { "name": "林子越", "gender": "unknown", "demands": [] },
