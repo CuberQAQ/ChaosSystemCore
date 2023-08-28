@@ -1,4 +1,3 @@
-import 'dart:ffi';
 import 'dart:math' as math;
 
 late void Function(String) logger;
@@ -31,6 +30,7 @@ void chaosSystemCore(
       var chosenSeat = resolvingPerson.resolve();
       if (chosenSeat == null) {
         logger("${resolvingPerson.name} 暂时不想决定座位");
+        logger("$resolvingPerson现在的压力值为${++resolvingPerson.stress}");
         continue;
       } else {
         logger("${resolvingPerson.name} 选定了座位：$chosenSeat");
@@ -97,12 +97,8 @@ class Person {
   }
 
   void drawHeatmap() {
-    //TODO
     if (targetSet.isEmpty || nowDemand == null) return;
-    for (var seat in targetSet) {
-      if (room.heatmap[seat] == null) continue;
-      room.heatmap[seat] = room.heatmap[seat]! + 1 / targetSet.length;
-    }
+    demandList[nowDemand!].drawHeatmap(targetSet);
   }
 
   void update({ArrangedInfo? arrangedInfo}) {
@@ -121,8 +117,20 @@ class Person {
   }
 
   Seat? resolve() {
-    var finalSeat = room.chooseBestSeat(range: targetSet);
+    late Seat? finalSeat;
+    // Choose Best Seat in Target Set
+    if (nowDemand == null) {
+      finalSeat = room.chooseBestSeat(range: targetSet);
+    } else {
+      finalSeat = demandList[nowDemand!].resolve(targetSet);
+    }
+    if (finalSeat == null) return null;
+    // Judgment
     for (var demand in demandList) {
+      if (!demand.judgment(finalSeat)) {
+        logger("[提示]$this选择的座位被$demand拒绝");
+        return null;
+      }
       if (demand.target.contains(finalSeat)) {
         logger("[提示]$name的需求$demand已被满足");
       } else {
@@ -178,8 +186,9 @@ abstract class Demand {
   late Set<Seat> target;
   void init({required Room room, required Person demander});
   void update({ArrangedInfo? arrangedInfo});
-  Seat? resolve();
-  void drawHeatmap();
+  Seat? resolve(Set<Seat> range);
+  void drawHeatmap(Set<Seat> range);
+  bool judgment(Seat finalSeat);
 }
 
 // 绝对需求
@@ -195,13 +204,29 @@ class AbsoluteDemand extends Demand {
 
   @override
   void update({ArrangedInfo? arrangedInfo}) {
-    target = room.findSeat((Seat seat) => filter(seat, room));
+    if (arrangedInfo == null || target.contains(arrangedInfo.seat)) {
+      target = room.getEmptySeat(
+          source: room.findSeat((Seat seat) => filter(seat, room)));
+    }
   }
 
   @override
-  Seat? resolve() {}
+  Seat? resolve(Set<Seat> range) {
+    return room.chooseBestSeat(range: range);
+  }
+
   @override
-  void drawHeatmap() {}
+  void drawHeatmap(Set<Seat> range) {
+    for (var seat in range) {
+      if (room.heatmap[seat] == null) continue;
+      room.heatmap[seat] = room.heatmap[seat]! + 1 / range.length;
+    }
+  }
+
+  @override
+  bool judgment(Seat finalSeat) {
+    return true;
+  }
 }
 
 // 相对需求
@@ -217,6 +242,7 @@ class RelativeDemand extends Demand {
   void init({required Room room, required Person demander}) {
     this.room = room;
     this.demander = demander;
+    target = Set.from(room.seats);
     update();
   }
 
@@ -225,23 +251,47 @@ class RelativeDemand extends Demand {
     if (arrangedInfo?.person.name == relativePerson) {
       logger("[提示]$demander的相对需求$this的目标个体已确定座位，监听响应");
       relativeSeat = arrangedInfo?.seat;
-    }
-    if (relativeSeat != null) {
-      target = room.findSeat((Seat seat) =>
-          filter(filteringSeat: seat, relativeSeat: relativeSeat!, room: room));
+      target = room.getEmptySeat(
+          source: room.findSeat((Seat seat) => filter(
+              filteringSeat: seat, relativeSeat: relativeSeat!, room: room)));
+    } else if (relativeSeat != null && target.contains(arrangedInfo?.seat)) {
+      target = room.getEmptySeat(
+          source: room.findSeat((Seat seat) => filter(
+              filteringSeat: seat, relativeSeat: relativeSeat!, room: room)));
     } else {
-      target = Set.from(room.seats);
+      target = room.getEmptySeat(source: Set.from(room.seats));
     }
   }
 
   @override
-  void drawHeatmap() {
-    // TODO: implement drawHeatmap
+  void drawHeatmap(Set<Seat> range) {
+    // TODO: 开发不均匀热图
+    for (var seat in range) {
+      if (room.heatmap[seat] == null) continue;
+      room.heatmap[seat] = room.heatmap[seat]! + 1 / range.length;
+    }
   }
+
   @override
-  Seat? resolve() {
-    // TODO: implement resolve
-    throw UnimplementedError();
+  Seat? resolve(Set<Seat> range) {
+    // TODO: 融入最近理论？
+    return room.chooseBestSeat(range: range);
+  }
+
+  @override
+  bool judgment(Seat finalSeat) {
+    if (relativeSeat == null) {
+      if (demander.stress >= 5) {
+        logger(
+            "[提示]$demander选定的位置本不满足$this（监听对象还未确定位置），但迫于压力$demander只能先选择座位$filter");
+        return true;
+      } else {
+        logger("[提示]$demander选定的位置不满足$this（监听对象还未确定位置），拒绝接受座位");
+        return false;
+      }
+    } else {
+      return true;
+    }
   }
 }
 

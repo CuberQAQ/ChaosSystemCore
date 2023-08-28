@@ -153,7 +153,7 @@ void main() {
   }
   File(outputFile).writeAsBytesSync(excel.encode()!);
   print("排座完成！");
-}
+} // main
 
 bool isAvailableCell(Data? cell) {
   if (cell == null) return false;
