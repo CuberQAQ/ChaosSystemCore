@@ -137,13 +137,14 @@ void main() {
       Room(seats: seats)));
 
   String log = '';
-  chaosSystemCore(
+  var chaosSystemCore = ChaosSystemCore(
       personList: personList,
       room: Room(seats: seats),
-      newLogger: (str) {
+      logger: (str) {
         log += str;
         log += '\n';
       });
+  chaosSystemCore.arrange();
   File(logFile).writeAsStringSync(log);
   // Write Result
   File(excelFile).copySync(outputFile);
