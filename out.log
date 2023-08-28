@@ -1,98 +1,63 @@
 [提示]初始化...
 [提示]第1次update所有人
 [提示]第2次update所有人
-[提示]第3次update所有人
-[提示]第4次update所有人
 第1次尝试找人安排座位
 当前热图:
-空座位:(1,1):0.9908730158730159
-空座位:(1,2):0.7536181139122317
-空座位:(1,3):0.4083800186741364
-空座位:(1,4):0.4083800186741364
-空座位:(1,5):0.44017826428817153
-空座位:(1,6):0.7208800186741364
-空座位:(1,7):1.6097689075630248
-空座位:(2,1):1.4908730158730155
-空座位:(2,2):0.6036181139122316
-空座位:(2,3):0.825046685340803
-空座位:(2,4):0.8776782642881714
-空座位:(2,5):0.7901782642881715
-空座位:(2,6):0.8735115976215048
-空座位:(2,7):1.709768907563025
-空座位:(3,1):0.7463675213675214
-空座位:(3,2):0.5924459527400705
-空座位:(3,3):0.6165061031160103
-空座位:(3,4):0.6165061031160103
-空座位:(3,5):1.0123394364493434
-空座位:(3,6):0.7790061031160103
-空座位:(4,1):0.7963675213675214
-空座位:(4,2):0.7091126194067371
-空座位:(4,3):0.6138745241686419
-空座位:(4,4):0.6665061031160103
-空座位:(4,5):1.5623394364493433
-空座位:(4,6):0.495672769782677
-空座位:(5,1):0.5177960927960928
-空座位:(5,2):0.46387452416864194
-空座位:(5,3):0.7379346745445817
-空座位:(5,4):0.7379346745445817
-空座位:(5,5):1.1337680078779144
-空座位:(5,6):0.5671013412112484
-空座位:(5,7):0.7893235634334705
-空座位:(6,1):0.5177960927960928
-空座位:(6,2):0.46387452416864194
-空座位:(6,3):0.6853030955972133
-空座位:(6,4):2.737934674544581
-空座位:(6,5):0.6337680078779151
-空座位:(6,6):0.5671013412112484
-空座位:(6,7):0.7366919844861022
+空座位:(1,1):0.27037037037037037
+空座位:(1,2):0.22037037037037036
+空座位:(1,3):0.22037037037037036
+空座位:(1,4):0.46644880174291947
+空座位:(1,5):0.38574704735695453
+空座位:(1,6):0.21644880174291936
+空座位:(1,7):0.42941176470588244
+空座位:(2,1):0.5506734006734008
+空座位:(2,2):0.25067340067340066
+空座位:(2,3):0.3423400673400674
+空座位:(2,4):0.5910500776599849
+空座位:(2,5):0.5077167443266516
+空座位:(2,6):0.34105007765998485
+空座位:(2,7):0.5384184987126165
+空座位:(3,1):0.6263814616755794
+空座位:(3,2):0.3263814616755794
+空座位:(3,3):0.5706797072896145
+空座位:(3,4):0.4706797072896145
+空座位:(3,5):1.1373463739562806
+空座位:(3,6):0.4706797072896145
+空座位:(4,1):0.743048128342246
+空座位:(4,2):0.3013814616755794
+空座位:(4,3):0.3013814616755794
+空座位:(4,4):0.3540130406229478
+空座位:(4,5):1.420679707289614
+空座位:(4,6):0.3040130406229478
+空座位:(5,1):0.8634184987126164
+空座位:(5,2):0.38008516537928316
+空座位:(5,3):1.4743834109933176
+空座位:(5,4):0.6410500776599849
+空座位:(5,5):0.9577167443266515
+空座位:(5,6):0.34105007765998485
+空座位:(5,7):0.5910500776599849
+空座位:(6,1):0.7562756415697592
+空座位:(6,2):0.522942308236426
+空座位:(6,3):0.5646089749030927
+空座位:(6,4):2.7839072205171274
+空座位:(6,5):0.6005738871837945
+空座位:(6,6):1.483907220517127
+空座位:(6,7):0.6812756415697593
+[提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
+[提示]房莉婷选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]房莉婷选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+房莉婷 暂时不想决定座位
+房莉婷现在的压力值为1
 [提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
 [提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
-韩凤阁 选定了座位：空座位:(1,7)
-[提示]曾可的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]陈子伶的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]古恩宇的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-第2次尝试找人安排座位
-当前热图:
-空座位:(1,1):0.9995726495726496
-空座位:(1,2):0.7632090132090132
-空座位:(1,3):0.4206164206164207
-空座位:(1,4):0.4206164206164207
-空座位:(1,5):0.45658133289712244
-空座位:(1,6):0.7372830872830873
-空座位:(2,1):1.4995726495726491
-空座位:(2,2):0.6132090132090133
-空座位:(2,3):0.8372830872830872
-空座位:(2,4):0.8899146662304556
-空座位:(2,5):0.8065813328971223
-空座位:(2,6):0.8899146662304556
-空座位:(2,7):1.8095053095053089
-空座位:(3,1):0.7495726495726496
-空座位:(3,2):0.5965423465423466
-空座位:(3,3):0.6232479995637891
-空座位:(3,4):0.6232479995637891
-空座位:(3,5):1.0232479995637889
-空座位:(3,6):0.7899146662304557
-空座位:(4,1):0.7995726495726496
-空座位:(4,2):0.7132090132090132
-空座位:(4,3):0.6206164206164206
-空座位:(4,4):0.6732479995637891
-空座位:(4,5):1.5732479995637885
-空座位:(4,6):0.5065813328971225
-空座位:(5,1):0.521001221001221
-空座位:(5,2):0.46797091797091805
-空座位:(5,3):0.7446765709923604
-空座位:(5,4):0.7446765709923604
-空座位:(5,5):1.1446765709923596
-空座位:(5,6):0.5780099043256939
-空座位:(5,7):0.8835654598812493
-空座位:(6,1):0.521001221001221
-空座位:(6,2):0.46797091797091805
-空座位:(6,3):0.692044992044992
-空座位:(6,4):2.7446765709923606
-空座位:(6,5):0.6446765709923605
-空座位:(6,6):0.5780099043256939
-空座位:(6,7):0.830933880933881
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'未被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]韩凤阁选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+韩凤阁 暂时不想决定座位
+韩凤阁现在的压力值为1
 [提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]文泽豪选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
@@ -103,1794 +68,1605 @@
 [提示]曹柏圳的需求Instance of 'AbsoluteDemand'已被满足
 [提示]曹柏圳的需求Instance of 'AbsoluteDemand'已被满足
 曹柏圳 选定了座位：空座位:(6,4)
-[提示]谭旭君的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]罗云媛的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]罗云媛的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-[提示]第2次update所有人
-[提示]第3次update所有人
-第3次尝试找人安排座位
-当前热图:
-空座位:(1,1):1.003740119529593
-空座位:(1,2):0.7683234528629264
-空座位:(1,3):0.4361556206950943
-空座位:(1,4):0.4361556206950943
-空座位:(1,5):0.4674687520082256
-空座位:(1,6):0.7452465297860033
-空座位:(2,1):1.5037401195295936
-空座位:(2,2):0.6183234528629264
-空座位:(2,3):0.863078697618171
-空座位:(2,4):0.9186342531737266
-空座位:(2,5):0.8174687520082254
-空座位:(2,6):0.9008020853415588
-空座位:(2,7):1.8166751012145754
-空座位:(3,1):0.7568170426065162
-空座位:(3,2):0.6214003759398494
-空座位:(3,3):0.6717111762506497
-空座位:(3,4):0.6717111762506497
-空座位:(3,5):1.0474687520082258
-空座位:(3,6):0.8038790084184818
-空座位:(4,1):0.8094486215538845
-空座位:(4,2):0.7509550318102949
-空座位:(4,3):0.6687871996424626
-空座位:(4,4):0.7243427551980182
-空座位:(4,5):1.6001003309555946
-空座位:(4,6):0.523177254032517
-空座位:(5,1):0.5363716984769614
-空座位:(5,2):0.5009550318102949
-空座位:(5,3):0.8012658321210951
-空座位:(5,4):0.8012658321210951
-空座位:(5,5):1.1770234078786712
-空座位:(5,6):0.6001003309555939
-空座位:(5,7):0.9048622357174988
-空座位:(6,1):0.5363716984769614
-空座位:(6,2):0.5009550318102949
-空座位:(6,3):0.6457102765655395
-空座位:(6,5):1.6001003309555946
-空座位:(6,6):0.6001003309555939
-空座位:(6,7):0.8493066801619432
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]曾可选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-曾可 暂时不想决定座位
-曾可现在的压力值为1
-[提示]秦浩朗的需求Instance of 'AbsoluteDemand'已被满足
-[提示]秦浩朗的需求Instance of 'AbsoluteDemand'已被满足
-[提示]秦浩朗的需求Instance of 'AbsoluteDemand'已被满足
-秦浩朗 选定了座位：空座位:(4,5)
-[提示]王元元的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]文泽豪的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]郑泽铭的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]周奥灵的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]李金言的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-第4次尝试找人安排座位
-当前热图:
-空座位:(1,1):1.0081366434307608
-空座位:(1,2):0.7737280412802232
-空座位:(1,3):0.4446371321893144
-空座位:(1,4):0.4446371321893144
-空座位:(1,5):0.48398014212055956
-空座位:(1,6):0.7584899460421279
-空座位:(2,1):1.5081366434307608
-空座位:(2,2):0.6237280412802233
-空座位:(2,3):0.8779704655226477
-空座位:(2,4):0.9367939949344124
-空座位:(2,5):0.8339801421205595
-空座位:(2,6):0.9173134754538927
-空座位:(2,7):1.8290781813362456
-空座位:(3,1):0.7645468998410172
-空座位:(3,2):0.6301382976904797
-空座位:(3,3):0.6932042513446686
-空座位:(3,4):0.6932042513446686
-空座位:(3,5):1.073723731864149
-空座位:(3,6):0.823723731864149
-空座位:(4,1):0.8201024553965728
-空座位:(4,2):0.7690271865793683
-空座位:(4,3):0.6899362774884594
-空座位:(4,4):0.7487598069002241
-空座位:(4,6):0.5459459540863716
-空座位:(5,1):0.54702553231965
-空座位:(5,2):0.5126169301691124
-空座位:(5,3):0.825682883823301
-空座位:(5,4):0.825682883823301
-空座位:(5,5):1.2062023643427815
-空座位:(5,6):0.6228690310094482
-空座位:(5,7):0.9267905996368992
-空座位:(6,1):0.54702553231965
-空座位:(6,2):0.5126169301691124
-空座位:(6,3):0.6668593544115364
-空座位:(6,5):1.6228690310094482
-空座位:(6,6):0.6228690310094482
-空座位:(6,7):0.8679670702251345
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]曾可选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-曾可 暂时不想决定座位
-曾可现在的压力值为2
-[提示]王元元选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]王元元选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-王元元 暂时不想决定座位
-王元元现在的压力值为1
-[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
-[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
-[提示]文泽豪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]文泽豪选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]文泽豪选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-文泽豪 暂时不想决定座位
-文泽豪现在的压力值为2
-[提示]郑泽铭的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-郑泽铭 选定了座位：空座位:(3,5)
-[提示]王元元的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]单思远的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]罗云媛的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-[提示]第2次update所有人
-[提示]第3次update所有人
-[提示]第4次update所有人
-第5次尝试找人安排座位
-当前热图:
-空座位:(1,1):1.0127816627816626
-空座位:(1,2):0.7794483294483294
-空座位:(1,3):0.45369075369075373
-空座位:(1,4):0.45369075369075373
-空座位:(1,5):0.5397047397047398
-空座位:(1,6):0.773038073038073
-空座位:(2,1):1.5127816627816624
-空座位:(2,2):0.6294483294483295
-空座位:(2,3):0.9036907536907537
-空座位:(2,4):0.9036907536907537
-空座位:(2,5):0.8897047397047395
-空座位:(2,6):0.973038073038073
-空座位:(2,7):1.8427350427350424
-空座位:(3,1):0.7728151075977162
-空座位:(3,2):0.6644817742643829
-空座位:(3,3):0.7887241985068071
-空座位:(3,4):0.6637241985068072
-空座位:(3,6):0.8830715178541264
-空座位:(4,1):0.8283706631532718
-空座位:(4,2):0.8200373298199385
-空座位:(4,3):0.7442797540623627
-空座位:(4,4):0.7192797540623628
-空座位:(4,6):0.6052937400763488
-空座位:(5,1):0.5552937400763488
-空座位:(5,2):0.5469604067430154
-空座位:(5,3):0.8212028309854396
-空座位:(5,4):0.8212028309854396
-空座位:(5,5):0.7822168169994256
-空座位:(5,6):0.5822168169994257
-空座位:(5,7):0.8852471200297286
-空座位:(6,1):0.5552937400763488
-空座位:(6,2):0.5469604067430154
-空座位:(6,3):0.6962028309854397
-空座位:(6,5):1.5822168169994253
-空座位:(6,6):0.5822168169994257
-空座位:(6,7):0.8852471200297286
-[提示]王元元的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
-[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
-[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
-[提示]王元元的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
-[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
-[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
-[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
-王元元 选定了座位：空座位:(2,1)
-[提示]冉懋鑫的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]阮丽颖的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-第6次尝试找人安排座位
-当前热图:
-空座位:(1,1):1.0685515873015872
-空座位:(1,2):0.7907738095238096
-空座位:(1,3):0.4650162337662338
-空座位:(1,4):0.4650162337662338
-空座位:(1,5):0.5510302197802198
-空座位:(1,6):0.7843635531135531
-空座位:(2,2):0.6518849206349207
-空座位:(2,3):0.9261273448773449
-空座位:(2,4):0.9261273448773449
-空座位:(2,5):0.9121413308913309
-空座位:(2,6):0.9954746642246641
-空座位:(2,7):1.8642246642246638
-空座位:(3,1):0.8221747757073844
-空座位:(3,2):0.6693969979296066
-空座位:(3,3):0.7936394221720308
-空座位:(3,4):0.6686394221720309
-空座位:(3,6):0.8879867415193501
-空座位:(4,1):0.87773033126294
-空座位:(4,2):0.8249525534851622
-空座位:(4,3):0.7491949777275864
-空座位:(4,4):0.7241949777275865
-空座位:(4,6):0.6102089637415725
-空座位:(5,1):0.5935422970749058
-空座位:(5,2):0.5518756304082391
-空座位:(5,3):0.8261180546506632
-空座位:(5,4):0.8261180546506632
-空座位:(5,5):0.7871320406646493
-空座位:(5,6):0.5871320406646494
-空座位:(5,7):0.8892153739979826
-空座位:(6,1):0.5935422970749058
-空座位:(6,2):0.5518756304082391
-空座位:(6,3):0.7011180546506633
-空座位:(6,5):1.587132040664649
-空座位:(6,6):0.5871320406646494
-空座位:(6,7):0.8892153739979826
-[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
-[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
-[提示]文泽豪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]文泽豪选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]文泽豪选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-文泽豪 暂时不想决定座位
-文泽豪现在的压力值为3
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]曾可选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-曾可 暂时不想决定座位
-曾可现在的压力值为3
-[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
-[提示]冉懋鑫选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]冉懋鑫选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-冉懋鑫 暂时不想决定座位
-冉懋鑫现在的压力值为1
-[提示]冼郸的需求Instance of 'AbsoluteDemand'已被满足
-[提示]冼郸的需求Instance of 'AbsoluteDemand'已被满足
-[提示]冼郸的需求Instance of 'AbsoluteDemand'已被满足
-[提示]冼郸的需求Instance of 'AbsoluteDemand'已被满足
-[提示]冼郸的需求Instance of 'AbsoluteDemand'已被满足
-冼郸 选定了座位：空座位:(1,6)
 [提示]黄嘉如的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
 [提示]第1次update所有人
-第7次尝试找人安排座位
+第2次尝试找人安排座位
 当前热图:
-空座位:(1,1):1.0813370900657426
-空座位:(1,2):0.8047087375753214
-空座位:(1,3):0.4825743502235428
-空座位:(1,4):0.4825743502235428
-空座位:(1,5):0.5749985926477852
-空座位:(2,2):0.6658198486864325
-空座位:(2,3):0.9436854613346538
-空座位:(2,4):0.9436854613346538
-空座位:(2,5):0.9361097037588962
-空座位:(2,6):0.6861097037588961
-空座位:(2,7):1.8871849725760999
-空座位:(3,1):0.8273845208957823
-空座位:(3,2):0.6757561684053609
-空座位:(3,3):0.8036217810535821
-空座位:(3,4):0.6786217810535822
-空座位:(3,6):0.5710460234778247
-空座位:(4,1):0.8829400764513379
-空座位:(4,2):0.8313117239609163
-空座位:(4,3):0.7591773366091377
-空座位:(4,4):0.7341773366091376
-空座位:(4,6):0.6266015790333802
-空座位:(5,1):0.5987520422633037
-空座位:(5,2):0.5582348008839934
-空座位:(5,3):0.8361004135322145
-空座位:(5,4):0.8361004135322145
-空座位:(5,5):0.803524655956457
-空座位:(5,6):0.6035246559564571
-空座位:(5,7):0.9045999247736612
-空座位:(6,1):0.5987520422633037
-空座位:(6,2):0.5582348008839934
-空座位:(6,3):0.7111004135322145
-空座位:(6,5):1.6035246559564564
-空座位:(6,6):0.6035246559564571
-空座位:(6,7):0.9045999247736612
-[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
-[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
-[提示]文泽豪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]文泽豪选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]文泽豪选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-文泽豪 暂时不想决定座位
-文泽豪现在的压力值为4
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]曾可选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-曾可 暂时不想决定座位
-曾可现在的压力值为4
-[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
-[提示]冉懋鑫选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]冉懋鑫选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-冉懋鑫 暂时不想决定座位
-冉懋鑫现在的压力值为2
-[提示]黄嘉如选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]黄嘉如选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-黄嘉如 暂时不想决定座位
-黄嘉如现在的压力值为1
-[提示]陈子伶的需求Instance of 'AbsoluteDemand'已被满足
-[提示]陈子伶选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]陈子伶选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-陈子伶 暂时不想决定座位
-陈子伶现在的压力值为1
-[提示]邱建华的需求Instance of 'AbsoluteDemand'已被满足
-[提示]邱建华选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]邱建华选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-邱建华 暂时不想决定座位
-邱建华现在的压力值为1
-[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
-[提示]王铭晟选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]王铭晟选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-王铭晟 暂时不想决定座位
-王铭晟现在的压力值为1
-[提示]古恩宇选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]古恩宇选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-古恩宇 暂时不想决定座位
-古恩宇现在的压力值为1
-[提示]周奥灵的需求Instance of 'AbsoluteDemand'已被满足
-[提示]周奥灵的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]周奥灵的需求Instance of 'AbsoluteDemand'已被满足
-[提示]周奥灵的需求Instance of 'AbsoluteDemand'已被满足
-[提示]周奥灵的需求Instance of 'AbsoluteDemand'已被满足
-周奥灵 选定了座位：空座位:(2,2)
-[提示]王铭晟的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]尤静宜的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-第8次尝试找人安排座位
-当前热图:
-空座位:(1,1):0.9848484848484846
-空座位:(1,2):0.8205627705627704
-空座位:(1,3):0.4984283832109918
-空座位:(1,4):0.4984283832109918
-空座位:(1,5):0.5908526256352341
-空座位:(2,3):0.931761716544325
-空座位:(2,4):0.931761716544325
-空座位:(2,5):0.9241859589685675
-空座位:(2,6):0.5908526256352341
-空座位:(2,7):1.7908526256352342
-空座位:(3,1):0.7218050065876151
-空座位:(3,2):0.6825192923019008
-空座位:(3,3):0.810384904950122
-空座位:(3,4):0.685384904950122
-空座位:(3,6):0.5778091473743646
-空座位:(4,1):0.7773605621431706
-空座位:(4,2):0.8380748478574563
-空座位:(4,3):0.7659404605056777
-空座位:(4,4):0.7409404605056776
-空座位:(4,6):0.6333647029299201
-空座位:(5,1):0.6042836390662476
-空座位:(5,2):0.5649979247805332
-空座位:(5,3):0.8428635374287545
-空座位:(5,4):0.8428635374287545
-空座位:(5,5):0.8102877798529969
-空座位:(5,6):0.610287779852997
-空座位:(5,7):0.9102877798529969
-空座位:(6,1):0.6042836390662476
-空座位:(6,2):0.5649979247805332
-空座位:(6,3):0.7178635374287545
-空座位:(6,5):1.610287779852997
-空座位:(6,6):0.610287779852997
-空座位:(6,7):0.9102877798529969
-[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
-[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
-[提示]文泽豪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]文泽豪选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]文泽豪选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-文泽豪 暂时不想决定座位
-文泽豪现在的压力值为5
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]曾可选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-曾可 暂时不想决定座位
-曾可现在的压力值为5
-[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
-[提示]冉懋鑫选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]冉懋鑫选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-冉懋鑫 暂时不想决定座位
-冉懋鑫现在的压力值为3
-[提示]黄嘉如选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]黄嘉如选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-黄嘉如 暂时不想决定座位
-黄嘉如现在的压力值为2
-[提示]陈子伶的需求Instance of 'AbsoluteDemand'已被满足
-[提示]陈子伶选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]陈子伶选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-陈子伶 暂时不想决定座位
-陈子伶现在的压力值为2
-[提示]邱建华的需求Instance of 'AbsoluteDemand'已被满足
-[提示]邱建华选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]邱建华选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-邱建华 暂时不想决定座位
-邱建华现在的压力值为2
-[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
-[提示]王铭晟的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]王铭晟选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]王铭晟选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-王铭晟 暂时不想决定座位
-王铭晟现在的压力值为2
-[提示]古恩宇选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]古恩宇选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-古恩宇 暂时不想决定座位
-古恩宇现在的压力值为2
-[提示]单思远的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-单思远 选定了座位：空座位:(3,6)
-[提示]第1次update所有人
-第9次尝试找人安排座位
-当前热图:
-空座位:(1,1):0.9907327586206895
-空座位:(1,2):0.8277697956577267
-空座位:(1,3):0.5095879774759086
-空座位:(1,4):0.5095879774759086
-空座位:(1,5):0.5095879774759086
-空座位:(2,3):0.9429213108092417
-空座位:(2,4):0.8429213108092418
-空座位:(2,5):0.8429213108092418
-空座位:(2,6):0.5095879774759086
-空座位:(2,7):1.808438552188552
-空座位:(3,1):0.7316418495297805
-空座位:(3,2):0.6936788865668176
-空座位:(3,3):0.7254970683849994
-空座位:(3,4):0.6004970683849995
-空座位:(4,1):0.787197405085336
-空座位:(4,2):0.8492344421223731
-空座位:(4,3):0.781052623940555
-空座位:(4,4):0.6560526239405551
-空座位:(4,6):0.556052623940555
-空座位:(5,1):0.6141204820084132
-空座位:(5,2):0.5761575190454501
-空座位:(5,3):0.8579757008636318
-空座位:(5,4):0.8579757008636318
-空座位:(5,5):0.7329757008636318
-空座位:(5,6):0.632975700863632
-空座位:(5,7):0.9318262755762754
-空座位:(6,1):0.6141204820084132
-空座位:(6,2):0.5761575190454501
-空座位:(6,3):0.7329757008636318
-空座位:(6,5):1.6329757008636316
-空座位:(6,6):0.632975700863632
-空座位:(6,7):0.9318262755762754
-[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
-[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
-[提示]文泽豪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]文泽豪选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力文泽豪只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]文泽豪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]文泽豪的需求Instance of 'AbsoluteDemand'未被满足
-[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
-文泽豪 选定了座位：空座位:(6,5)
-[提示]第1次update所有人
-第10次尝试找人安排座位
-当前热图:
-空座位:(1,1):0.9970046082949306
-空座位:(1,2):0.8354661467564691
-空座位:(1,3):0.5216133329036553
-空座位:(1,4):0.5216133329036553
-空座位:(1,5):0.5307042419945645
-空座位:(2,3):0.9549466662369888
-空座位:(2,4):0.8549466662369887
-空座位:(2,5):0.8640375753278977
-空座位:(2,6):0.5307042419945645
-空座位:(2,7):1.8283232896136123
-空座位:(3,1):0.742242703533026
-空座位:(3,2):0.7057042419945644
-空座位:(3,3):0.7418514281417505
-空座位:(3,4):0.6168514281417505
-空座位:(4,1):0.8010662329447907
-空座位:(4,2):0.8645277714063291
-空座位:(4,3):0.8006749575535153
-空座位:(4,4):0.6756749575535153
-空座位:(4,6):0.5847658666444243
-空座位:(5,1):0.634399566278124
-空座位:(5,2):0.5978611047396625
-空座位:(5,3):0.8840082908868487
-空座位:(5,4):0.8840082908868487
-空座位:(5,5):0.7680991999777577
-空座位:(5,6):0.6680991999777577
-空座位:(5,7):0.9657182475968055
-空座位:(6,1):0.634399566278124
-空座位:(6,2):0.5978611047396625
-空座位:(6,3):0.7590082908868485
-空座位:(6,6):0.6680991999777577
-空座位:(6,7):0.9657182475968055
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力曾可只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
-[提示]曾可选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力曾可只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-曾可 选定了座位：空座位:(2,7)
-[提示]第1次update所有人
-第11次尝试找人安排座位
-当前热图:
-空座位:(1,1):1.0134920634920634
-空座位:(1,2):0.8534920634920635
-空座位:(1,3):0.5444011544011543
-空座位:(1,4):0.5444011544011543
-空座位:(1,5):0.5646031746031746
-空座位:(2,3):0.9777344877344878
-空座位:(2,4):0.8777344877344878
-空座位:(2,5):0.897936507936508
-空座位:(2,6):0.5646031746031746
-空座位:(3,1):0.7476190476190476
-空座位:(3,2):0.7126190476190476
-空座位:(3,3):0.7535281385281385
-空座位:(3,4):0.6285281385281385
-空座位:(4,1):0.8064425770308123
-空座位:(4,2):0.8714425770308123
-空座位:(4,3):0.8123516679399032
-空座位:(4,4):0.6873516679399032
-空座位:(4,6):0.6075536881419233
-空座位:(5,1):0.6397759103641456
-空座位:(5,2):0.6047759103641456
-空座位:(5,3):0.8956850012732367
-空座位:(5,4):0.8956850012732367
-空座位:(5,5):0.7908870214752568
-空座位:(5,6):0.6908870214752567
-空座位:(5,7):1.1551727357609718
-空座位:(6,1):0.6397759103641456
-空座位:(6,2):0.6047759103641456
-空座位:(6,3):0.7706850012732365
-空座位:(6,6):0.6908870214752567
-空座位:(6,7):1.1551727357609718
-[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
-[提示]冉懋鑫选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]冉懋鑫选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-冉懋鑫 暂时不想决定座位
-冉懋鑫现在的压力值为4
-[提示]黄嘉如选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]黄嘉如选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-黄嘉如 暂时不想决定座位
-黄嘉如现在的压力值为3
-[提示]陈子伶的需求Instance of 'AbsoluteDemand'已被满足
-[提示]陈子伶选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]陈子伶选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-陈子伶 暂时不想决定座位
-陈子伶现在的压力值为3
-[提示]邱建华的需求Instance of 'AbsoluteDemand'已被满足
-[提示]邱建华选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]邱建华选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-邱建华 暂时不想决定座位
-邱建华现在的压力值为3
-[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
-[提示]王铭晟的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]王铭晟选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]王铭晟选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-王铭晟 暂时不想决定座位
-王铭晟现在的压力值为3
-[提示]张宝怡的需求Instance of 'AbsoluteDemand'已被满足
-[提示]张宝怡的需求Instance of 'AbsoluteDemand'已被满足
-[提示]张宝怡的需求Instance of 'AbsoluteDemand'已被满足
-张宝怡 选定了座位：空座位:(1,3)
-[提示]谭旭君的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-第12次尝试找人安排座位
-当前热图:
-空座位:(1,1):0.909450830140485
-空座位:(1,2):0.7511174968071518
-空座位:(1,4):0.4563806547018889
-空座位:(1,5):0.467491765813
-空座位:(2,3):0.889713988035222
-空座位:(2,4):0.7897139880352219
-空座位:(2,5):0.8008250991463329
-空座位:(2,6):0.467491765813
-空座位:(3,1):0.7546889253785803
-空座位:(3,2):0.7213555920452469
-空座位:(3,3):0.7766187499399838
-空座位:(3,4):0.6516187499399839
-空座位:(4,1):0.8135124547903451
-空座位:(4,2):0.8801791214570117
-空座位:(4,3):0.8354422793517485
-空座位:(4,4):0.7104422793517485
-空座位:(4,6):0.6215533904628597
-空座位:(5,1):0.6468457881236784
-空座位:(5,2):0.6135124547903451
-空座位:(5,3):0.918775612685082
-空座位:(5,4):0.918775612685082
-空座位:(5,5):0.8048867237961931
-空座位:(5,6):0.704886723796193
-空座位:(5,7):1.1678496867591566
-空座位:(6,1):0.6468457881236784
-空座位:(6,2):0.6135124547903451
-空座位:(6,3):0.7937756126850818
-空座位:(6,6):0.704886723796193
-空座位:(6,7):1.1678496867591566
-[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
-[提示]冉懋鑫选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]冉懋鑫选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-冉懋鑫 暂时不想决定座位
-冉懋鑫现在的压力值为5
-[提示]黄嘉如选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]黄嘉如选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-黄嘉如 暂时不想决定座位
-黄嘉如现在的压力值为4
-[提示]陈子伶的需求Instance of 'AbsoluteDemand'已被满足
-[提示]陈子伶选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]陈子伶选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-陈子伶 暂时不想决定座位
-陈子伶现在的压力值为4
-[提示]阮丽颖的需求Instance of 'AbsoluteDemand'已被满足
-[提示]阮丽颖的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]阮丽颖选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]阮丽颖选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-阮丽颖 暂时不想决定座位
-阮丽颖现在的压力值为1
-[提示]孙江坤的需求Instance of 'AbsoluteDemand'已被满足
-[提示]孙江坤选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]孙江坤选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-孙江坤 暂时不想决定座位
-孙江坤现在的压力值为1
-[提示]陈维钧选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]陈维钧选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-陈维钧 暂时不想决定座位
-陈维钧现在的压力值为1
-[提示]邱建华的需求Instance of 'AbsoluteDemand'已被满足
-[提示]邱建华选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]邱建华选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-邱建华 暂时不想决定座位
-邱建华现在的压力值为4
-[提示]古恩宇选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]古恩宇选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-古恩宇 暂时不想决定座位
-古恩宇现在的压力值为3
-[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
-[提示]王铭晟的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]王铭晟选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]王铭晟选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-王铭晟 暂时不想决定座位
-王铭晟现在的压力值为4
-[提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
-[提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
-[提示]房莉婷选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]房莉婷选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-房莉婷 暂时不想决定座位
-房莉婷现在的压力值为1
-[提示]谢谦益选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]谢谦益选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-谢谦益 暂时不想决定座位
-谢谦益现在的压力值为1
-[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
-[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
-游欣 选定了座位：空座位:(1,4)
-[提示]段星同的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-第13次尝试找人安排座位
-当前热图:
-空座位:(1,1):0.9170329670329669
-空座位:(1,2):0.7605112279025321
-空座位:(1,5):0.42717789456919886
-空座位:(2,3):0.8605112279025321
-空座位:(2,4):0.7605112279025321
-空座位:(2,5):0.7605112279025321
-空座位:(2,6):0.42717789456919886
-空座位:(3,1):0.7622710622710622
-空座位:(3,2):0.7307493231406273
-空座位:(3,3):0.7474159898072941
-空座位:(3,4):0.6224159898072941
-空座位:(4,1):0.821094591682827
-空座位:(4,2):0.889572852552392
-空座位:(4,3):0.8062395192190588
-空座位:(4,4):0.6812395192190587
-空座位:(4,6):0.5812395192190588
-空座位:(5,1):0.6544279250161602
-空座位:(5,2):0.6229061858857254
-空座位:(5,3):0.889572852552392
-空座位:(5,4):0.889572852552392
-空座位:(5,5):0.764572852552392
-空座位:(5,6):0.6645728525523921
-空座位:(5,7):1.126111314090854
-空座位:(6,1):0.6544279250161602
-空座位:(6,2):0.6229061858857254
-空座位:(6,3):0.764572852552392
-空座位:(6,6):0.6645728525523921
-空座位:(6,7):1.126111314090854
-[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
-[提示]冉懋鑫选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力冉懋鑫只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]冉懋鑫的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
-[提示]冉懋鑫选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力冉懋鑫只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]冉懋鑫的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
-[提示]冉懋鑫的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]冉懋鑫选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力冉懋鑫只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]冉懋鑫的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
-[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
-冉懋鑫 选定了座位：空座位:(1,2)
-[提示]陈子伶的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]钟元彪的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-第14次尝试找人安排座位
-当前热图:
-空座位:(1,1):0.4251851851851852
-空座位:(1,5):0.43730639730639725
-空座位:(2,3):0.8706397306397304
-空座位:(2,4):0.7706397306397303
-空座位:(2,5):0.7706397306397303
-空座位:(2,6):0.43730639730639725
-空座位:(3,1):0.7704232804232802
-空座位:(3,2):0.7408778258778257
-空座位:(3,3):0.7575444925444923
-空座位:(3,4):0.6325444925444923
-空座位:(4,1):0.829246809835045
-空座位:(4,2):0.8997013552895903
-空座位:(4,3):0.816368021956257
-空座位:(4,4):0.691368021956257
-空座位:(4,6):0.5913680219562572
-空座位:(5,1):0.6625801431683782
-空座位:(5,2):0.6330346886229237
-空座位:(5,3):0.8997013552895903
-空座位:(5,4):0.8997013552895903
-空座位:(5,5):0.7747013552895903
-空座位:(5,6):0.6747013552895904
-空座位:(5,7):1.1347013552895904
-空座位:(6,1):0.6625801431683782
-空座位:(6,2):0.6330346886229237
-空座位:(6,3):0.7747013552895903
-空座位:(6,6):0.6747013552895904
-空座位:(6,7):1.1347013552895904
-[提示]黄嘉如选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]黄嘉如选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-黄嘉如 暂时不想决定座位
-黄嘉如现在的压力值为5
-[提示]陈子伶的需求Instance of 'AbsoluteDemand'已被满足
-[提示]陈子伶的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]陈子伶的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]陈子伶的需求Instance of 'AbsoluteDemand'已被满足
-[提示]陈子伶的需求Instance of 'AbsoluteDemand'已被满足
-[提示]陈子伶选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]陈子伶选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-陈子伶 暂时不想决定座位
-陈子伶现在的压力值为5
-[提示]阮丽颖的需求Instance of 'AbsoluteDemand'已被满足
-[提示]阮丽颖的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]阮丽颖选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]阮丽颖选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-阮丽颖 暂时不想决定座位
-阮丽颖现在的压力值为2
-[提示]陈维钧选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]陈维钧选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-陈维钧 暂时不想决定座位
-陈维钧现在的压力值为2
-[提示]孙江坤的需求Instance of 'AbsoluteDemand'已被满足
-[提示]孙江坤选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]孙江坤选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-孙江坤 暂时不想决定座位
-孙江坤现在的压力值为2
-[提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
+空座位:(1,1):0.27435897435897433
+空座位:(1,2):0.22435897435897434
+空座位:(1,3):0.22435897435897434
+空座位:(1,4):0.5546620046620047
+空座位:(1,5):0.39355089355089357
+空座位:(1,6):0.22132867132867132
+空座位:(1,7):0.43286713286713296
+空座位:(2,1):0.5556089743589744
+空座位:(2,2):0.25560897435897434
+空座位:(2,3):0.3490872352285396
+空座位:(2,4):0.6849458210871254
+空座位:(2,5):0.5182791544204588
+空座位:(2,6):0.35161248775379217
+空座位:(2,7):0.5460569321982366
+空座位:(3,1):0.6307837995337996
+空座位:(3,2):0.3307837995337996
+空座位:(3,3):0.5909287270700315
+空座位:(3,4):0.47981761595892036
+空座位:(3,5):1.1464842826255865
+空座位:(3,6):0.47981761595892036
+空座位:(4,1):0.7474504662004662
+空座位:(4,2):0.3187065048478092
+空座位:(4,3):0.3187065048478092
+空座位:(4,4):0.37426206040336485
+空座位:(4,5):1.42981761595892
+空座位:(4,6):0.3131509492922537
+空座位:(5,1):0.869245337995338
+空座位:(5,2):0.3970231157731158
+空座位:(5,3):1.4960569321982362
+空座位:(5,4):0.7460569321982365
+空座位:(5,5):0.9682791544204588
+空座位:(5,6):0.35161248775379217
+空座位:(5,7):0.6016124877537922
+空座位:(6,1):0.7859120046620047
+空座位:(6,2):0.5636897824397825
+空座位:(6,3):0.6071680433093477
+空座位:(6,5):1.6349458210871253
+空座位:(6,6):1.5182791544204586
+空座位:(6,7):0.7127235988649032
 [提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
 [提示]房莉婷选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]房莉婷选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 房莉婷 暂时不想决定座位
 房莉婷现在的压力值为2
-[提示]古恩宇选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]古恩宇选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-古恩宇 暂时不想决定座位
-古恩宇现在的压力值为4
-[提示]谢谦益选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]谢谦益选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-谢谦益 暂时不想决定座位
-谢谦益现在的压力值为2
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'未被满足
-[提示]谭旭君的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]谭旭君的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
-[提示]谭旭君选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]谭旭君选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-谭旭君 暂时不想决定座位
-谭旭君现在的压力值为1
-[提示]邱建华的需求Instance of 'AbsoluteDemand'已被满足
-[提示]邱建华选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]邱建华选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-邱建华 暂时不想决定座位
-邱建华现在的压力值为5
-[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
-[提示]王铭晟的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]王铭晟选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]王铭晟选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-王铭晟 暂时不想决定座位
-王铭晟现在的压力值为5
-[提示]尤静宜选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]尤静宜选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-尤静宜 暂时不想决定座位
-尤静宜现在的压力值为1
-[提示]林子越的需求Instance of 'AbsoluteDemand'已被满足
-[提示]林子越选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]林子越选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-林子越 暂时不想决定座位
-林子越现在的压力值为1
-[提示]古兆康的需求Instance of 'AbsoluteDemand'未被满足
-[提示]古兆康选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]古兆康选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-古兆康 暂时不想决定座位
-古兆康现在的压力值为1
-[提示]陈霞的需求Instance of 'AbsoluteDemand'已被满足
-陈霞 选定了座位：空座位:(1,1)
-[提示]第1次update所有人
-第15次尝试找人安排座位
-当前热图:
-空座位:(1,5):0.40442890442890433
-空座位:(2,3):0.8377622377622376
-空座位:(2,4):0.7377622377622376
-空座位:(2,5):0.7377622377622376
-空座位:(2,6):0.40442890442890433
-空座位:(3,1):0.7875457875457875
-空座位:(3,2):0.7080003330003329
-空座位:(3,3):0.7246669996669995
-空座位:(3,4):0.5996669996669995
-空座位:(4,1):0.8463693169575522
-空座位:(4,2):0.8668238624120976
-空座位:(4,3):0.7834905290787643
-空座位:(4,4):0.6584905290787643
-空座位:(4,6):0.5584905290787643
-空座位:(5,1):0.6797026502908855
-空座位:(5,2):0.6001571957454309
-空座位:(5,3):0.8668238624120975
-空座位:(5,4):0.8668238624120975
-空座位:(5,5):0.7418238624120975
-空座位:(5,6):0.6418238624120975
-空座位:(5,7):1.141823862412098
-空座位:(6,1):0.6797026502908855
-空座位:(6,2):0.6001571957454309
-空座位:(6,3):0.7418238624120975
-空座位:(6,6):0.6418238624120975
-空座位:(6,7):1.141823862412098
-[提示]黄嘉如选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力黄嘉如只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]黄嘉如的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]黄嘉如选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力黄嘉如只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]黄嘉如的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]黄嘉如的需求Instance of 'AbsoluteDemand'已被满足
-[提示]黄嘉如选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力黄嘉如只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]黄嘉如的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]黄嘉如的需求Instance of 'AbsoluteDemand'已被满足
-[提示]黄嘉如的需求Instance of 'AbsoluteDemand'已被满足
-[提示]黄嘉如的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]黄嘉如选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力黄嘉如只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]黄嘉如的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]黄嘉如的需求Instance of 'AbsoluteDemand'已被满足
-黄嘉如 选定了座位：空座位:(5,7)
-[提示]谢谦益的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]谢谦益的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'未被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]韩凤阁选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+韩凤阁 暂时不想决定座位
+韩凤阁现在的压力值为2
+[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]文泽豪选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]文泽豪选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+文泽豪 暂时不想决定座位
+文泽豪现在的压力值为2
+[提示]秦浩朗的需求Instance of 'AbsoluteDemand'已被满足
+[提示]秦浩朗的需求Instance of 'AbsoluteDemand'已被满足
+[提示]秦浩朗的需求Instance of 'AbsoluteDemand'已被满足
+秦浩朗 选定了座位：空座位:(4,5)
+[提示]文泽豪的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]郑泽铭的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
 [提示]第1次update所有人
 [提示]第2次update所有人
-第16次尝试找人安排座位
+[提示]第3次update所有人
+第3次尝试找人安排座位
 当前热图:
-空座位:(1,5):0.43144257703081224
-空座位:(2,3):0.8508870214752569
-空座位:(2,4):0.750887021475257
-空座位:(2,5):0.7647759103641458
-空座位:(2,6):0.43144257703081224
-空座位:(3,1):0.8
-空座位:(3,2):0.7226190476190475
-空座位:(3,3):0.7425536881419236
-空座位:(3,4):0.6175536881419235
-空座位:(4,1):0.8625
-空座位:(4,2):0.8851190476190477
-空座位:(4,3):0.8050536881419236
-空座位:(4,4):0.6800536881419236
-空座位:(4,6):0.5939425770308123
-空座位:(5,1):0.7034090909090909
-空座位:(5,2):0.6260281385281387
-空座位:(5,3):0.8959627790510145
-空座位:(5,4):0.8959627790510145
-空座位:(5,5):0.7848516679399034
-空座位:(5,6):0.6848516679399034
-空座位:(6,1):0.7034090909090909
-空座位:(6,2):0.6260281385281387
-空座位:(6,3):0.7709627790510145
-空座位:(6,6):0.6848516679399034
-空座位:(6,7):0.6848516679399034
-[提示]陈子伶的需求Instance of 'AbsoluteDemand'已被满足
-[提示]陈子伶的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]陈子伶的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]陈子伶的需求Instance of 'AbsoluteDemand'已被满足
-[提示]陈子伶的需求Instance of 'AbsoluteDemand'已被满足
-[提示]陈子伶选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力陈子伶只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]陈子伶的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]陈子伶选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力陈子伶只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]陈子伶的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]陈子伶的需求Instance of 'AbsoluteDemand'已被满足
-[提示]陈子伶的需求Instance of 'AbsoluteDemand'已被满足
-陈子伶 选定了座位：空座位:(2,4)
-[提示]古兆康的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]邱建华的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-第17次尝试找人安排座位
-当前热图:
-空座位:(1,5):0.4458333333333334
-空座位:(2,3):0.5458333333333333
-空座位:(2,5):0.4458333333333334
-空座位:(2,6):0.4458333333333334
-空座位:(3,1):0.8083333333333333
-空座位:(3,2):0.7333333333333334
-空座位:(3,3):0.7708333333333331
-空座位:(3,4):0.6458333333333331
-空座位:(4,1):0.8708333333333333
-空座位:(4,2):0.8958333333333333
-空座位:(4,3):0.8333333333333331
-空座位:(4,4):0.7083333333333331
-空座位:(4,6):0.6083333333333333
-空座位:(5,1):0.7117424242424244
-空座位:(5,2):0.6367424242424241
-空座位:(5,3):0.9242424242424241
-空座位:(5,4):0.9242424242424241
-空座位:(5,5):0.7992424242424241
-空座位:(5,6):0.6992424242424241
-空座位:(6,1):0.7117424242424244
-空座位:(6,2):0.6367424242424241
-空座位:(6,3):0.7992424242424241
-空座位:(6,6):0.6992424242424241
-空座位:(6,7):0.6992424242424241
-[提示]阮丽颖的需求Instance of 'AbsoluteDemand'已被满足
-[提示]阮丽颖的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]阮丽颖选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]阮丽颖选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-阮丽颖 暂时不想决定座位
-阮丽颖现在的压力值为3
-[提示]陈维钧选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]陈维钧选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-陈维钧 暂时不想决定座位
-陈维钧现在的压力值为3
-[提示]孙江坤的需求Instance of 'AbsoluteDemand'已被满足
-[提示]孙江坤选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]孙江坤选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-孙江坤 暂时不想决定座位
-孙江坤现在的压力值为3
-[提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
+空座位:(1,1):0.2770580296896086
+空座位:(1,2):0.22705802968960861
+空座位:(1,3):0.22705802968960861
+空座位:(1,4):0.5583080296896085
+空座位:(1,5):0.43379822576803995
+空座位:(1,6):0.2249746963562753
+空座位:(1,7):0.43651315789473677
+空座位:(2,1):0.6426494275390708
+空座位:(2,2):0.25931609420573765
+空座位:(2,3):0.354770639660283
+空座位:(2,4):0.6948441690720477
+空座位:(2,5):0.5615108357387144
+空座位:(2,6):0.36151083573871445
+空座位:(2,7):0.5526873063269496
+空座位:(3,1):0.7187712224108658
+空座位:(3,2):0.33543788907753247
+空座位:(3,3):0.6325731068009854
+空座位:(3,4):0.48971596394384254
+空座位:(3,5):1.189715963943843
+空座位:(3,6):0.48971596394384254
+空座位:(4,1):0.8354378890775324
+空座位:(4,2):0.35708291072255405
+空座位:(4,3):0.35708291072255405
+空座位:(4,4):0.27304929727717603
+空座位:(4,6):0.323049297277176
+空座位:(5,1):0.6238994275390708
+空座位:(5,2):0.43342323706288033
+空座位:(5,3):1.537701311929191
+空座位:(5,4):0.7877013119291905
+空座位:(5,5):1.0115108357387144
+空座位:(5,6):0.36151083573871445
+空座位:(5,7):0.6115108357387143
+空座位:(6,1):0.7905660942057375
+空座位:(6,2):0.6000899037295471
+空座位:(6,3):0.5026873063269497
+空座位:(6,5):1.6781775024053815
+空座位:(6,6):1.5281775024053816
+空座位:(6,7):0.7193539729936163
 [提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
 [提示]房莉婷选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]房莉婷选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 房莉婷 暂时不想决定座位
 房莉婷现在的压力值为3
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'未被满足
-[提示]谭旭君的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]谭旭君的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
-[提示]谭旭君选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]谭旭君选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-谭旭君 暂时不想决定座位
-谭旭君现在的压力值为2
-[提示]谢谦益选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]谢谦益选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-谢谦益 暂时不想决定座位
-谢谦益现在的压力值为3
-[提示]尤静宜选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]尤静宜选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-尤静宜 暂时不想决定座位
-尤静宜现在的压力值为2
-[提示]林子越的需求Instance of 'AbsoluteDemand'已被满足
-[提示]林子越选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]林子越选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-林子越 暂时不想决定座位
-林子越现在的压力值为2
-[提示]古兆康的需求Instance of 'AbsoluteDemand'未被满足
-[提示]古兆康的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]古兆康的需求Instance of 'AbsoluteDemand'已被满足
-[提示]古兆康选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]古兆康选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-古兆康 暂时不想决定座位
-古兆康现在的压力值为2
-[提示]古恩宇选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]古恩宇选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-古恩宇 暂时不想决定座位
-古恩宇现在的压力值为5
-[提示]覃莹选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]覃莹选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-覃莹 暂时不想决定座位
-覃莹现在的压力值为1
-[提示]朱志涛的需求Instance of 'AbsoluteDemand'已被满足
-[提示]朱志涛选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]朱志涛选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-朱志涛 暂时不想决定座位
-朱志涛现在的压力值为1
-[提示]王枫睿选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]王枫睿选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-王枫睿 暂时不想决定座位
-王枫睿现在的压力值为1
-[提示]段星同的需求Instance of 'AbsoluteDemand'已被满足
-[提示]段星同的需求Instance of 'AbsoluteDemand'未被满足
-[提示]段星同选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]段星同选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-段星同 暂时不想决定座位
-段星同现在的压力值为1
-[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]李金言选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]李金言选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-李金言 暂时不想决定座位
-李金言现在的压力值为1
-利宇涛 选定了座位：空座位:(2,5)
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'未被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]韩凤阁选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+韩凤阁 暂时不想决定座位
+韩凤阁现在的压力值为3
+[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]文泽豪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]文泽豪的需求Instance of 'AbsoluteDemand'未被满足
+[提示]文泽豪的需求Instance of 'AbsoluteDemand'已被满足
+文泽豪 选定了座位：空座位:(6,5)
+[提示]李金言的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
 [提示]第1次update所有人
-第18次尝试找人安排座位
+第4次尝试找人安排座位
 当前热图:
-空座位:(1,5):0.47954669281900386
-空座位:(2,3):0.561689549961861
-空座位:(2,6):0.47954669281900386
-空座位:(3,1):0.817391304347826
-空座位:(3,2):0.7450228832951945
-空座位:(3,3):0.786689549961861
-空座位:(3,4):0.661689549961861
-空座位:(4,1):0.879891304347826
-空座位:(4,2):0.9075228832951944
-空座位:(4,3):0.849189549961861
-空座位:(4,4):0.724189549961861
-空座位:(4,6):0.6420466928190038
-空座位:(5,1):0.7208003952569169
-空座位:(5,2):0.6484319742042853
-空座位:(5,3):0.940098640870952
-空座位:(5,4):0.940098640870952
-空座位:(5,5):0.8329557837280949
-空座位:(5,6):0.7329557837280948
-空座位:(6,1):0.7208003952569169
-空座位:(6,2):0.6484319742042853
-空座位:(6,3):0.815098640870952
-空座位:(6,6):0.7329557837280948
-空座位:(6,7):0.7329557837280948
-[提示]阮丽颖的需求Instance of 'AbsoluteDemand'已被满足
-[提示]阮丽颖的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]阮丽颖选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]阮丽颖选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-阮丽颖 暂时不想决定座位
-阮丽颖现在的压力值为4
-[提示]陈维钧选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]陈维钧选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-陈维钧 暂时不想决定座位
-陈维钧现在的压力值为4
-[提示]孙江坤的需求Instance of 'AbsoluteDemand'已被满足
-[提示]孙江坤选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]孙江坤选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-孙江坤 暂时不想决定座位
-孙江坤现在的压力值为4
-[提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
+空座位:(1,1):0.28144144144144145
+空座位:(1,2):0.23144144144144144
+空座位:(1,3):0.23144144144144144
+空座位:(1,4):0.5636995059575705
+空座位:(1,5):0.49286617262423715
+空座位:(1,6):0.23036617262423714
+空座位:(1,7):0.44036617262423716
+空座位:(2,1):0.6481081081081079
+空座位:(2,2):0.26477477477477473
+空座位:(2,3):0.3623938223938224
+空座位:(2,4):0.7071518869099511
+空座位:(2,5):0.6238185535766179
+空座位:(2,6):0.3738185535766181
+空座位:(2,7):0.5613185535766181
+空座位:(3,1):0.7236995059575704
+空座位:(3,2):0.34036617262423713
+空座位:(3,3):0.6433423631004274
+空座位:(3,4):0.5004852202432848
+空座位:(3,5):1.2504852202432846
+空座位:(3,6):0.5004852202432848
+空座位:(4,1):0.8403661726242369
+空座位:(4,2):0.3641756964337609
+空座位:(4,3):0.3641756964337609
+空座位:(4,4):0.28381855357661806
+空座位:(4,6):0.3338185535766181
+空座位:(5,1):0.6303661726242369
+空座位:(5,2):0.43988998214804664
+空座位:(5,3):1.550009029767094
+空座位:(5,4):0.8000090297670941
+空座位:(5,5):1.073818553576618
+空座位:(5,6):0.3738185535766181
+空座位:(5,7):0.6238185535766179
+空座位:(6,1):0.8303661726242371
+空座位:(6,2):0.6398899821480464
+空座位:(6,3):0.5446518869099513
+空座位:(6,6):1.573818553576618
+空座位:(6,7):0.761318553576618
 [提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
 [提示]房莉婷选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]房莉婷选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 房莉婷 暂时不想决定座位
 房莉婷现在的压力值为4
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'未被满足
-[提示]谭旭君的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]谭旭君的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'未被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]韩凤阁选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+韩凤阁 暂时不想决定座位
+韩凤阁现在的压力值为4
+[提示]郑泽铭的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+郑泽铭 选定了座位：空座位:(5,5)
+[提示]单思远的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
+第5次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.28611111111111115
+空座位:(1,2):0.23611111111111116
+空座位:(1,3):0.23611111111111116
+空座位:(1,4):0.5694444444444444
+空座位:(1,5):0.5194444444444445
+空座位:(1,6):0.23611111111111116
+空座位:(1,7):0.4444444444444445
+空座位:(2,1):0.6539272030651341
+空座位:(2,2):0.27059386973180083
+空座位:(2,3):0.3705938697318008
+空座位:(2,4):0.6539272030651341
+空座位:(2,5):0.6539272030651341
+空座位:(2,6):0.3205938697318008
+空座位:(2,7):0.5705938697318008
+空座位:(3,1):0.7289272030651341
+空座位:(3,2):0.3455938697318008
+空座位:(3,3):0.5884510125889436
+空座位:(3,4):0.4455938697318008
+空座位:(3,5):0.9039272030651342
+空座位:(3,6):0.4455938697318008
+空座位:(4,1):0.8455938697318007
+空座位:(4,2):0.371784345922277
+空座位:(4,3):0.371784345922277
+空座位:(4,4):0.35392720306513414
+空座位:(4,6):0.40392720306513413
+空座位:(5,1):0.6372605363984675
+空座位:(5,2):0.446784345922277
+空座位:(5,3):1.6217843459222767
+空座位:(5,4):0.8717843459222769
+空座位:(5,6):0.4455938697318008
+空座位:(5,7):0.6955938697318007
+空座位:(6,1):0.8372605363984674
+空座位:(6,2):0.646784345922277
+空座位:(6,3):0.5539272030651341
+空座位:(6,6):1.6455938697318007
+空座位:(6,7):0.7705938697318008
+[提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
+[提示]房莉婷选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]房莉婷选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+房莉婷 暂时不想决定座位
+房莉婷现在的压力值为5
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'未被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]韩凤阁选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+韩凤阁 暂时不想决定座位
+韩凤阁现在的压力值为5
+[提示]谭旭君选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]谭旭君选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+谭旭君 暂时不想决定座位
+谭旭君现在的压力值为1
+[提示]谢谦益的需求Instance of 'AbsoluteDemand'已被满足
+[提示]谢谦益选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]谢谦益选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+谢谦益 暂时不想决定座位
+谢谦益现在的压力值为1
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]李金言选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+李金言 暂时不想决定座位
+李金言现在的压力值为1
+[提示]古兆康选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]古兆康选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+古兆康 暂时不想决定座位
+古兆康现在的压力值为1
+[提示]林子越选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]林子越选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+林子越 暂时不想决定座位
+林子越现在的压力值为1
+[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王元元选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]王元元选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+王元元 暂时不想决定座位
+王元元现在的压力值为1
+[提示]段星同的需求Instance of 'AbsoluteDemand'已被满足
+段星同 选定了座位：空座位:(3,2)
+[提示]第1次update所有人
+[提示]第2次update所有人
+[提示]第3次update所有人
+第6次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.2892857142857143
+空座位:(1,2):0.23928571428571432
+空座位:(1,3):0.23928571428571432
+空座位:(1,4):0.573768472906404
+空座位:(1,5):0.5237684729064039
+空座位:(1,6):0.24043513957307067
+空座位:(1,7):0.448768472906404
+空座位:(2,1):0.6583333333333333
+空座位:(2,2):0.275
+空座位:(2,3):0.37500000000000006
+空座位:(2,4):0.6594827586206896
+空座位:(2,5):0.6594827586206896
+空座位:(2,6):0.32614942528735635
+空座位:(2,7):0.5761494252873564
+空座位:(3,1):0.5678160919540229
+空座位:(3,3):0.45114942528735635
+空座位:(3,4):0.2844827586206897
+空座位:(3,5):0.742816091954023
+空座位:(3,6):0.2844827586206897
+空座位:(4,1):0.8511494252873563
+空座位:(4,2):0.40114942528735636
+空座位:(4,3):0.40114942528735636
+空座位:(4,4):0.3594827586206897
+空座位:(4,6):0.40948275862068967
+空座位:(5,1):0.642816091954023
+空座位:(5,2):0.4761494252873564
+空座位:(5,3):1.6511494252873562
+空座位:(5,4):0.7344827586206896
+空座位:(5,6):0.45114942528735635
+空座位:(5,7):0.7011494252873562
+空座位:(6,1):0.842816091954023
+空座位:(6,2):0.6761494252873563
+空座位:(6,3):0.5594827586206896
+空座位:(6,6):1.6511494252873562
+空座位:(6,7):0.7761494252873563
+[提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
+[提示]房莉婷选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力房莉婷只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
+[提示]房莉婷的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
+房莉婷 选定了座位：空座位:(6,6)
+[提示]王元元的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
+第7次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.29709023197379636
+空座位:(1,2):0.244458653026428
+空座位:(1,3):0.244458653026428
+空座位:(1,4):0.5828045176880821
+空座位:(1,5):0.5301729387407137
+空座位:(1,6):0.2494711843547488
+空座位:(1,7):0.45599292348518355
+空座位:(2,1):0.6674606023441667
+空座位:(2,2):0.28149569006346503
+空座位:(2,3):0.3867588479582018
+空座位:(2,4):0.6724731336724875
+空座位:(2,5):0.6724731336724875
+空座位:(2,6):0.33913980033915425
+空座位:(2,7):0.5891398003391541
+空座位:(3,1):0.5763632938555538
+空座位:(3,3):0.46232820613625564
+空座位:(3,4):0.295661539469589
+空座位:(3,5):0.7718520156600651
+空座位:(3,6):0.295661539469589
+空座位:(4,1):0.8570650482415189
+空座位:(4,2):0.4096966271888872
+空座位:(4,3):0.4096966271888872
+空座位:(4,4):0.38588710337936344
+空座位:(4,6):0.43851868232673186
+空座位:(5,1):0.650543309111084
+空座位:(5,2):0.48387664244441736
+空座位:(5,3):1.6793653642489281
+空座位:(5,4):0.7626986975822619
+空座位:(5,6):0.4819969431962971
+空座位:(5,7):0.731996943196297
+空座位:(6,1):0.900543309111084
+空座位:(6,2):0.7338766424444173
+空座位:(6,3):0.6198415547251191
+空座位:(6,7):0.839139800339154
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'未被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+[提示]韩凤阁选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力韩凤阁只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
+[提示]韩凤阁的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]韩凤阁的需求Instance of 'AbsoluteDemand'已被满足
+韩凤阁 选定了座位：空座位:(5,3)
+[提示]古恩宇的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
+第8次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.31020733652312593
+空座位:(1,2):0.25757575757575757
+空座位:(1,3):0.25757575757575757
+空座位:(1,4):0.5896686159844053
+空座位:(1,5):0.537037037037037
+空座位:(1,6):0.25633528265107214
+空座位:(1,7):0.46088073719652656
+空座位:(2,1):0.6820022083179976
+空座位:(2,2):0.296037296037296
+空座位:(2,3):0.40422443054021995
+空座位:(2,4):0.6836857100014992
+空座位:(2,5):0.6836857100014992
+空座位:(2,6):0.3503523766681661
+空座位:(2,7):0.6003523766681661
+空座位:(3,1):0.5826756089913984
+空座位:(3,3):0.5048978312136206
+空座位:(3,4):0.3048978312136207
+空座位:(3,5):0.8048978312136206
+空座位:(3,6):0.3048978312136207
+空座位:(4,1):0.8633773633773631
+空座位:(4,2):0.45226625226625217
+空座位:(4,3):0.45226625226625217
+空座位:(4,4):0.41893291893291884
+空座位:(4,6):0.4715644978802873
+空座位:(5,1):0.6664076664076664
+空座位:(5,2):0.533074333074333
+空座位:(5,4):0.7977207977207976
+空座位:(5,6):0.5170190433348327
+空座位:(5,7):0.7670190433348327
+空座位:(6,1):0.9164076664076661
+空座位:(6,2):0.7830743330743328
+空座位:(6,3):0.6386298886298887
+空座位:(6,7):0.850352376668166
+[提示]谭旭君选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]谭旭君选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+谭旭君 暂时不想决定座位
+谭旭君现在的压力值为2
+[提示]谢谦益的需求Instance of 'AbsoluteDemand'已被满足
+[提示]谢谦益选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]谢谦益选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+谢谦益 暂时不想决定座位
+谢谦益现在的压力值为2
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]李金言选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+李金言 暂时不想决定座位
+李金言现在的压力值为2
+[提示]古兆康选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]古兆康选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+古兆康 暂时不想决定座位
+古兆康现在的压力值为2
+[提示]林子越选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]林子越选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+林子越 暂时不想决定座位
+林子越现在的压力值为2
+[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王元元选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]王元元选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+王元元 暂时不想决定座位
+王元元现在的压力值为2
+[提示]古恩宇选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]古恩宇选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+古恩宇 暂时不想决定座位
+古恩宇现在的压力值为1
+[提示]单思远的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+单思远 选定了座位：空座位:(4,4)
+[提示]第1次update所有人
+[提示]第2次update所有人
+[提示]第3次update所有人
+第9次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.31399521531100477
+空座位:(1,2):0.26136363636363635
+空座位:(1,3):0.26136363636363635
+空座位:(1,4):0.5948809961967857
+空座位:(1,5):0.5422494172494172
+空座位:(1,6):0.2615476628634523
+空座位:(1,7):0.4660931174089069
+空座位:(2,1):0.6873285486443381
+空座位:(2,2):0.3013636363636364
+空座位:(2,3):0.41281874472276947
+空座位:(2,4):0.6937045256085503
+空座位:(2,5):0.6937045256085503
+空座位:(2,6):0.3603711922752171
+空座位:(2,7):0.6103711922752171
+空座位:(3,1):0.5894264507422402
+空座位:(3,3):0.6482499801540049
+空座位:(3,4):0.31491664682067155
+空座位:(3,5):0.6482499801540049
+空座位:(3,6):0.31491664682067155
+空座位:(4,1):0.8701282051282051
+空座位:(4,2):0.5956184012066364
+空座位:(4,3):0.2622850678733032
+空座位:(4,6):0.31491664682067155
+空座位:(5,1):0.6731585081585081
+空座位:(5,2):0.3398251748251748
+空座位:(5,4):0.641072946661182
+空座位:(5,6):0.3603711922752171
+空座位:(5,7):0.6103711922752171
+空座位:(6,1):0.9231585081585081
+空座位:(6,2):0.9231585081585081
+空座位:(6,3):0.6486487042369395
+空座位:(6,7):0.860371192275217
 [提示]谭旭君选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]谭旭君选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 谭旭君 暂时不想决定座位
 谭旭君现在的压力值为3
-[提示]古兆康的需求Instance of 'AbsoluteDemand'未被满足
-[提示]古兆康的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]古兆康的需求Instance of 'AbsoluteDemand'已被满足
+[提示]谢谦益的需求Instance of 'AbsoluteDemand'已被满足
+[提示]谢谦益选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]谢谦益选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+谢谦益 暂时不想决定座位
+谢谦益现在的压力值为3
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]李金言选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+李金言 暂时不想决定座位
+李金言现在的压力值为3
 [提示]古兆康选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]古兆康选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 古兆康 暂时不想决定座位
 古兆康现在的压力值为3
-[提示]谢谦益选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]谢谦益选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-谢谦益 暂时不想决定座位
-谢谦益现在的压力值为4
-[提示]尤静宜选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]尤静宜选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-尤静宜 暂时不想决定座位
-尤静宜现在的压力值为3
-[提示]林子越的需求Instance of 'AbsoluteDemand'已被满足
+[提示]古恩宇选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]古恩宇选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+古恩宇 暂时不想决定座位
+古恩宇现在的压力值为2
 [提示]林子越选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]林子越选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 林子越 暂时不想决定座位
 林子越现在的压力值为3
-[提示]罗云媛的需求Instance of 'AbsoluteDemand'未被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]罗云媛选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-罗云媛 暂时不想决定座位
-罗云媛现在的压力值为1
-周晗 选定了座位：空座位:(2,6)
+[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王元元选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]王元元选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+王元元 暂时不想决定座位
+王元元现在的压力值为3
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]游欣选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+游欣 暂时不想决定座位
+游欣现在的压力值为1
+[提示]孙江坤的需求Instance of 'AbsoluteDemand'已被满足
+[提示]孙江坤的需求Instance of 'AbsoluteDemand'已被满足
+孙江坤 选定了座位：空座位:(4,3)
 [提示]第1次update所有人
-第19次尝试找人安排座位
+第10次尝试找人安排座位
 当前热图:
-空座位:(1,5):0.520923520923521
-空座位:(2,3):0.5792568542568544
-空座位:(3,1):0.8272727272727273
-空座位:(3,2):0.7578282828282829
-空座位:(3,3):0.8042568542568544
-空座位:(3,4):0.6792568542568544
-空座位:(4,1):0.8897727272727273
-空座位:(4,2):0.9203282828282828
-空座位:(4,3):0.8667568542568544
-空座位:(4,4):0.7417568542568544
-空座位:(4,6):0.6834235209235211
-空座位:(5,1):0.7306818181818182
-空座位:(5,2):0.6612373737373738
-空座位:(5,3):0.9576659451659454
-空座位:(5,4):0.9576659451659454
-空座位:(5,5):0.874332611832612
-空座位:(5,6):0.774332611832612
-空座位:(6,1):0.7306818181818182
-空座位:(6,2):0.6612373737373738
-空座位:(6,3):0.8326659451659454
-空座位:(6,6):0.774332611832612
-空座位:(6,7):0.774332611832612
-[提示]阮丽颖的需求Instance of 'AbsoluteDemand'已被满足
-[提示]阮丽颖的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]阮丽颖选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]阮丽颖选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-阮丽颖 暂时不想决定座位
-阮丽颖现在的压力值为5
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'未被满足
-[提示]谭旭君的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]谭旭君的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
+空座位:(1,1):0.31802747337552084
+空座位:(1,2):0.2653958944281525
+空座位:(1,3):0.2653958944281525
+空座位:(1,4):0.6004517157997632
+空座位:(1,5):0.5478201368523948
+空座位:(1,6):0.26711838246643
+空座位:(1,7):0.4716638370118844
+空座位:(2,1):0.6930274733755207
+空座位:(2,2):0.3070625610948191
+空座位:(2,3):0.35969414004218747
+空座位:(2,4):0.6421183824664299
+空座位:(2,5):0.6421183824664299
+空座位:(2,6):0.3087850491330967
+空座位:(2,7):0.5587850491330966
+空座位:(3,1):0.5966638370118844
+空座位:(3,3):0.5966638370118844
+空座位:(3,4):0.2633305036785512
+空座位:(3,5):0.5966638370118844
+空座位:(3,6):0.2633305036785512
+空座位:(4,1):0.8773655913978493
+空座位:(4,2):0.544032258064516
+空座位:(4,6):0.2633305036785512
+空座位:(5,1):0.6803958944281524
+空座位:(5,2):0.34706256109481903
+空座位:(5,4):0.5894868035190615
+空座位:(5,6):0.3087850491330967
+空座位:(5,7):0.5587850491330966
+空座位:(6,1):0.9303958944281523
+空座位:(6,2):0.9303958944281523
+空座位:(6,3):0.5970625610948191
+空座位:(6,7):0.8087850491330965
 [提示]谭旭君选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]谭旭君选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 谭旭君 暂时不想决定座位
 谭旭君现在的压力值为4
-[提示]雷利的需求Instance of 'AbsoluteDemand'已被满足
-[提示]雷利的需求Instance of 'AbsoluteDemand'未被满足
-雷利 选定了座位：空座位:(1,5)
-[提示]尤静宜的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]谢谦益的需求Instance of 'AbsoluteDemand'已被满足
+[提示]谢谦益选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]谢谦益选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+谢谦益 暂时不想决定座位
+谢谦益现在的压力值为4
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]李金言选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+李金言 暂时不想决定座位
+李金言现在的压力值为4
+[提示]古兆康选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]古兆康选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+古兆康 暂时不想决定座位
+古兆康现在的压力值为4
+[提示]古恩宇选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]古恩宇选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+古恩宇 暂时不想决定座位
+古恩宇现在的压力值为3
+[提示]林子越选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]林子越选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+林子越 暂时不想决定座位
+林子越现在的压力值为4
+[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王元元选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]王元元选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+王元元 暂时不想决定座位
+王元元现在的压力值为4
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]游欣选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+游欣 暂时不想决定座位
+游欣现在的压力值为2
+[提示]黄嘉如的需求Instance of 'AbsoluteDemand'已被满足
+[提示]黄嘉如的需求Instance of 'AbsoluteDemand'已被满足
+[提示]黄嘉如的需求Instance of 'AbsoluteDemand'已被满足
+[提示]黄嘉如的需求Instance of 'AbsoluteDemand'已被满足
+[提示]黄嘉如的需求Instance of 'AbsoluteDemand'已被满足
+[提示]黄嘉如的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]黄嘉如的需求Instance of 'AbsoluteDemand'已被满足
+黄嘉如 选定了座位：空座位:(3,6)
+[提示]古兆康的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
 [提示]第1次update所有人
 [提示]第2次update所有人
 [提示]第3次update所有人
+第11次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.26969696969696966
+空座位:(1,2):0.26969696969696966
+空座位:(1,3):0.26969696969696966
+空座位:(1,4):0.5537878787878788
+空座位:(1,5):0.5537878787878788
+空座位:(1,6):0.22045454545454543
+空座位:(1,7):0.425
+空座位:(2,1):0.6465085638998682
+空座位:(2,2):0.3131752305665349
+空座位:(2,3):0.3131752305665349
+空座位:(2,4):0.597266139657444
+空座位:(2,5):0.597266139657444
+空座位:(2,6):0.26393280632411065
+空座位:(2,7):0.5139328063241108
+空座位:(3,1):0.5518115942028986
+空座位:(3,3):0.7184782608695651
+空座位:(3,4):0.21847826086956518
+空座位:(3,5):0.5518115942028986
+空座位:(4,1):0.8851449275362318
+空座位:(4,2):0.21847826086956518
+空座位:(4,6):0.21847826086956518
+空座位:(5,1):0.6881752305665348
+空座位:(5,2):0.35484189723320153
+空座位:(5,4):0.597266139657444
+空座位:(5,6):0.26393280632411065
+空座位:(5,7):0.5139328063241108
+空座位:(6,1):0.9381752305665347
+空座位:(6,2):1.104841897233202
+空座位:(6,3):0.6048418972332017
+空座位:(6,7):0.7639328063241105
+[提示]古恩宇选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]古恩宇选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+古恩宇 暂时不想决定座位
+古恩宇现在的压力值为4
+[提示]谭旭君选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]谭旭君选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+谭旭君 暂时不想决定座位
+谭旭君现在的压力值为5
+[提示]谢谦益的需求Instance of 'AbsoluteDemand'已被满足
+[提示]谢谦益选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]谢谦益选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+谢谦益 暂时不想决定座位
+谢谦益现在的压力值为5
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]李金言选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+李金言 暂时不想决定座位
+李金言现在的压力值为5
+[提示]古兆康选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]古兆康选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+古兆康 暂时不想决定座位
+古兆康现在的压力值为5
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]游欣选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+游欣 暂时不想决定座位
+游欣现在的压力值为3
+[提示]林子越选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]林子越选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+林子越 暂时不想决定座位
+林子越现在的压力值为5
+[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王元元选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]王元元选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+王元元 暂时不想决定座位
+王元元现在的压力值为5
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'未被满足
+[提示]王铭晟选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]王铭晟选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+王铭晟 暂时不想决定座位
+王铭晟现在的压力值为1
+[提示]周晗选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]周晗选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+周晗 暂时不想决定座位
+周晗现在的压力值为1
+[提示]覃莹的需求Instance of 'AbsoluteDemand'已被满足
+[提示]覃莹选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]覃莹选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+覃莹 暂时不想决定座位
+覃莹现在的压力值为1
+[提示]陈霞的需求Instance of 'AbsoluteDemand'已被满足
+陈霞 选定了座位：空座位:(4,2)
+[提示]谭旭君的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
+第12次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.23981191222570536
+空座位:(1,2):0.23981191222570536
+空座位:(1,3):0.23981191222570536
+空座位:(1,4):0.5257144155195129
+空座位:(1,5):0.5257144155195129
+空座位:(1,6):0.19238108218617966
+空座位:(1,7):0.3969265367316342
+空座位:(2,1):0.618599791013584
+空座位:(2,2):0.28526645768025083
+空座位:(2,3):0.28526645768025083
+空座位:(2,4):0.5711689609740583
+空座位:(2,5):0.5711689609740583
+空座位:(2,6):0.23783562764072513
+空座位:(2,7):0.48783562764072513
+空座位:(3,1):0.5257144155195129
+空座位:(3,3):0.6923810821861794
+空座位:(3,4):0.19238108218617966
+空座位:(3,5):0.5257144155195129
+空座位:(4,1):0.5257144155195129
+空座位:(4,6):0.19238108218617966
+空座位:(5,1):1.328744718549816
+空座位:(5,2):0.328744718549816
+空座位:(5,4):0.5711689609740583
+空座位:(5,6):0.23783562764072513
+空座位:(5,7):0.48783562764072513
+空座位:(6,1):0.578744718549816
+空座位:(6,2):1.0787447185498158
+空座位:(6,3):0.578744718549816
+空座位:(6,7):0.7378356276407252
+[提示]谭旭君的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]谭旭君选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力谭旭君只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
+[提示]谭旭君的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]谭旭君选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力谭旭君只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
+[提示]谭旭君的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
+[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
+[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
+[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
+[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
+谭旭君 选定了座位：空座位:(5,1)
+[提示]周奥灵的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]曾可的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
+[提示]第2次update所有人
+第13次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.25476190476190474
+空座位:(1,2):0.25476190476190474
+空座位:(1,3):0.25476190476190474
+空座位:(1,4):0.5335497835497836
+空座位:(1,5):0.5335497835497836
+空座位:(1,6):0.20021645021645018
+空座位:(1,7):0.4025974025974026
+空座位:(2,1):0.6357142857142857
+空座位:(2,2):0.30238095238095236
+空座位:(2,3):0.30238095238095236
+空座位:(2,4):0.5811688311688311
+空座位:(2,5):0.5811688311688311
+空座位:(2,6):0.2478354978354978
+空座位:(2,7):0.4978354978354978
+空座位:(3,1):0.5335497835497836
+空座位:(3,3):0.7002164502164502
+空座位:(3,4):0.20021645021645018
+空座位:(3,5):0.5335497835497836
+空座位:(4,1):0.5335497835497836
+空座位:(4,6):0.20021645021645018
+空座位:(5,2):0.3478354978354978
+空座位:(5,4):0.5811688311688311
+空座位:(5,6):0.2478354978354978
+空座位:(5,7):0.4978354978354978
+空座位:(6,1):0.5978354978354978
+空座位:(6,2):1.0978354978354976
+空座位:(6,3):0.5978354978354978
+空座位:(6,7):0.7478354978354977
+[提示]古恩宇选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]古恩宇选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+古恩宇 暂时不想决定座位
+古恩宇现在的压力值为5
+[提示]谢谦益的需求Instance of 'AbsoluteDemand'已被满足
+[提示]谢谦益选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力谢谦益只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
+[提示]谢谦益的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+谢谦益 选定了座位：空座位:(1,4)
+[提示]李金言的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]田敏德的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
+第14次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.2611111111111111
+空座位:(1,2):0.2611111111111111
+空座位:(1,3):0.2611111111111111
+空座位:(1,5):0.5420634920634919
+空座位:(1,6):0.2087301587301587
+空座位:(1,7):0.4087301587301587
+空座位:(2,1):0.642063492063492
+空座位:(2,2):0.30873015873015874
+空座位:(2,3):0.30873015873015874
+空座位:(2,4):0.2563492063492063
+空座位:(2,5):0.5896825396825396
+空座位:(2,6):0.2563492063492063
+空座位:(2,7):0.5063492063492063
+空座位:(3,1):0.5396825396825395
+空座位:(3,3):0.7063492063492063
+空座位:(3,4):0.20634920634920634
+空座位:(3,5):0.5396825396825395
+空座位:(4,1):0.5396825396825395
+空座位:(4,6):0.20634920634920634
+空座位:(5,2):0.35634920634920636
+空座位:(5,4):0.2563492063492063
+空座位:(5,6):0.2563492063492063
+空座位:(5,7):0.5063492063492063
+空座位:(6,1):0.6063492063492064
+空座位:(6,2):1.1063492063492062
+空座位:(6,3):0.6063492063492064
+空座位:(6,7):0.7563492063492063
+[提示]古恩宇选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力古恩宇只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
+[提示]古恩宇的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]古恩宇的需求Instance of 'AbsoluteDemand'已被满足
+[提示]古恩宇的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]古恩宇的需求Instance of 'AbsoluteDemand'已被满足
+古恩宇 选定了座位：空座位:(3,3)
+[提示]覃莹的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]钟元彪的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
+第15次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.26538461538461544
+空座位:(1,2):0.26538461538461544
+空座位:(1,3):0.26538461538461544
+空座位:(1,5):0.5487179487179487
+空座位:(1,6):0.2153846153846154
+空座位:(1,7):0.41538461538461535
+空座位:(2,1):0.6487179487179486
+空座位:(2,2):0.3153846153846154
+空座位:(2,3):0.3153846153846154
+空座位:(2,4):0.26538461538461544
+空座位:(2,5):0.5987179487179486
+空座位:(2,6):0.26538461538461544
+空座位:(2,7):0.5153846153846154
+空座位:(3,1):0.5487179487179487
+空座位:(3,4):0.2153846153846154
+空座位:(3,5):0.5487179487179487
+空座位:(4,1):0.5487179487179487
+空座位:(4,6):0.2153846153846154
+空座位:(5,2):0.3653846153846153
+空座位:(5,4):0.26538461538461544
+空座位:(5,6):0.26538461538461544
+空座位:(5,7):0.5153846153846154
+空座位:(6,1):0.6153846153846153
+空座位:(6,2):0.6153846153846153
+空座位:(6,3):0.6153846153846153
+空座位:(6,7):0.7653846153846154
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
+[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
+[提示]李金言选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力李金言只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
+[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]李金言选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力李金言只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
+[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+李金言 选定了座位：空座位:(4,1)
+[提示]第1次update所有人
+第16次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.27
+空座位:(1,2):0.27
+空座位:(1,3):0.27
+空座位:(1,5):0.5559649122807018
+空座位:(1,6):0.22263157894736843
+空座位:(1,7):0.42263157894736847
+空座位:(2,1):0.32263157894736844
+空座位:(2,2):0.32263157894736844
+空座位:(2,3):0.32263157894736844
+空座位:(2,4):0.2752631578947368
+空座位:(2,5):0.6085964912280702
+空座位:(2,6):0.2752631578947368
+空座位:(2,7):0.5252631578947369
+空座位:(3,1):0.22526315789473686
+空座位:(3,4):0.22526315789473686
+空座位:(3,5):0.5585964912280702
+空座位:(4,6):0.22526315789473686
+空座位:(5,2):0.3752631578947368
+空座位:(5,4):0.2752631578947368
+空座位:(5,6):0.2752631578947368
+空座位:(5,7):0.5252631578947369
+空座位:(6,1):0.6252631578947367
+空座位:(6,2):0.6252631578947367
+空座位:(6,3):0.6252631578947367
+空座位:(6,7):0.7752631578947369
+[提示]古兆康选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力古兆康只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
+[提示]古兆康的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]古兆康的需求Instance of 'AbsoluteDemand'已被满足
+[提示]古兆康的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]古兆康的需求Instance of 'AbsoluteDemand'已被满足
+[提示]古兆康的需求Instance of 'AbsoluteDemand'已被满足
+[提示]古兆康的需求Instance of 'AbsoluteDemand'已被满足
+[提示]古兆康的需求Instance of 'AbsoluteDemand'已被满足
+古兆康 选定了座位：空座位:(1,5)
+[提示]覃莹的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]雷利的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
+第17次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.2776315789473684
+空座位:(1,2):0.2776315789473684
+空座位:(1,3):0.2776315789473684
+空座位:(1,6):0.23318713450292394
+空座位:(1,7):0.4305555555555555
+空座位:(2,1):0.33026315789473687
+空座位:(2,2):0.33026315789473687
+空座位:(2,3):0.33026315789473687
+空座位:(2,4):0.28581871345029236
+空座位:(2,5):0.28581871345029236
+空座位:(2,6):0.28581871345029236
+空座位:(2,7):0.5358187134502923
+空座位:(3,1):0.23318713450292394
+空座位:(3,4):0.23318713450292394
+空座位:(3,5):0.23318713450292394
+空座位:(4,6):0.23318713450292394
+空座位:(5,2):0.38581871345029245
+空座位:(5,4):0.28581871345029236
+空座位:(5,6):0.28581871345029236
+空座位:(5,7):0.5358187134502923
+空座位:(6,1):0.6358187134502924
+空座位:(6,2):0.6358187134502924
+空座位:(6,3):0.6358187134502924
+空座位:(6,7):0.7858187134502923
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]游欣选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+游欣 暂时不想决定座位
+游欣现在的压力值为4
+[提示]覃莹的需求Instance of 'AbsoluteDemand'已被满足
+[提示]覃莹选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]覃莹选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+覃莹 暂时不想决定座位
+覃莹现在的压力值为2
+[提示]周晗选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]周晗选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+周晗 暂时不想决定座位
+周晗现在的压力值为2
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'未被满足
+[提示]王铭晟选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]王铭晟选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+王铭晟 暂时不想决定座位
+王铭晟现在的压力值为2
+利宇涛 选定了座位：空座位:(3,5)
+[提示]覃莹的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
+第18次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.28306636155606407
+空座位:(1,2):0.28306636155606407
+空座位:(1,3):0.28306636155606407
+空座位:(1,6):0.24188989096782876
+空座位:(1,7):0.4392583120204604
+空座位:(2,1):0.3386219171116196
+空座位:(2,2):0.3386219171116196
+空座位:(2,3):0.3386219171116196
+空座位:(2,4):0.29744544652338434
+空座位:(2,5):0.29744544652338434
+空座位:(2,6):0.29744544652338434
+空座位:(2,7):0.5474454465233843
+空座位:(3,1):0.24481386757601592
+空座位:(3,4):0.24481386757601592
+空座位:(4,6):0.24481386757601592
+空座位:(5,2):0.3974454465233843
+空座位:(5,4):0.29744544652338434
+空座位:(5,6):0.29744544652338434
+空座位:(5,7):0.5474454465233843
+空座位:(6,1):0.6474454465233843
+空座位:(6,2):0.6474454465233843
+空座位:(6,3):0.6474454465233843
+空座位:(6,7):0.7974454465233843
+[提示]覃莹的需求Instance of 'AbsoluteDemand'已被满足
+[提示]覃莹选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]覃莹选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+覃莹 暂时不想决定座位
+覃莹现在的压力值为3
+[提示]周晗选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]周晗选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+周晗 暂时不想决定座位
+周晗现在的压力值为3
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'未被满足
+[提示]王铭晟选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]王铭晟选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+王铭晟 暂时不想决定座位
+王铭晟现在的压力值为3
+[提示]王枫睿选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]王枫睿选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+王枫睿 暂时不想决定座位
+王枫睿现在的压力值为1
+[提示]陈维钧的需求Instance of 'AbsoluteDemand'未被满足
+陈维钧 选定了座位：空座位:(1,6)
+[提示]第1次update所有人
+第19次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.2919191919191919
+空座位:(1,2):0.2919191919191919
+空座位:(1,3):0.2919191919191919
+空座位:(1,7):0.44886363636363635
+空座位:(2,1):0.3474747474747475
+空座位:(2,2):0.3474747474747475
+空座位:(2,3):0.3474747474747475
+空座位:(2,4):0.3099747474747475
+空座位:(2,5):0.3099747474747475
+空座位:(2,6):0.3099747474747475
+空座位:(2,7):0.5599747474747475
+空座位:(3,1):0.25441919191919193
+空座位:(3,4):0.25441919191919193
+空座位:(4,6):0.25441919191919193
+空座位:(5,2):0.4099747474747475
+空座位:(5,4):0.3099747474747475
+空座位:(5,6):0.3099747474747475
+空座位:(5,7):0.5599747474747475
+空座位:(6,1):0.6599747474747475
+空座位:(6,2):0.6599747474747475
+空座位:(6,3):0.6599747474747475
+空座位:(6,7):0.8099747474747475
+[提示]朱志涛的需求Instance of 'AbsoluteDemand'已被满足
+[提示]朱志涛的需求Instance of 'AbsoluteDemand'已被满足
+[提示]朱志涛选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]朱志涛选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+朱志涛 暂时不想决定座位
+朱志涛现在的压力值为1
+[提示]尤静宜的需求Instance of 'AbsoluteDemand'已被满足
+[提示]尤静宜的需求Instance of 'AbsoluteDemand'已被满足
+尤静宜 选定了座位：空座位:(3,1)
+[提示]冉懋鑫的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
 第20次尝试找人安排座位
 当前热图:
-空座位:(2,3):0.4512227968110321
-空座位:(3,1):0.44047619047619047
-空座位:(3,2):0.24929971988795518
-空座位:(3,3):0.5762227968110321
-空座位:(3,4):0.4512227968110321
-空座位:(4,1):1.0654761904761907
-空座位:(4,2):1.1659663865546221
-空座位:(4,3):0.8678894634776987
-空座位:(4,4):0.7012227968110321
-空座位:(4,6):0.6512227968110321
-空座位:(5,1):0.7472943722943723
-空座位:(5,2):0.7227845683728037
-空座位:(5,3):1.0497076452958807
-空座位:(5,4):1.0497076452958807
-空座位:(5,5):0.9580409786292139
-空座位:(5,6):0.8330409786292139
-空座位:(6,1):0.7472943722943723
-空座位:(6,2):0.7227845683728037
-空座位:(6,3):0.8830409786292139
-空座位:(6,6):0.8330409786292139
-空座位:(6,7):0.8330409786292139
-[提示]邱建华的需求Instance of 'AbsoluteDemand'已被满足
-[提示]邱建华的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]邱建华的需求Instance of 'AbsoluteDemand'已被满足
-[提示]邱建华的需求Instance of 'AbsoluteDemand'已被满足
-[提示]邱建华的需求Instance of 'AbsoluteDemand'已被满足
-[提示]邱建华选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力邱建华只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]邱建华的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]邱建华的需求Instance of 'AbsoluteDemand'已被满足
-邱建华 选定了座位：空座位:(4,1)
-[提示]谢谦益的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+空座位:(1,1):0.2507936507936508
+空座位:(1,2):0.2507936507936508
+空座位:(1,3):0.2507936507936508
+空座位:(1,7):0.4119047619047619
+空座位:(2,1):0.3096171802054155
+空座位:(2,2):0.3096171802054155
+空座位:(2,3):0.3096171802054155
+空座位:(2,4):0.2762838468720822
+空座位:(2,5):0.2762838468720822
+空座位:(2,6):0.2762838468720822
+空座位:(2,7):0.5262838468720822
+空座位:(3,4):0.2207282913165266
+空座位:(4,6):0.2207282913165266
+空座位:(5,2):0.37628384687208216
+空座位:(5,4):0.2762838468720822
+空座位:(5,6):0.2762838468720822
+空座位:(5,7):0.5262838468720822
+空座位:(6,1):0.6262838468720822
+空座位:(6,2):0.6262838468720822
+空座位:(6,3):0.6262838468720822
+空座位:(6,7):0.7762838468720822
+[提示]阮丽颖的需求Instance of 'AbsoluteDemand'已被满足
+[提示]阮丽颖选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]阮丽颖选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+阮丽颖 暂时不想决定座位
+阮丽颖现在的压力值为1
+[提示]冼郸的需求Instance of 'AbsoluteDemand'已被满足
+冼郸 选定了座位：空座位:(3,4)
+[提示]周晗的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]王铭晟的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
 [提示]第1次update所有人
 第21次尝试找人安排座位
 当前热图:
-空座位:(2,3):0.46074660633484166
-空座位:(3,1):0.5333333333333333
-空座位:(3,2):0.25882352941176473
-空座位:(3,3):0.5857466063348415
-空座位:(3,4):0.46074660633484166
-空座位:(4,2):0.6838235294117646
-空座位:(4,3):0.8857466063348415
-空座位:(4,4):0.7190799396681749
-空座位:(4,6):0.669079939668175
-空座位:(5,1):0.8484848484848485
-空座位:(5,2):0.7406417112299465
-空座位:(5,3):1.0675647881530235
-空座位:(5,4):1.0675647881530235
-空座位:(5,5):0.9758981214863567
-空座位:(5,6):0.8508981214863567
-空座位:(6,1):0.8484848484848485
-空座位:(6,2):0.7406417112299465
-空座位:(6,3):0.9008981214863567
-空座位:(6,6):0.8508981214863567
-空座位:(6,7):0.8508981214863567
-[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
-[提示]王铭晟的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]王铭晟选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力王铭晟只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]王铭晟的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-王铭晟 选定了座位：空座位:(3,1)
+空座位:(1,1):0.20555555555555555
+空座位:(1,2):0.20555555555555555
+空座位:(1,3):0.20555555555555555
+空座位:(1,7):0.37142857142857144
+空座位:(2,1):0.20555555555555555
+空座位:(2,2):0.20555555555555555
+空座位:(2,3):0.20555555555555555
+空座位:(2,4):0.17698412698412697
+空座位:(2,5):0.17698412698412697
+空座位:(2,6):0.17698412698412697
+空座位:(2,7):0.42698412698412697
+空座位:(4,6):1.1214285714285714
+空座位:(5,2):0.276984126984127
+空座位:(5,4):0.17698412698412697
+空座位:(5,6):0.17698412698412697
+空座位:(5,7):0.42698412698412697
+空座位:(6,1):0.526984126984127
+空座位:(6,2):0.526984126984127
+空座位:(6,3):0.526984126984127
+空座位:(6,7):0.676984126984127
+[提示]周晗的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+周晗 选定了座位：空座位:(4,6)
 [提示]第1次update所有人
 第22次尝试找人安排座位
 当前热图:
-空座位:(2,3):0.4712729221243153
-空座位:(3,2):0.2693498452012384
-空座位:(3,3):0.5962729221243153
-空座位:(3,4):0.4712729221243153
-空座位:(4,2):0.6943498452012383
-空座位:(4,3):0.8962729221243152
-空座位:(4,4):0.7296062554576486
-空座位:(4,6):0.6796062554576486
-空座位:(5,1):0.5256778309409889
-空座位:(5,2):0.7511680270194202
-空座位:(5,3):1.0780911039424972
-空座位:(5,4):1.0780911039424972
-空座位:(5,5):0.9864244372758304
-空座位:(5,6):0.8614244372758304
-空座位:(6,1):0.5256778309409889
-空座位:(6,2):0.7511680270194202
-空座位:(6,3):0.9114244372758304
-空座位:(6,6):0.8614244372758304
-空座位:(6,7):0.8614244372758304
-田敏德 选定了座位：空座位:(3,2)
-[提示]李金言的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+空座位:(1,1):0.20818713450292398
+空座位:(1,2):0.20818713450292398
+空座位:(1,3):0.20818713450292398
+空座位:(1,7):0.37955465587044535
+空座位:(2,1):0.20818713450292398
+空座位:(2,2):0.20818713450292398
+空座位:(2,3):0.20818713450292398
+空座位:(2,4):0.1851102114260009
+空座位:(2,5):0.1851102114260009
+空座位:(2,6):0.1851102114260009
+空座位:(2,7):0.4351102114260009
+空座位:(5,2):0.2851102114260009
+空座位:(5,4):0.1851102114260009
+空座位:(5,6):0.1851102114260009
+空座位:(5,7):0.4351102114260009
+空座位:(6,1):0.5351102114260009
+空座位:(6,2):0.5351102114260009
+空座位:(6,3):0.5351102114260009
+空座位:(6,7):0.6851102114260009
+[提示]周奥灵的需求Instance of 'AbsoluteDemand'未被满足
+[提示]周奥灵的需求Instance of 'AbsoluteDemand'已被满足
+[提示]周奥灵的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+周奥灵 选定了座位：空座位:(2,5)
 [提示]第1次update所有人
 第23次尝试找人安排座位
 当前热图:
-空座位:(2,3):0.48664529914529914
-空座位:(3,3):0.6116452991452992
-空座位:(3,4):0.48664529914529914
-空座位:(4,2):0.7097222222222221
-空座位:(4,3):0.9116452991452991
-空座位:(4,4):0.7449786324786325
-空座位:(4,6):0.6949786324786325
-空座位:(5,1):0.5373737373737374
-空座位:(5,2):0.766540404040404
-空座位:(5,3):1.0934634809634811
-空座位:(5,4):1.0934634809634811
-空座位:(5,5):1.0017968142968143
-空座位:(5,6):0.8767968142968143
-空座位:(6,1):0.5373737373737374
-空座位:(6,2):0.766540404040404
-空座位:(6,3):0.9267968142968144
-空座位:(6,6):0.8767968142968143
-空座位:(6,7):0.8767968142968143
+空座位:(1,1):0.21437908496732028
+空座位:(1,2):0.21437908496732028
+空座位:(1,3):0.21437908496732028
+空座位:(1,7):0.3888888888888889
+空座位:(2,1):0.21437908496732028
+空座位:(2,2):0.21437908496732028
+空座位:(2,3):0.21437908496732028
+空座位:(2,4):0.19771241830065361
+空座位:(2,6):0.19771241830065361
+空座位:(2,7):0.4477124183006536
+空座位:(5,2):0.29771241830065365
+空座位:(5,4):0.19771241830065361
+空座位:(5,6):0.19771241830065361
+空座位:(5,7):0.4477124183006536
+空座位:(6,1):0.5477124183006536
+空座位:(6,2):0.5477124183006536
+空座位:(6,3):0.5477124183006536
+空座位:(6,7):0.6977124183006536
+李锐涛 选定了座位：空座位:(2,6)
+[提示]阮丽颖的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
+第24次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.2213235294117647
+空座位:(1,2):0.2213235294117647
+空座位:(1,3):0.2213235294117647
+空座位:(1,7):0.3997326203208556
+空座位:(2,1):0.2213235294117647
+空座位:(2,2):0.2213235294117647
+空座位:(2,3):0.2213235294117647
+空座位:(2,4):0.2122326203208556
+空座位:(2,7):0.4622326203208556
+空座位:(5,2):0.31223262032085564
+空座位:(5,4):0.2122326203208556
+空座位:(5,6):0.2122326203208556
+空座位:(5,7):0.4622326203208556
+空座位:(6,1):0.5622326203208556
+空座位:(6,2):0.5622326203208556
+空座位:(6,3):0.5622326203208556
+空座位:(6,7):0.7122326203208555
+张宝怡 选定了座位：空座位:(5,6)
+[提示]钟元彪的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]游欣的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]王元元的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
+第25次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.22916666666666666
+空座位:(1,2):0.22916666666666666
+空座位:(1,3):0.22916666666666666
+空座位:(1,7):0.4125
+空座位:(2,1):0.22916666666666666
+空座位:(2,2):0.22916666666666666
+空座位:(2,3):0.22916666666666666
+空座位:(2,4):0.22916666666666669
+空座位:(2,7):0.4791666666666667
+空座位:(5,2):0.3291666666666667
+空座位:(5,4):0.22916666666666669
+空座位:(5,7):0.4791666666666667
+空座位:(6,1):0.5791666666666667
+空座位:(6,2):0.5791666666666667
+空座位:(6,3):0.5791666666666667
+空座位:(6,7):0.7291666666666667
+陈子伶 选定了座位：空座位:(2,3)
+[提示]第1次update所有人
+第26次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.2492063492063492
+空座位:(1,2):0.2492063492063492
+空座位:(1,3):0.2492063492063492
+空座位:(1,7):0.4166666666666667
+空座位:(2,1):0.2492063492063492
+空座位:(2,2):0.2492063492063492
+空座位:(2,4):0.2380952380952381
+空座位:(2,7):0.48809523809523814
+空座位:(5,2):0.3492063492063492
+空座位:(5,4):0.2380952380952381
+空座位:(5,7):0.48809523809523814
+空座位:(6,1):0.5992063492063492
+空座位:(6,2):0.5992063492063492
+空座位:(6,3):0.5992063492063492
+空座位:(6,7):0.7380952380952381
+[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
+[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
+[提示]冉懋鑫的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
+[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
+[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
+[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
+[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
+[提示]冉懋鑫选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]冉懋鑫选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+冉懋鑫 暂时不想决定座位
+冉懋鑫现在的压力值为1
+[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
+[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]曾可选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]曾可选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+曾可 暂时不想决定座位
+曾可现在的压力值为1
+[提示]邱建华的需求Instance of 'AbsoluteDemand'已被满足
+邱建华 选定了座位：空座位:(2,4)
+[提示]第1次update所有人
+第27次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.18803418803418803
+空座位:(1,2):0.18803418803418803
+空座位:(1,3):0.18803418803418803
+空座位:(1,7):0.3611111111111111
+空座位:(2,1):0.18803418803418803
+空座位:(2,2):0.18803418803418803
+空座位:(2,7):0.43803418803418803
+空座位:(5,2):0.29914529914529914
+空座位:(5,4):0.18803418803418803
+空座位:(5,7):0.43803418803418803
+空座位:(6,1):0.5491452991452992
+空座位:(6,2):0.5491452991452992
+空座位:(6,3):0.5491452991452992
+空座位:(6,7):0.688034188034188
+[提示]雷利的需求Instance of 'AbsoluteDemand'已被满足
+[提示]雷利的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+雷利 选定了座位：空座位:(2,2)
+[提示]第1次update所有人
+第28次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.20833333333333331
+空座位:(1,2):0.20833333333333331
+空座位:(1,3):0.20833333333333331
+空座位:(1,7):0.3611111111111111
+空座位:(2,1):0.20833333333333331
+空座位:(2,7):0.4444444444444444
+空座位:(5,2):0.3194444444444444
+空座位:(5,4):0.19444444444444442
+空座位:(5,7):0.4444444444444444
+空座位:(6,1):0.5694444444444444
+空座位:(6,2):0.5694444444444444
+空座位:(6,3):0.5694444444444444
+空座位:(6,7):0.6944444444444444
+[提示]田敏德的需求Instance of 'AbsoluteDemand'已被满足
+[提示]田敏德的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+田敏德 选定了座位：空座位:(5,4)
+[提示]冉懋鑫的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
+第29次尝试找人安排座位
+当前热图:
+空座位:(1,1):0.2159090909090909
+空座位:(1,2):0.2159090909090909
+空座位:(1,3):0.2159090909090909
+空座位:(1,7):0.375
+空座位:(2,1):0.2159090909090909
+空座位:(2,7):0.46590909090909094
+空座位:(5,2):0.34090909090909094
+空座位:(5,7):0.46590909090909094
+空座位:(6,1):0.5909090909090909
+空座位:(6,2):0.5909090909090909
+空座位:(6,3):0.5909090909090909
+空座位:(6,7):0.7159090909090909
 [提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
 [提示]钟元彪选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]钟元彪选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 钟元彪 暂时不想决定座位
 钟元彪现在的压力值为1
-[提示]李锐涛的需求Instance of 'AbsoluteDemand'已被满足
-[提示]李锐涛的需求Instance of 'AbsoluteDemand'已被满足
-[提示]李锐涛的需求Instance of 'AbsoluteDemand'已被满足
-李锐涛 选定了座位：空座位:(3,4)
-[提示]谭旭君的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+罗云媛 选定了座位：空座位:(1,2)
+[提示]钟元彪的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
 [提示]第1次update所有人
-第24次尝试找人安排座位
+第30次尝试找人安排座位
 当前热图:
-空座位:(2,3):0.3859943977591036
-空座位:(3,3):0.5109943977591036
-空座位:(4,2):0.6681372549019607
-空座位:(4,3):0.8109943977591035
-空座位:(4,4):0.6443277310924369
-空座位:(4,6):0.8264705882352941
-空座位:(5,1):0.49162210338680923
-空座位:(5,2):0.7249554367201425
-空座位:(5,3):0.9928125795772854
-空座位:(5,4):0.9928125795772854
-空座位:(5,5):0.883288770053476
-空座位:(5,6):1.008288770053476
-空座位:(6,1):0.49162210338680923
-空座位:(6,2):0.7249554367201425
-空座位:(6,3):0.8261459129106188
-空座位:(6,6):1.008288770053476
-空座位:(6,7):1.008288770053476
+空座位:(1,1):0.24285714285714285
+空座位:(1,3):0.24285714285714285
+空座位:(1,7):0.375
+空座位:(2,1):0.24285714285714285
+空座位:(2,7):0.475
+空座位:(5,2):0.3678571428571429
+空座位:(5,7):0.475
+空座位:(6,1):0.6178571428571429
+空座位:(6,2):0.6178571428571429
+空座位:(6,3):0.6178571428571429
+空座位:(6,7):0.725
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]钟元彪选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]钟元彪选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 钟元彪 暂时不想决定座位
 钟元彪现在的压力值为2
-[提示]罗云媛的需求Instance of 'AbsoluteDemand'未被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]罗云媛选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-罗云媛 暂时不想决定座位
-罗云媛现在的压力值为2
-[提示]覃莹选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]覃莹选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-覃莹 暂时不想决定座位
-覃莹现在的压力值为2
+[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
+[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
+[提示]冉懋鑫的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
+[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
+[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
+[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
+[提示]冉懋鑫的需求Instance of 'AbsoluteDemand'已被满足
+[提示]冉懋鑫的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+冉懋鑫 选定了座位：空座位:(1,1)
+[提示]第1次update所有人
+第31次尝试找人安排座位
+当前热图:
+空座位:(1,3):0.2777777777777778
+空座位:(1,7):0.375
+空座位:(2,1):0.2777777777777778
+空座位:(2,7):0.4861111111111111
+空座位:(5,2):0.4027777777777778
+空座位:(5,7):0.4861111111111111
+空座位:(6,1):0.6527777777777778
+空座位:(6,2):0.6527777777777778
+空座位:(6,3):0.6527777777777778
+空座位:(6,7):0.7361111111111112
+[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
+[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]曾可选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]曾可选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+曾可 暂时不想决定座位
+曾可现在的压力值为2
+[提示]阮丽颖的需求Instance of 'AbsoluteDemand'已被满足
+[提示]阮丽颖的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+阮丽颖 选定了座位：空座位:(2,1)
+[提示]朱志涛的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
+第32次尝试找人安排座位
+当前热图:
+空座位:(1,3):0.325
+空座位:(1,7):0.375
+空座位:(2,7):0.5
+空座位:(5,2):0.45
+空座位:(5,7):0.5
+空座位:(6,1):0.7
+空座位:(6,2):0.7
+空座位:(6,3):0.7
+空座位:(6,7):0.75
 [提示]朱志涛的需求Instance of 'AbsoluteDemand'已被满足
-[提示]朱志涛选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]朱志涛选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-朱志涛 暂时不想决定座位
-朱志涛现在的压力值为2
+[提示]朱志涛的需求Instance of 'AbsoluteDemand'已被满足
+[提示]朱志涛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+朱志涛 选定了座位：空座位:(1,3)
+[提示]王元元的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]第1次update所有人
+第33次尝试找人安排座位
+当前热图:
+空座位:(1,7):0.375
+空座位:(2,7):0.5178571428571428
+空座位:(5,2):0.5178571428571428
+空座位:(5,7):0.5178571428571428
+空座位:(6,1):0.7678571428571428
+空座位:(6,2):0.7678571428571428
+空座位:(6,3):0.7678571428571428
+空座位:(6,7):0.7678571428571428
 [提示]王枫睿选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]王枫睿选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 王枫睿 暂时不想决定座位
 王枫睿现在的压力值为2
-[提示]段星同的需求Instance of 'AbsoluteDemand'已被满足
-[提示]段星同的需求Instance of 'AbsoluteDemand'未被满足
-[提示]段星同选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]段星同选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-段星同 暂时不想决定座位
-段星同现在的压力值为2
-[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
-[提示]李金言选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]李金言选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-李金言 暂时不想决定座位
-李金言现在的压力值为2
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'未被满足
-[提示]谭旭君的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]谭旭君的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
-[提示]谭旭君的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
-[提示]谭旭君的需求Instance of 'AbsoluteDemand'已被满足
-谭旭君 选定了座位：空座位:(4,6)
-[提示]第1次update所有人
-第25次尝试找人安排座位
-当前热图:
-空座位:(2,3):0.40178571428571425
-空座位:(3,3):0.5267857142857142
-空座位:(4,2):0.6934523809523808
-空座位:(4,3):0.8363095238095236
-空座位:(4,4):0.669642857142857
-空座位:(5,1):0.5121753246753247
-空座位:(5,2):0.7502705627705627
-空座位:(5,3):1.0181277056277056
-空座位:(5,4):1.0181277056277056
-空座位:(5,5):0.9586038961038961
-空座位:(5,6):0.8336038961038961
-空座位:(6,1):0.5121753246753247
-空座位:(6,2):0.7502705627705627
-空座位:(6,3):0.8514610389610389
-空座位:(6,6):0.8336038961038961
-空座位:(6,7):0.8336038961038961
+[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
+[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]曾可选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]曾可选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+曾可 暂时不想决定座位
+曾可现在的压力值为3
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]钟元彪选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]钟元彪选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 钟元彪 暂时不想决定座位
 钟元彪现在的压力值为3
-[提示]罗云媛的需求Instance of 'AbsoluteDemand'未被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]罗云媛选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-罗云媛 暂时不想决定座位
-罗云媛现在的压力值为3
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'未被满足
+[提示]王铭晟的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王铭晟选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]王铭晟选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+王铭晟 暂时不想决定座位
+王铭晟现在的压力值为4
+[提示]覃莹的需求Instance of 'AbsoluteDemand'已被满足
 [提示]覃莹选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]覃莹选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 覃莹 暂时不想决定座位
-覃莹现在的压力值为3
-[提示]朱志涛的需求Instance of 'AbsoluteDemand'已被满足
-[提示]朱志涛选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]朱志涛选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-朱志涛 暂时不想决定座位
-朱志涛现在的压力值为3
+覃莹现在的压力值为4
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+[提示]游欣的需求Instance of 'AbsoluteDemand'已被满足
+游欣 选定了座位：空座位:(5,2)
+[提示]第1次update所有人
+第34次尝试找人安排座位
+当前热图:
+空座位:(1,7):0.39285714285714285
+空座位:(2,7):0.5595238095238095
+空座位:(5,7):0.5595238095238095
+空座位:(6,1):0.5595238095238095
+空座位:(6,2):0.5595238095238095
+空座位:(6,3):0.5595238095238095
+空座位:(6,7):0.8095238095238095
 [提示]王枫睿选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]王枫睿选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 王枫睿 暂时不想决定座位
 王枫睿现在的压力值为3
-[提示]段星同的需求Instance of 'AbsoluteDemand'已被满足
-[提示]段星同的需求Instance of 'AbsoluteDemand'未被满足
-[提示]段星同选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]段星同选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-段星同 暂时不想决定座位
-段星同现在的压力值为3
-[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
-[提示]李金言选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]李金言选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-李金言 暂时不想决定座位
-李金言现在的压力值为3
-[提示]尤静宜的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]尤静宜的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]尤静宜的需求Instance of 'AbsoluteDemand'已被满足
-[提示]尤静宜选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]尤静宜选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-尤静宜 暂时不想决定座位
-尤静宜现在的压力值为4
-[提示]林子越的需求Instance of 'AbsoluteDemand'已被满足
-[提示]林子越选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]林子越选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-林子越 暂时不想决定座位
-林子越现在的压力值为4
-[提示]古兆康的需求Instance of 'AbsoluteDemand'未被满足
-[提示]古兆康的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]古兆康的需求Instance of 'AbsoluteDemand'已被满足
-[提示]古兆康选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]古兆康选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-古兆康 暂时不想决定座位
-古兆康现在的压力值为4
-[提示]陈维钧选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]陈维钧选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-陈维钧 暂时不想决定座位
-陈维钧现在的压力值为5
-[提示]孙江坤的需求Instance of 'AbsoluteDemand'已被满足
-[提示]孙江坤选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]孙江坤选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-孙江坤 暂时不想决定座位
-孙江坤现在的压力值为5
-[提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
-[提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
-[提示]房莉婷选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]房莉婷选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-房莉婷 暂时不想决定座位
-房莉婷现在的压力值为5
-[提示]谢谦益选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]谢谦益选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-谢谦益 暂时不想决定座位
-谢谦益现在的压力值为5
-[提示]阮丽颖的需求Instance of 'AbsoluteDemand'已被满足
-[提示]阮丽颖的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]阮丽颖选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力阮丽颖只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]阮丽颖的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]阮丽颖的需求Instance of 'AbsoluteDemand'已被满足
-[提示]阮丽颖选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力阮丽颖只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]阮丽颖的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]阮丽颖选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力阮丽颖只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]阮丽颖的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-阮丽颖 选定了座位：空座位:(6,7)
-[提示]罗云媛的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-[提示]第2次update所有人
-第26次尝试找人安排座位
-当前热图:
-空座位:(2,3):0.4197802197802198
-空座位:(3,3):0.5447802197802198
-空座位:(4,2):0.7224358974358974
-空座位:(4,3):0.8652930402930403
-空座位:(4,4):0.6986263736263736
-空座位:(5,1):0.5538461538461539
-空座位:(5,2):0.7974358974358974
-空座位:(5,3):1.0652930402930403
-空座位:(5,4):1.0652930402930403
-空座位:(5,5):0.7557692307692307
-空座位:(5,6):0.6307692307692307
-空座位:(6,1):0.5538461538461539
-空座位:(6,2):0.7974358974358974
-空座位:(6,3):0.8986263736263735
-空座位:(6,6):0.6307692307692307
+[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
+[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]曾可选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]曾可选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+曾可 暂时不想决定座位
+曾可现在的压力值为4
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]钟元彪选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]钟元彪选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 钟元彪 暂时不想决定座位
 钟元彪现在的压力值为4
-[提示]罗云媛的需求Instance of 'AbsoluteDemand'未被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]罗云媛选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-罗云媛 暂时不想决定座位
-罗云媛现在的压力值为4
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'未被满足
+[提示]王铭晟的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王铭晟选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]王铭晟选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+王铭晟 暂时不想决定座位
+王铭晟现在的压力值为5
+[提示]覃莹的需求Instance of 'AbsoluteDemand'已被满足
 [提示]覃莹选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]覃莹选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 覃莹 暂时不想决定座位
-覃莹现在的压力值为4
-[提示]朱志涛的需求Instance of 'AbsoluteDemand'已被满足
-[提示]朱志涛选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]朱志涛选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-朱志涛 暂时不想决定座位
-朱志涛现在的压力值为4
-[提示]王枫睿选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]王枫睿选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-王枫睿 暂时不想决定座位
-王枫睿现在的压力值为4
-[提示]段星同的需求Instance of 'AbsoluteDemand'已被满足
-[提示]段星同的需求Instance of 'AbsoluteDemand'未被满足
-[提示]段星同选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]段星同选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-段星同 暂时不想决定座位
-段星同现在的压力值为4
-[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
-[提示]李金言选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]李金言选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-李金言 暂时不想决定座位
-李金言现在的压力值为4
-[提示]尤静宜的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]尤静宜的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]尤静宜的需求Instance of 'AbsoluteDemand'已被满足
-[提示]尤静宜选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]尤静宜选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-尤静宜 暂时不想决定座位
-尤静宜现在的压力值为5
+覃莹现在的压力值为5
+[提示]林子越选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力林子越只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
+[提示]林子越的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]林子越选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力林子越只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
+[提示]林子越的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
 [提示]林子越的需求Instance of 'AbsoluteDemand'已被满足
-[提示]林子越选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]林子越选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-林子越 暂时不想决定座位
-林子越现在的压力值为5
-[提示]古兆康的需求Instance of 'AbsoluteDemand'未被满足
-[提示]古兆康的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]古兆康的需求Instance of 'AbsoluteDemand'已被满足
-[提示]古兆康选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]古兆康选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-古兆康 暂时不想决定座位
-古兆康现在的压力值为5
-[提示]古恩宇选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力古恩宇只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]古恩宇的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]古恩宇的需求Instance of 'AbsoluteDemand'已被满足
-[提示]古恩宇的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]古恩宇的需求Instance of 'AbsoluteDemand'已被满足
-古恩宇 选定了座位：空座位:(4,2)
-[提示]罗云媛的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]朱志涛的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]孙江坤的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]谢谦益的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]林子越的需求Instance of 'AbsoluteDemand'已被满足
+林子越 选定了座位：空座位:(1,7)
+[提示]王枫睿的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]覃莹的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
+[提示]王元元的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
 [提示]第1次update所有人
-第27次尝试找人安排座位
+第35次尝试找人安排座位
 当前热图:
-空座位:(2,3):0.4404761904761904
-空座位:(3,3):0.4404761904761904
-空座位:(4,3):1.6071428571428568
-空座位:(4,4):0.6071428571428571
-空座位:(5,1):0.5809523809523809
-空座位:(5,2):0.6642857142857143
-空座位:(5,3):0.8071428571428572
-空座位:(5,4):0.8071428571428572
-空座位:(5,5):0.6642857142857143
-空座位:(5,6):0.6642857142857143
-空座位:(6,1):0.5809523809523809
-空座位:(6,2):0.6642857142857143
-空座位:(6,3):0.8071428571428572
-空座位:(6,6):0.6642857142857143
-[提示]孙江坤的需求Instance of 'AbsoluteDemand'已被满足
-[提示]孙江坤的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]孙江坤的需求Instance of 'AbsoluteDemand'已被满足
-孙江坤 选定了座位：空座位:(4,3)
+空座位:(2,7):0.3333333333333333
+空座位:(5,7):0.5333333333333333
+空座位:(6,1):0.7833333333333333
+空座位:(6,2):0.7833333333333333
+空座位:(6,3):0.7833333333333333
+空座位:(6,7):0.7833333333333333
+[提示]王枫睿的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+王枫睿 选定了座位：空座位:(5,7)
 [提示]第1次update所有人
-第28次尝试找人安排座位
+第36次尝试找人安排座位
 当前热图:
-空座位:(2,3):0.4883449883449884
-空座位:(3,3):0.4883449883449884
-空座位:(4,4):0.6701631701631703
-空座位:(5,1):0.6125874125874127
-空座位:(5,2):0.7034965034965036
-空座位:(5,3):0.8701631701631702
-空座位:(5,4):0.8701631701631702
-空座位:(5,5):0.7034965034965036
-空座位:(5,6):0.7034965034965036
-空座位:(6,1):0.6125874125874127
-空座位:(6,2):0.7034965034965036
-空座位:(6,3):0.8701631701631702
-空座位:(6,6):0.7034965034965036
+空座位:(2,7):0.4
+空座位:(6,1):0.65
+空座位:(6,2):0.65
+空座位:(6,3):0.65
+空座位:(6,7):0.65
+[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
+[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]曾可选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
+[提示]曾可选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
+曾可 暂时不想决定座位
+曾可现在的压力值为5
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
 [提示]钟元彪选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
 [提示]钟元彪选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
 钟元彪 暂时不想决定座位
 钟元彪现在的压力值为5
-[提示]罗云媛的需求Instance of 'AbsoluteDemand'未被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]罗云媛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-罗云媛 选定了座位：空座位:(3,3)
-[提示]第1次update所有人
-[提示]第2次update所有人
-第29次尝试找人安排座位
-当前热图:
-空座位:(2,3):0.55
-空座位:(4,4):0.8409090909090909
-空座位:(5,1):0.5409090909090909
-空座位:(5,2):0.6409090909090909
-空座位:(5,3):0.8409090909090909
-空座位:(5,4):0.8409090909090909
-空座位:(5,5):0.6409090909090909
-空座位:(5,6):0.6409090909090909
-空座位:(6,1):0.740909090909091
-空座位:(6,2):0.8409090909090909
-空座位:(6,3):1.0409090909090908
-空座位:(6,6):0.8409090909090909
-[提示]覃莹选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]覃莹选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-覃莹 暂时不想决定座位
-覃莹现在的压力值为5
-[提示]朱志涛的需求Instance of 'AbsoluteDemand'已被满足
-[提示]朱志涛的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]朱志涛的需求Instance of 'AbsoluteDemand'已被满足
-[提示]朱志涛的需求Instance of 'AbsoluteDemand'已被满足
-[提示]朱志涛的需求Instance of 'AbsoluteDemand'已被满足
-朱志涛 选定了座位：空座位:(5,1)
-[提示]第1次update所有人
-第30次尝试找人安排座位
-当前热图:
-空座位:(2,3):0.4818181818181818
-空座位:(4,4):0.7818181818181819
-空座位:(5,2):0.604040404040404
-空座位:(5,3):0.804040404040404
-空座位:(5,4):0.804040404040404
-空座位:(5,5):0.604040404040404
-空座位:(5,6):0.604040404040404
-空座位:(6,1):0.704040404040404
-空座位:(6,2):0.804040404040404
-空座位:(6,3):1.0040404040404038
-空座位:(6,6):0.804040404040404
-[提示]王枫睿选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]王枫睿选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-王枫睿 暂时不想决定座位
-王枫睿现在的压力值为5
-[提示]段星同的需求Instance of 'AbsoluteDemand'已被满足
-[提示]段星同的需求Instance of 'AbsoluteDemand'未被满足
-[提示]段星同选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]段星同选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-段星同 暂时不想决定座位
-段星同现在的压力值为5
-[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
-[提示]李金言选定的位置不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），拒绝接受座位
-[提示]李金言选择的座位被Instance of 'RelativeDemandWithSemiConfirm'拒绝
-李金言 暂时不想决定座位
-李金言现在的压力值为5
-[提示]陈维钧选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力陈维钧只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]陈维钧的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]陈维钧的需求Instance of 'AbsoluteDemand'已被满足
-[提示]陈维钧的需求Instance of 'AbsoluteDemand'已被满足
-陈维钧 选定了座位：空座位:(2,3)
-[提示]古兆康的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-[提示]第2次update所有人
-第31次尝试找人安排座位
-当前热图:
-空座位:(4,4):0.3111111111111111
-空座位:(5,2):0.5333333333333333
-空座位:(5,3):0.5333333333333333
-空座位:(5,4):0.5333333333333333
-空座位:(5,5):0.5333333333333333
-空座位:(5,6):0.5333333333333333
-空座位:(6,1):0.9222222222222223
-空座位:(6,2):1.0333333333333334
-空座位:(6,3):1.0333333333333334
-空座位:(6,6):1.0333333333333334
-[提示]尤静宜的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]尤静宜的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]尤静宜的需求Instance of 'AbsoluteDemand'已被满足
-[提示]尤静宜选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力尤静宜只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]尤静宜的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]尤静宜的需求Instance of 'AbsoluteDemand'已被满足
-[提示]尤静宜选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力尤静宜只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]尤静宜的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-尤静宜 选定了座位：空座位:(6,1)
-[提示]古兆康的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]古兆康的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-第32次尝试找人安排座位
-当前热图:
-空座位:(4,4):0.2222222222222222
-空座位:(5,2):0.4722222222222222
-空座位:(5,3):0.4722222222222222
-空座位:(5,4):0.4722222222222222
-空座位:(5,5):0.4722222222222222
-空座位:(5,6):0.4722222222222222
-空座位:(6,2):0.8055555555555556
-空座位:(6,3):0.8055555555555556
-空座位:(6,6):0.8055555555555556
-[提示]林子越的需求Instance of 'AbsoluteDemand'已被满足
-[提示]林子越选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力林子越只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
-[提示]林子越的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-林子越 选定了座位：空座位:(6,2)
-[提示]房莉婷的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]王枫睿的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-第33次尝试找人安排座位
-当前热图:
-空座位:(4,4):0.45
-空座位:(5,2):0.5357142857142857
-空座位:(5,3):0.5357142857142857
-空座位:(5,4):0.7357142857142858
-空座位:(5,5):0.7357142857142858
-空座位:(5,6):0.7357142857142858
-空座位:(6,3):0.5357142857142857
-空座位:(6,6):0.7357142857142858
-[提示]王枫睿的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-王枫睿 选定了座位：空座位:(4,4)
-[提示]李金言的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]覃莹的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-第34次尝试找人安排座位
-当前热图:
-空座位:(5,2):0.42857142857142855
-空座位:(5,3):0.42857142857142855
-空座位:(5,4):0.42857142857142855
-空座位:(5,5):0.42857142857142855
-空座位:(5,6):0.42857142857142855
-空座位:(6,3):0.42857142857142855
-空座位:(6,6):0.42857142857142855
-[提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
-[提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
-[提示]房莉婷的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]房莉婷的需求Instance of 'AbsoluteDemand'已被满足
-房莉婷 选定了座位：空座位:(6,3)
-[提示]第1次update所有人
-第35次尝试找人安排座位
-当前热图:
-空座位:(5,2):0.3333333333333333
-空座位:(5,3):0.3333333333333333
-空座位:(5,4):0.3333333333333333
-空座位:(5,5):0.3333333333333333
-空座位:(5,6):0.3333333333333333
-空座位:(6,6):0.3333333333333333
-[提示]谢谦益的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]谢谦益的需求Instance of 'AbsoluteDemand'已被满足
-[提示]谢谦益的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]谢谦益的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]谢谦益的需求Instance of 'AbsoluteDemand'已被满足
-[提示]谢谦益的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-谢谦益 选定了座位：空座位:(5,5)
-[提示]段星同的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]钟元彪的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
-[提示]第1次update所有人
-第36次尝试找人安排座位
-当前热图:
-空座位:(5,2):0.4
-空座位:(5,3):0.4
-空座位:(5,4):0.4
-空座位:(5,6):0.4
-空座位:(6,6):0.4
-[提示]古兆康的需求Instance of 'AbsoluteDemand'未被满足
-[提示]古兆康的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]古兆康的需求Instance of 'AbsoluteDemand'已被满足
-[提示]古兆康的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]古兆康的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]古兆康的需求Instance of 'AbsoluteDemand'已被满足
-[提示]古兆康的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-古兆康 选定了座位：空座位:(5,3)
+[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王元元的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王元元的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]王元元的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王元元的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
+[提示]王元元的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+王元元 选定了座位：空座位:(6,2)
 [提示]第1次update所有人
 第37次尝试找人安排座位
 当前热图:
-空座位:(5,2):0.5
-空座位:(5,4):0.5
-空座位:(5,6):0.5
-空座位:(6,6):0.5
-[提示]段星同的需求Instance of 'AbsoluteDemand'已被满足
-[提示]段星同的需求Instance of 'AbsoluteDemand'未被满足
-[提示]段星同的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]段星同的需求Instance of 'AbsoluteDemand'已被满足
-[提示]段星同的需求Instance of 'AbsoluteDemand'已被满足
-[提示]段星同的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]段星同的需求Instance of 'AbsoluteDemand'已被满足
-段星同 选定了座位：空座位:(6,6)
+空座位:(2,7):0.5
+空座位:(6,1):0.5
+空座位:(6,3):0.5
+空座位:(6,7):0.5
+[提示]曾可的需求Instance of 'AbsoluteDemand'已被满足
+[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]曾可选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力曾可只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
+[提示]曾可的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+曾可 选定了座位：空座位:(6,1)
 [提示]第1次update所有人
 第38次尝试找人安排座位
 当前热图:
-空座位:(5,2):0.3333333333333333
-空座位:(5,4):0.3333333333333333
-空座位:(5,6):0.3333333333333333
-[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'未被满足
-[提示]李金言的需求Instance of 'AbsoluteDemand'已被满足
-[提示]李金言的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-李金言 选定了座位：空座位:(5,6)
+空座位:(2,7):0.6666666666666666
+空座位:(6,3):0.6666666666666666
+空座位:(6,7):0.6666666666666666
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
+[提示]钟元彪选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力钟元彪只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
+[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+钟元彪 选定了座位：空座位:(2,7)
+[提示]王铭晟的相对需求Instance of 'RelativeDemandWithSemiConfirm'的目标个体已确定座位，监听响应
 [提示]第1次update所有人
 第39次尝试找人安排座位
 当前热图:
-空座位:(5,2):0.5
-空座位:(5,4):0.5
-[提示]覃莹的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]覃莹的需求Instance of 'AbsoluteDemand'已被满足
-覃莹 选定了座位：空座位:(5,2)
+空座位:(6,3):1.0
+空座位:(6,7):1.0
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'未被满足
+[提示]王铭晟的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王铭晟的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
+[提示]王铭晟的需求Instance of 'AbsoluteDemand'已被满足
+王铭晟 选定了座位：空座位:(6,7)
 [提示]第1次update所有人
 第40次尝试找人安排座位
 当前热图:
-
-[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
-[提示]钟元彪的需求Instance of 'AbsoluteDemand'已被满足
-[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-[提示]钟元彪的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
-钟元彪 选定了座位：空座位:(5,4)
+空座位:(6,3):1.0
+[提示]覃莹的需求Instance of 'AbsoluteDemand'已被满足
+[提示]覃莹的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]覃莹的需求Instance of 'AbsoluteDemand'已被满足
+[提示]覃莹的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]覃莹选定的位置本不满足Instance of 'RelativeDemandWithSemiConfirm'（监听对象还未确定位置），但迫于压力覃莹只能先选择座位Closure: ({required Seat filteringSeat, required Seat relativeSeat, required Room room}) => bool
+[提示]覃莹的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]覃莹的需求Instance of 'AbsoluteDemand'已被满足
+[提示]覃莹的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]覃莹的需求Instance of 'RelativeDemandWithSemiConfirm'已被满足
+[提示]覃莹的需求Instance of 'AbsoluteDemand'已被满足
+覃莹 选定了座位：空座位:(6,3)
 [提示]第1次update所有人
 座位编排完成，终止程序

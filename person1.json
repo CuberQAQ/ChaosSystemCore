@@ -15,7 +15,6 @@
     "gender": "unknown",
     "demands": [
       { "type": "absolute", "data": ["(2~,)"] },
-      { "type": "relative", "target": "古恩宇", "data": ["(0,0)1"] },
       { "type": "absolute", "data": ["(4,5)~3"] }
     ]
   },
@@ -26,7 +25,6 @@
       { "type": "absolute", "data": ["(,3~5)"] },
       { "type": "absolute", "data": ["(1~2,)", "(5~6,)"] },
       { "type": "relative", "target": "秦浩朗", "data": ["(0,0)~3"] },
-      { "type": "relative", "target": "古恩宇", "data": ["(0,0)~3"] },
       { "type": "absolute", "data": ["(6,4)"] },
       { "type": "absolute", "data": ["(6,5)"] }
     ]
