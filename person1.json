@@ -1,0 +1,106 @@
+[
+  {
+    "name": "秦浩朗",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(2~,)"] },
+      { "type": "absolute", "data": ["(3~5,)"] },
+      { "type": "absolute", "data": ["(4,5)"] }
+    ]
+  },
+  { "name": "韩凤阁", "gender": "unknown", "demands": [] },
+  { "name": "利宇涛", "gender": "unknown", "demands": [] },
+  {
+    "name": "孙江坤",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(2~,)"] },
+      { "type": "relative", "target": "古恩宇", "data": ["(0,0)1"] },
+      { "type": "absolute", "data": ["(4,5)~3"] }
+    ]
+  },
+  {
+    "name": "文泽豪",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(,3~5)"] },
+      { "type": "absolute", "data": ["(1~2,)", "(5~6,)"] },
+      { "type": "relative", "target": "秦浩朗", "data": ["(0,0)~3"] },
+      { "type": "relative", "target": "古恩宇", "data": ["(0,0)~3"] },
+      { "type": "absolute", "data": ["(6,4)"] },
+      { "type": "absolute", "data": ["(6,5)"] }
+    ]
+  },
+  {
+    "name": "曹柏圳",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(,3~5)"] },
+      { "type": "absolute", "data": ["(1~2,)", "(5~6,)"] },
+      { "type": "absolute", "data": ["(6,4)"] }
+    ]
+  },
+  {
+    "name": "郑泽铭",
+    "gender": "unknown",
+    "demands": [
+      { "type": "relative", "target": "秦浩朗", "data": ["(1,0)", "(-1,0)"] }
+    ]
+  },
+  {
+    "name": "单思远",
+    "gender": "unknown",
+    "demands": [{ "type": "relative", "target": "郑泽铭", "data": ["(0,0)~2"] }]
+  },
+  {
+    "name": "古恩宇",
+    "gender": "unknown",
+    "demands": [
+      { "type": "relative", "target": "尤静宜", "data": ["(0,-1)"] },
+      {
+        "type": "absolute",
+        "data": ["(,2~4)"]
+      },
+      { "type": "relative", "target": "韩凤阁", "data": ["(0,0)~2"] },
+      {
+        "type": "absolute",
+        "data": ["(4,5)1~", "(5,5)1~"]
+      }
+    ]
+  },
+  { "name": "林子越", "gender": "unknown", "demands": [] },
+  { "name": "游欣", "gender": "unknown", "demands": [] },
+  { "name": "李金言", "gender": "unknown", "demands": [] },
+  { "name": "陈霞", "gender": "unknown", "demands": [] },
+  { "name": "罗云媛", "gender": "unknown", "demands": [] },
+  { "name": "房莉婷", "gender": "unknown", "demands": [] },
+  {
+    "name": "王枫睿",
+    "gender": "unknown",
+    "demands": [{ "type": "relative", "target": "林子越", "data": ["(0,0)2~"] }]
+  },
+  { "name": "陈维钧", "gender": "unknown", "demands": [] },
+  { "name": "朱志涛", "gender": "unknown", "demands": [] },
+  { "name": "尤静宜", "gender": "unknown", "demands": [] },
+  { "name": "黄嘉如", "gender": "unknown", "demands": [] },
+  { "name": "覃莹", "gender": "unknown", "demands": [] },
+  { "name": "阮丽颖", "gender": "unknown", "demands": [] },
+  { "name": "冼郸", "gender": "unknown", "demands": [] },
+  { "name": "周奥灵", "gender": "unknown", "demands": [] },
+  { "name": "李锐涛", "gender": "unknown", "demands": [] },
+  { "name": "谭旭君", "gender": "unknown", "demands": [] },
+  { "name": "王元元", "gender": "unknown", "demands": [] },
+  { "name": "张宝怡", "gender": "unknown", "demands": [] },
+  { "name": "陈子伶", "gender": "unknown", "demands": [] },
+  { "name": "冉懋鑫", "gender": "unknown", "demands": [] },
+  { "name": "段星同", "gender": "unknown", "demands": [] },
+  { "name": "曾可", "gender": "unknown", "demands": [] },
+  { "name": "王铭晟", "gender": "unknown", "demands": [] },
+  { "name": "邱建华", "gender": "unknown", "demands": [] },
+  { "name": "周晗", "gender": "unknown", "demands": [] },
+  { "name": "雷利", "gender": "unknown", "demands": [] },
+  { "name": "田敏德", "gender": "unknown", "demands": [] },
+  { "name": "古兆康", "gender": "unknown", "demands": [] },
+  { "name": "钟元彪", "gender": "unknown", "demands": [] },
+  { "name": "谢谦益", "gender": "unknown", "demands": [] }
+]

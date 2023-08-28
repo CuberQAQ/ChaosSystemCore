@@ -1,2 +1,13 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+# 混沌系统 ChaosSystem
+## 规划各大版本功能：
+### 1.0（已完成）
+- 支持绝对需求和相对需求、热图协调等基础功能，勉强能协调
+### 2.0
+- 支持稳定需求和妥协需求、全局需求（优先级前或后），协调效果较好
+### 3.0
+- 开发图形界面（使用Flutter），可视化调整参数、实时显示排座过程
+### 4.0
+- 开发服务端、客户端，可以登录账号来调整自己的需求等等
+### 5.0
+- 进一步优化算法 可以实时微调
+- 开发多种功能，比如考场排座、多教室排座、多规则排座等

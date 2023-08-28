@@ -253,61 +253,63 @@ Person? parsePersonObj(dynamic personRawObj) {
               // With Distance Demanded
               // TODO
               var exactDistance = getMinDistance(
-                  area: room.findSeat((seat) {
-                    if (parsedCoordinateData.columnDemanded) {
-                      if (parsedCoordinateData.columnRanged) {
-                        // 检查是否在范围内
-                        if (parsedCoordinateData.columnBegin != null &&
-                            seat.location.column <
-                                parsedCoordinateData.columnBegin!) {
-                          return false;
+                      area: room.findSeat((seat) {
+                        if (parsedCoordinateData.columnDemanded) {
+                          if (parsedCoordinateData.columnRanged) {
+                            // 检查是否在范围内
+                            if (parsedCoordinateData.columnBegin != null &&
+                                seat.location.column <
+                                    parsedCoordinateData.columnBegin!) {
+                              return false;
+                            }
+                            if (parsedCoordinateData.columnEnd != null &&
+                                seat.location.column >
+                                    parsedCoordinateData.columnEnd!) {
+                              return false;
+                            }
+                          } else {
+                            if (seat.location.column !=
+                                parsedCoordinateData.columnBegin) {
+                              return false;
+                            }
+                          }
                         }
-                        if (parsedCoordinateData.columnEnd != null &&
-                            seat.location.column >
-                                parsedCoordinateData.columnEnd!) {
-                          return false;
+                        if (parsedCoordinateData.rowDemanded) {
+                          if (parsedCoordinateData.rowRanged) {
+                            // 检查是否在范围内
+                            if (parsedCoordinateData.rowBegin != null &&
+                                seat.location.row <
+                                    parsedCoordinateData.rowBegin!) {
+                              return false;
+                            }
+                            if (parsedCoordinateData.rowEnd != null &&
+                                seat.location.row >
+                                    parsedCoordinateData.rowEnd!) {
+                              return false;
+                            }
+                          } else {
+                            if (seat.location.row !=
+                                parsedCoordinateData.rowBegin) {
+                              return false;
+                            }
+                          }
                         }
-                      } else {
-                        if (seat.location.column !=
-                            parsedCoordinateData.columnBegin) {
-                          return false;
-                        }
-                      }
-                    }
-                    if (parsedCoordinateData.rowDemanded) {
-                      if (parsedCoordinateData.rowRanged) {
-                        // 检查是否在范围内
-                        if (parsedCoordinateData.rowBegin != null &&
-                            seat.location.row <
-                                parsedCoordinateData.rowBegin!) {
-                          return false;
-                        }
-                        if (parsedCoordinateData.rowEnd != null &&
-                            seat.location.row > parsedCoordinateData.rowEnd!) {
-                          return false;
-                        }
-                      } else {
-                        if (seat.location.row !=
-                            parsedCoordinateData.rowBegin) {
-                          return false;
-                        }
-                      }
-                    }
-                    return true;
-                  }),
-                  target: seat);
+                        return true;
+                      }),
+                      target: seat) ??
+                  1; // TODO ??1 null????
               if (parsedCoordinateData.distanceRanged) {
                 if (parsedCoordinateData.distanceBegin != null &&
-                    exactDistance! < parsedCoordinateData.distanceBegin!) {
+                    exactDistance < parsedCoordinateData.distanceBegin!) {
                   result = false;
                 }
                 if (parsedCoordinateData.distanceEnd != null &&
-                    exactDistance! > parsedCoordinateData.distanceEnd!) {
+                    exactDistance > parsedCoordinateData.distanceEnd!) {
                   result = false;
                 }
               } else {
                 if (parsedCoordinateData.distanceBegin != null &&
-                    exactDistance! != parsedCoordinateData.distanceBegin!) {
+                    exactDistance != parsedCoordinateData.distanceBegin!) {
                   result = false;
                 }
               }
@@ -425,62 +427,63 @@ Person? parsePersonObj(dynamic personRawObj) {
                 // TODO
                 // TODO
                 var exactDistance = getMinDistance(
-                    area: room.findSeat((seat) {
-                      if (parsedCoordinateData.columnDemanded) {
-                        if (parsedCoordinateData.columnRanged) {
-                          // 检查是否在范围内
-                          if (parsedCoordinateData.columnBegin != null &&
-                              seat.location.column <
-                                  parsedCoordinateData.columnBegin!) {
-                            return false;
+                        area: room.findSeat((seat) {
+                          if (parsedCoordinateData.columnDemanded) {
+                            if (parsedCoordinateData.columnRanged) {
+                              // 检查是否在范围内
+                              if (parsedCoordinateData.columnBegin != null &&
+                                  seat.location.column <
+                                      parsedCoordinateData.columnBegin!) {
+                                return false;
+                              }
+                              if (parsedCoordinateData.columnEnd != null &&
+                                  seat.location.column >
+                                      parsedCoordinateData.columnEnd!) {
+                                return false;
+                              }
+                            } else {
+                              if (seat.location.column !=
+                                  parsedCoordinateData.columnBegin) {
+                                return false;
+                              }
+                            }
                           }
-                          if (parsedCoordinateData.columnEnd != null &&
-                              seat.location.column >
-                                  parsedCoordinateData.columnEnd!) {
-                            return false;
+                          if (parsedCoordinateData.rowDemanded) {
+                            if (parsedCoordinateData.rowRanged) {
+                              // 检查是否在范围内
+                              if (parsedCoordinateData.rowBegin != null &&
+                                  seat.location.row <
+                                      parsedCoordinateData.rowBegin!) {
+                                return false;
+                              }
+                              if (parsedCoordinateData.rowEnd != null &&
+                                  seat.location.row >
+                                      parsedCoordinateData.rowEnd!) {
+                                return false;
+                              }
+                            } else {
+                              if (seat.location.row !=
+                                  parsedCoordinateData.rowBegin) {
+                                return false;
+                              }
+                            }
                           }
-                        } else {
-                          if (seat.location.column !=
-                              parsedCoordinateData.columnBegin) {
-                            return false;
-                          }
-                        }
-                      }
-                      if (parsedCoordinateData.rowDemanded) {
-                        if (parsedCoordinateData.rowRanged) {
-                          // 检查是否在范围内
-                          if (parsedCoordinateData.rowBegin != null &&
-                              seat.location.row <
-                                  parsedCoordinateData.rowBegin!) {
-                            return false;
-                          }
-                          if (parsedCoordinateData.rowEnd != null &&
-                              seat.location.row >
-                                  parsedCoordinateData.rowEnd!) {
-                            return false;
-                          }
-                        } else {
-                          if (seat.location.row !=
-                              parsedCoordinateData.rowBegin) {
-                            return false;
-                          }
-                        }
-                      }
-                      return true;
-                    }),
-                    target: filteringSeat);
+                          return true;
+                        }),
+                        target: filteringSeat) ??
+                    0; // TODO ??0
                 if (parsedCoordinateData.distanceRanged) {
                   if (parsedCoordinateData.distanceBegin != null &&
-                      exactDistance! < parsedCoordinateData.distanceBegin!) {
+                      exactDistance < parsedCoordinateData.distanceBegin!) {
                     result = false;
                   }
                   if (parsedCoordinateData.distanceEnd != null &&
-                      exactDistance! > parsedCoordinateData.distanceEnd!) {
+                      exactDistance > parsedCoordinateData.distanceEnd!) {
                     result = false;
                   }
                 } else {
                   if (parsedCoordinateData.distanceBegin != null &&
-                      exactDistance! != parsedCoordinateData.distanceBegin!) {
+                      exactDistance != parsedCoordinateData.distanceBegin!) {
                     result = false;
                   }
                 }
@@ -594,5 +597,9 @@ class ParsedCoordinateData {
   @override
   String toString() {
     return "{columnDemanded: $columnDemanded, columnBegin: $columnBegin, columnRanged: $columnRanged, columnEnd: $columnEnd, rowDemanded: $rowDemanded, rowBegin: $rowBegin, rowRanged: $rowRanged, rowEnd: $rowEnd, distanceDemanded: $distanceDemanded, distanceBegin: $distanceBegin, distanceRanged: $distanceRanged, distanceEnd: $distanceEnd, }";
+  }
+
+  String toRawString() {
+    return "(${columnBegin ?? ''}${columnRanged ? '~' : ''}${columnRanged ? (columnEnd ?? '') : ''},${rowBegin ?? ''}${rowRanged ? '~' : ''}${rowRanged ? (rowEnd ?? '') : ''})${distanceBegin ?? ''}${distanceRanged ? '~' : ''}${distanceRanged ? (distanceEnd ?? '') : ''}";
   }
 }

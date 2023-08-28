@@ -1,4 +1,45 @@
+import 'dart:convert';
+import 'dart:io';
 import 'dart:math';
+
+const personJsonFile = "./person.json";
+void main() {
+  var personJson = json.decode(File(personJsonFile).readAsStringSync());
+  print(personJson);
+  for (var personRaw in personJson) {
+    if (personRaw["demands"].isEmpty) {
+      // Random Generate
+      var demandLength = Random().nextInt(10);
+      for (int i = 0; i < demandLength; ++i) {
+        dynamic newDemandRaw = {};
+        if (Random().nextInt(100) > 60) {
+          // Relative
+          newDemandRaw["type"] = "relative";
+          newDemandRaw["target"] =
+              personJson[Random().nextInt(personJson.length)]["name"];
+          newDemandRaw["data"] = [];
+          var dataLength = Random().nextInt(5) + 1;
+          for (int j = 0; j < dataLength; ++j) {
+            newDemandRaw["data"]
+                .add(ParsedCoordinateData.random().toRawString());
+          }
+        } else {
+          // Absolute
+          newDemandRaw["type"] = "absolute";
+          newDemandRaw["data"] = [];
+          var dataLength = Random().nextInt(5) + 1;
+          for (int j = 0; j < dataLength; ++j) {
+            newDemandRaw["data"]
+                .add(ParsedCoordinateData.random().toRawString());
+          }
+        }
+        personRaw["demands"].add(newDemandRaw);
+      }
+    }
+  }
+  print(personJson);
+  File(personJsonFile).writeAsStringSync(json.encode(personJson));
+}
 
 /// str: (-3~,1~4)3 之类
 ParsedCoordinateData? parseDataStr(String str) {
@@ -105,8 +146,4 @@ class ParsedCoordinateData {
       distanceRanged = false;
     }
   }
-}
-
-void main() {
-  print(ParsedCoordinateData.random().toRawString());
 }
