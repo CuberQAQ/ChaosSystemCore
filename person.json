@@ -1,1 +1,217 @@
-[{"name":"秦浩朗","gender":"unknown","demands":[{"type":"absolute","data":["(2~,)"]},{"type":"absolute","data":["(3~5,)"]},{"type":"absolute","data":["(4,5)"]}]},{"name":"韩凤阁","gender":"unknown","demands":[{"type":"absolute","data":["(2~4,)5~","(5,)"]},{"type":"absolute","data":["(,)~","(,~1)6~3","(,)","(,)","(,)"]},{"type":"absolute","data":["(2,5)","(,)","(,)~2","(,6)","(,)2"]},{"type":"absolute","data":["(~,)1","(,)1","(2,4)","(1,)1"]},{"type":"absolute","data":["(,2)2~","(,~)4","(,)","(~,2)","(,4)"]},{"type":"absolute","data":["(3,)2"]},{"type":"relative","target":"林子越","data":["(,3)","(,)","(~,)"]},{"type":"absolute","data":["(1~,~6)4","(2,1)","(1~,)3~3","(,3)"]}]},{"name":"利宇涛","gender":"unknown","demands":[]},{"name":"孙江坤","gender":"unknown","demands":[{"type":"absolute","data":["(2~,)"]},{"type":"absolute","data":["(4,5)~3"]}]},{"name":"文泽豪","gender":"unknown","demands":[{"type":"absolute","data":["(,3~5)"]},{"type":"absolute","data":["(1~2,)","(5~6,)"]},{"type":"relative","target":"秦浩朗","data":["(0,0)~3"]},{"type":"absolute","data":["(6,4)"]},{"type":"absolute","data":["(6,5)"]}]},{"name":"曹柏圳","gender":"unknown","demands":[{"type":"absolute","data":["(,3~5)"]},{"type":"absolute","data":["(1~2,)","(5~6,)"]},{"type":"absolute","data":["(6,4)"]}]},{"name":"郑泽铭","gender":"unknown","demands":[{"type":"relative","target":"秦浩朗","data":["(1,0)","(-1,0)"]}]},{"name":"单思远","gender":"unknown","demands":[{"type":"relative","target":"郑泽铭","data":["(0,0)~2"]}]},{"name":"古恩宇","gender":"unknown","demands":[{"type":"relative","target":"尤静宜","data":["(0,-1)"]},{"type":"absolute","data":["(,2~4)"]},{"type":"relative","target":"韩凤阁","data":["(0,0)~2"]},{"type":"absolute","data":["(4,5)1~","(5,5)1~"]}]},{"name":"林子越","gender":"unknown","demands":[{"type":"relative","target":"王枫睿","data":["(~,~)","(,)4~","(2~,)","(,~2)~1"]},{"type":"relative","target":"王枫睿","data":["(,6)"]},{"type":"absolute","data":["(,)","(,)","(6~2,)~2","(4~,1)","(,)"]},{"type":"absolute","data":["(,~)~","(,)","(~3,)5","(~2,)1","(,~4)"]}]},{"name":"游欣","gender":"unknown","demands":[{"type":"absolute","data":["(,)","(,)","(,)","(,)"]},{"type":"absolute","data":["(,)"]},{"type":"absolute","data":["(,)5","(3~,)6","(~2,)","(5~,)"]},{"type":"absolute","data":["(,)5~","(~6,)","(,)","(,4)3","(,)"]},{"type":"absolute","data":["(,)","(,6~1)3~","(6,)4","(3~,~1)"]},{"type":"absolute","data":["(,)","(2,4)","(,)"]},{"type":"relative","target":"张宝怡","data":["(~,)1"]},{"type":"absolute","data":["(,1)","(,)2","(,)"]},{"type":"absolute","data":["(5~3,5)","(~5,)4~","(,~3)","(,~)1"]}]},{"name":"李金言","gender":"unknown","demands":[{"type":"absolute","data":["(,)","(,1~1)"]},{"type":"relative","target":"文泽豪","data":["(,)6","(,)"]},{"type":"absolute","data":["(,)","(~4,)3~3"]},{"type":"absolute","data":["(~,)~","(,)"]},{"type":"absolute","data":["(~5,~1)"]},{"type":"relative","target":"谢谦益","data":["(1,6~4)"]},{"type":"absolute","data":["(,4~6)","(,)"]},{"type":"relative","target":"利宇涛","data":["(~3,)~","(,)"]},{"type":"relative","target":"古兆康","data":["(1~1,)","(3~1,1~5)"]}]},{"name":"陈霞","gender":"unknown","demands":[{"type":"absolute","data":["(~,)"]}]},{"name":"罗云媛","gender":"unknown","demands":[]},{"name":"房莉婷","gender":"unknown","demands":[{"type":"absolute","data":["(,~6)3~1","(6,6)"]},{"type":"relative","target":"钟元彪","data":["(,6)2~"]}]},{"name":"王枫睿","gender":"unknown","demands":[{"type":"relative","target":"林子越","data":["(0,0)2~"]}]},{"name":"陈维钧","gender":"unknown","demands":[{"type":"absolute","data":["(,)2"]}]},{"name":"朱志涛","gender":"unknown","demands":[{"type":"absolute","data":["(,)","(4~,6)","(~4,)"]},{"type":"absolute","data":["(,~4)~2","(6~,)","(~,~5)~","(~,)","(,4)"]},{"type":"relative","target":"阮丽颖","data":["(,)"]}]},{"name":"尤静宜","gender":"unknown","demands":[{"type":"absolute","data":["(,1~)","(4~3,2)1","(5~3,4~5)5~3","(2,~4)~5"]},{"type":"absolute","data":["(,~)"]}]},{"name":"黄嘉如","gender":"unknown","demands":[{"type":"absolute","data":["(,4)3~","(2~,4)~1","(,2)4~4"]},{"type":"absolute","data":["(~2,~)","(3,1~)","(,6~)"]},{"type":"absolute","data":["(,~6)","(,)","(~,3~)"]},{"type":"absolute","data":["(5,~)2","(5,~2)","(,)"]},{"type":"absolute","data":["(,)","(3~3,)6~4"]},{"type":"relative","target":"曹柏圳","data":["(1,)~1","(~,)","(,)","(,4~4)4"]},{"type":"absolute","data":["(6,)","(,~)","(,)"]}]},{"name":"覃莹","gender":"unknown","demands":[{"type":"absolute","data":["(,3~)4~","(,)"]},{"type":"relative","target":"林子越","data":["(,)~2","(,1)","(,)","(,~6)4"]},{"type":"absolute","data":["(,~)","(,)","(~,1)4~3"]},{"type":"relative","target":"古兆康","data":["(,)","(,~2)","(6~6,2~)2","(~,)","(,3)"]},{"type":"relative","target":"覃莹","data":["(,)","(~2,)"]},{"type":"absolute","data":["(,)6~3","(,4~)","(3~,1~)"]},{"type":"relative","target":"古恩宇","data":["(,2)","(2~,6)","(,)","(,)~","(2~6,)"]},{"type":"relative","target":"利宇涛","data":["(2,)","(,)","(,)"]},{"type":"absolute","data":["(,)","(,)~","(1,)","(,4~)"]}]},{"name":"阮丽颖","gender":"unknown","demands":[{"type":"absolute","data":["(,6)","(4~,)","(,)"]},{"type":"relative","target":"李锐涛","data":["(~,)","(,)~2"]}]},{"name":"冼郸","gender":"unknown","demands":[{"type":"absolute","data":["(,)5","(,)","(,)"]}]},{"name":"周奥灵","gender":"unknown","demands":[{"type":"absolute","data":["(~2,6~4)"]},{"type":"absolute","data":["(4~,2~3)","(,)","(,)","(5,~3)~"]},{"type":"relative","target":"谭旭君","data":["(,)"]}]},{"name":"李锐涛","gender":"unknown","demands":[]},{"name":"谭旭君","gender":"unknown","demands":[{"type":"relative","target":"陈霞","data":["(2,)1"]},{"type":"relative","target":"李金言","data":["(,)","(,)","(,~)"]},{"type":"relative","target":"王枫睿","data":["(,)2~","(,)","(,)~3","(6,~)~3"]},{"type":"absolute","data":["(4~,)"]},{"type":"absolute","data":["(~3,)","(~1,~)","(,)"]},{"type":"absolute","data":["(~,~2)~6"]},{"type":"absolute","data":["(,~)","(3,6~3)","(,~1)~1","(6,)","(~,)~4"]},{"type":"absolute","data":["(~,1)"]}]},{"name":"王元元","gender":"unknown","demands":[{"type":"absolute","data":["(,)","(~,6~5)~6","(,5~3)","(1,)~3"]},{"type":"relative","target":"林子越","data":["(,)","(,6~1)"]},{"type":"absolute","data":["(,)","(,)4"]},{"type":"absolute","data":["(6,)"]},{"type":"relative","target":"房莉婷","data":["(,)","(,4)","(,~1)~6","(,)"]},{"type":"absolute","data":["(2~4,)~2","(,)1~","(,)"]},{"type":"relative","target":"张宝怡","data":["(6,)","(4~,)"]},{"type":"relative","target":"朱志涛","data":["(~,)~5","(,3~)","(,)","(1,)2","(3~2,)"]}]},{"name":"张宝怡","gender":"unknown","demands":[]},{"name":"陈子伶","gender":"unknown","demands":[]},{"name":"冉懋鑫","gender":"unknown","demands":[{"type":"absolute","data":["(,~4)2~1","(,)~"]},{"type":"absolute","data":["(,)","(~5,)","(,)~4"]},{"type":"relative","target":"尤静宜","data":["(6,5)~"]},{"type":"absolute","data":["(,)","(~4,)~","(,)6~1","(,3~1)6~"]},{"type":"absolute","data":["(2~,~3)~4","(,~3)","(,)"]},{"type":"absolute","data":["(,)1~","(,)"]},{"type":"absolute","data":["(,6)2","(,)","(,)","(,)6~","(,2~)"]},{"type":"relative","target":"田敏德","data":["(4,)~","(,)","(,1~2)","(3,)"]}]},{"name":"段星同","gender":"unknown","demands":[{"type":"absolute","data":["(3,)"]}]},{"name":"曾可","gender":"unknown","demands":[{"type":"absolute","data":["(~,)","(,)~2"]},{"type":"relative","target":"谭旭君","data":["(1,)","(2,~)~2","(5,)","(,5)4~2","(,)"]},{"type":"relative","target":"王铭晟","data":["(,1~3)","(6,~5)","(3~3,)","(,)","(~6,)1"]}]},{"name":"王铭晟","gender":"unknown","demands":[{"type":"absolute","data":["(,)2"]},{"type":"relative","target":"冼郸","data":["(~,)~1","(,2~)","(,)","(,1)"]},{"type":"absolute","data":["(,)"]},{"type":"absolute","data":["(5~,)3~","(5~,)"]},{"type":"relative","target":"钟元彪","data":["(~,)"]},{"type":"absolute","data":["(,2~)~3","(,)6"]},{"type":"absolute","data":["(,)4~","(~,)","(,5)2","(,1)","(~,)3~"]},{"type":"absolute","data":["(,)~"]},{"type":"absolute","data":["(~1,)3~5","(,)4~4","(2,)","(,3)~3"]}]},{"name":"邱建华","gender":"unknown","demands":[{"type":"absolute","data":["(~,)","(6~,~2)","(4,)","(1,)"]}]},{"name":"周晗","gender":"unknown","demands":[{"type":"relative","target":"冼郸","data":["(1,)","(,~4)5~","(2~1,)"]}]},{"name":"雷利","gender":"unknown","demands":[{"type":"absolute","data":["(,~5)","(~,~5)3","(,)","(~,)","(,)"]},{"type":"relative","target":"古兆康","data":["(,~)"]}]},{"name":"田敏德","gender":"unknown","demands":[{"type":"absolute","data":["(,)","(5,)2~","(,2~)","(,)1"]},{"type":"relative","target":"谢谦益","data":["(,)","(1,~)","(,)","(,1)"]}]},{"name":"古兆康","gender":"unknown","demands":[{"type":"relative","target":"冉懋鑫","data":["(,)","(,)","(,5~)"]},{"type":"absolute","data":["(,)","(,)","(~4,4)"]},{"type":"relative","target":"黄嘉如","data":["(,)","(,)","(,~)","(2~4,1)"]},{"type":"absolute","data":["(2~5,)~1"]},{"type":"absolute","data":["(,)","(~1,~1)1","(1,~1)"]},{"type":"absolute","data":["(,5)","(4,)4~"]},{"type":"absolute","data":["(~2,~)1","(,)","(,5~6)2"]}]},{"name":"钟元彪","gender":"unknown","demands":[{"type":"absolute","data":["(,6)2~1","(,)~2","(,)","(~,)","(,)"]},{"type":"absolute","data":["(,)~","(,6~)","(,5~6)","(,)"]},{"type":"relative","target":"张宝怡","data":["(5~,)~6","(3~,)"]},{"type":"relative","target":"古恩宇","data":["(,)~","(,)"]},{"type":"relative","target":"罗云媛","data":["(~,6~6)~4","(,1~6)","(~,~)5"]},{"type":"absolute","data":["(,2)5~","(,)","(,~1)"]},{"type":"absolute","data":["(,)4","(,)2~","(,)4~","(,)"]},{"type":"absolute","data":["(,)","(4,3)","(,~1)"]},{"type":"relative","target":"王铭晟","data":["(,~)","(,)","(,3~)4~","(4~,)","(,)4~6"]}]},{"name":"谢谦益","gender":"unknown","demands":[{"type":"absolute","data":["(,)~","(1~,~1)"]},{"type":"relative","target":"古恩宇","data":["(,5)3"]}]}]
+[
+  {
+    "name": "秦浩朗",
+    "gender": "unknown",
+    "demands": [{ "type": "absolute", "data": ["(3,4)", "(4,4)"] }]
+  },
+  {
+    "name": "韩凤阁",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(,2~4)"] },
+      { "type": "relative", "target": "游欣", "data": ["(0,0)1"] },
+      { "type": "relative", "target": "黄嘉如", "data": ["(0,0)1"] },
+      { "type": "absolute", "data": ["(2~5,)"] }
+    ]
+  },
+  {
+    "name": "利宇涛",
+    "gender": "unknown",
+    "demands": [{ "type": "absolute", "data": ["(2~5,2~4)"] }]
+  },
+  {
+    "name": "孙江坤",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(2~5,4)"] },
+      { "type": "relative", "target": "段星同", "data": ["(0,0)1"] }
+    ]
+  },
+  {
+    "name": "文泽豪",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(,3~5)"] },
+      { "type": "absolute", "data": ["(1~2,)", "(5~6,)"] },
+      { "type": "relative", "target": "秦浩朗", "data": ["(0,0)~3"] },
+      { "type": "absolute", "data": ["(6,4)"] },
+      { "type": "absolute", "data": ["(6,5)"] }
+    ]
+  },
+  {
+    "name": "曹柏圳",
+    "gender": "unknown",
+    "demands": [{ "type": "absolute", "data": ["(,4~)"] }]
+  },
+  { "name": "郑泽铭", "gender": "unknown", "demands": [] },
+  {
+    "name": "单思远",
+    "gender": "unknown",
+    "demands": [{ "type": "absolute", "data": ["(1,2~4)", "(-1,2~4)"] }]
+  },
+  {
+    "name": "古恩宇",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(,2~4)"] },
+      { "type": "relative", "target": "尤静宜", "data": ["(0,1)"] },
+      { "type": "relative", "target": "韩凤阁", "data": ["(0,0)~2"] },
+      { "type": "absolute", "data": ["(5,5)1~"] },
+      { "type": "absolute", "data": ["(4,5)1~"] }
+    ]
+  },
+  {
+    "name": "林子越",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(1,3)"] },
+      { "type": "absolute", "data": ["(6,3)"] }
+    ]
+  },
+  {
+    "name": "游欣",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(,2~4)"] },
+      { "type": "relative", "target": "韩凤阁", "data": ["(0,0)~1"] },
+      { "type": "relative", "target": "韩凤阁", "data": ["(0,0)~2"] },
+      { "type": "relative", "target": "韩凤阁", "data": ["(0,0)~3"] },
+      { "type": "relative", "target": "韩凤阁", "data": ["(0,0)~4"] }
+    ]
+  },
+  {
+    "name": "李金言",
+    "gender": "unknown",
+    "demands": [{ "type": "absolute", "data": ["(3,2)", "(3,3)"] }]
+  },
+  {
+    "name": "陈霞",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(,2~3)"] },
+      { "type": "relative", "target": "曹柏圳", "data": ["(0,0)2~"] },
+      { "type": "relative", "target": "曹柏圳", "data": ["(0,0)3~"] },
+      { "type": "relative", "target": "曹柏圳", "data": ["(0,0)4~"] },
+      { "type": "relative", "target": "曹柏圳", "data": ["(0,0)5~"] }
+    ]
+  },
+  {
+    "name": "罗云媛",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(2,4)1~"] },
+      { "type": "absolute", "data": ["(5,4)1~"] },
+      { "type": "absolute", "data": ["(3,2)1~"] },
+      { "type": "absolute", "data": ["(4,6)1~"] },
+      { "type": "absolute", "data": ["(4,2)1~"] },
+      { "type": "absolute", "data": ["(3,6)1~"] },
+      { "type": "absolute", "data": ["(2~5,~4)"] },
+      { "type": "relative", "target": "谢谦益", "data": ["(0,0)2~"] },
+      { "type": "relative", "target": "秦浩朗", "data": ["(0,0)~2"] },
+      { "type": "relative", "target": "田敏德", "data": ["(0,0)2~"] },
+      { "type": "relative", "target": "孙江坤", "data": ["(0,0)~2"] },
+      { "type": "relative", "target": "谢谦益", "data": ["(0,0)3~"] },
+      { "type": "relative", "target": "秦浩朗", "data": ["(0,0)~3"] },
+      { "type": "relative", "target": "田敏德", "data": ["(0,0)3~"] },
+      { "type": "relative", "target": "孙江坤", "data": ["(0,0)~3"] },
+      { "type": "relative", "target": "谢谦益", "data": ["(0,0)4~"] },
+      { "type": "relative", "target": "秦浩朗", "data": ["(0,0)~4"] },
+      { "type": "relative", "target": "田敏德", "data": ["(0,0)4~"] },
+      { "type": "relative", "target": "孙江坤", "data": ["(0,0)~4"] },
+      { "type": "relative", "target": "谢谦益", "data": ["(0,0)5~"] },
+      { "type": "relative", "target": "秦浩朗", "data": ["(0,0)~5"] },
+      { "type": "relative", "target": "田敏德", "data": ["(0,0)5~"] },
+      { "type": "relative", "target": "孙江坤", "data": ["(0,0)~5"] }
+    ]
+  },
+  { "name": "房莉婷", "gender": "unknown", "demands": [] },
+  {
+    "name": "王枫睿",
+    "gender": "unknown",
+    "demands": [
+      { "type": "relative", "target": "林子越", "data": ["(0,0)2~"] },
+      { "type": "absolute", "data": ["(2~5,)"] }
+    ]
+  },
+  { "name": "陈维钧", "gender": "unknown", "demands": [] },
+  { "name": "朱志涛", "gender": "unknown", "demands": [] },
+  {
+    "name": "尤静宜",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(,2~4)"] },
+      { "type": "absolute", "data": ["(2,2)", "(4,2)"] }
+    ]
+  },
+  {
+    "name": "黄嘉如",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(,2~4)"] },
+      { "type": "relative", "target": "韩凤阁", "data": ["(0,0)1"] }
+    ]
+  },
+  { "name": "覃莹", "gender": "unknown", "demands": [] },
+  {
+    "name": "阮丽颖",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(2~5,2~5)"] },
+      { "type": "relative", "target": "王铭晟", "data": ["(0,0)~3"] },
+      { "type": "relative", "target": "王铭晟", "data": ["(0,0)~2"] }
+    ]
+  },
+  { "name": "冼郸", "gender": "unknown", "demands": [] },
+  {
+    "name": "周奥灵",
+    "gender": "unknown",
+    "demands": [{ "type": "absolute", "data": ["(,2~4)"] }]
+  },
+  {
+    "name": "李锐涛",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(,2~4)"] },
+      { "type": "relative", "target": "文泽豪", "data": ["(0,0)~1"] },
+      { "type": "relative", "target": "文泽豪", "data": ["(0,0)~2"] },
+      { "type": "relative", "target": "文泽豪", "data": ["(0,0)~3"] },
+      { "type": "relative", "target": "文泽豪", "data": ["(0,0)~4"] },
+      { "type": "relative", "target": "文泽豪", "data": ["(0,0)~5"] }
+    ]
+  },
+  { "name": "谭旭君", "gender": "unknown", "demands": [] },
+  {
+    "name": "王元元",
+    "gender": "unknown",
+    "demands": [
+      { "type": "absolute", "data": ["(2,~3)", "(5,~3)", "(3,2~3)", "(4,2~3)"] }
+    ]
+  },
+  {
+    "name": "张宝怡",
+    "gender": "unknown",
+    "demands": [{ "type": "absolute", "data": ["(2~5,3~5)"] }]
+  },
+  { "name": "陈子伶", "gender": "unknown", "demands": [] },
+  { "name": "冉懋鑫", "gender": "unknown", "demands": [] },
+  { "name": "段星同", "gender": "unknown", "demands": [] },
+  { "name": "曾可", "gender": "unknown", "demands": [] },
+  { "name": "王铭晟", "gender": "unknown", "demands": [] },
+  { "name": "邱建华", "gender": "unknown", "demands": [] },
+  { "name": "周晗", "gender": "unknown", "demands": [] },
+  { "name": "雷利", "gender": "unknown", "demands": [] },
+  { "name": "田敏德", "gender": "unknown", "demands": [] },
+  { "name": "古兆康", "gender": "unknown", "demands": [] },
+  {
+    "name": "钟元彪",
+    "gender": "unknown",
+    "demands": [
+      { "type": "relative", "target": "雷利", "data": ["(0,0)1"] },
+      { "type": "relative", "target": "罗云媛", "data": ["(0,0)1"] },
+      { "type": "relative", "target": "李金言", "data": ["(0,0)1"] },
+      { "type": "relative", "target": "利宇涛", "data": ["(0,0)1"] },
+      { "type": "relative", "target": "李锐涛", "data": ["(0,0)1"] }
+    ]
+  },
+  { "name": "谢谦益", "gender": "unknown", "demands": [] }
+]

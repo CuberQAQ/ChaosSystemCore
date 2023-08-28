@@ -8,6 +8,8 @@ var namelistFile = "./names.txt";
 var personJsonFile = "./person.json";
 var outputFile = "./result.xlsx";
 var logFile = "./out.log";
+const bool columnReversed = true;
+const bool rowReversed = false;
 
 class ExcelSeat extends Seat {
   String excelPostion;
@@ -51,8 +53,8 @@ void main() {
 
   var availableColsIndexesList = availableColsIndexesSet.toList();
   var availableRowsIndexesList = availableRowsIndexesSet.toList();
-  availableColsIndexesList.sort((a, b) => a - b);
-  availableRowsIndexesList.sort((a, b) => a - b);
+  availableColsIndexesList.sort((a, b) => columnReversed ? (b - a) : (a - b));
+  availableRowsIndexesList.sort((a, b) => rowReversed ? (b - a) : (a - b));
   // print("availableColsIndexes = $availableColsIndexesList");
   // print("availableRowsIndexes = $availableRowsIndexesList");
   var seats = <ExcelSeat>[]; // (col, row) (列，排)
