@@ -10,6 +10,7 @@ var outputFile = "./result.xlsx";
 var logFile = "./out.log";
 const bool columnReversed = true;
 const bool rowReversed = false;
+const bool addCompromiseDemandAfterDemandsOfEveryone = false;
 
 class ExcelSeat extends Seat {
   String excelPostion;
@@ -360,7 +361,7 @@ Person? parsePersonObj(dynamic personRawObj) {
         }));
         break;
       case "relative":
-        demandList.add(RelativeDemandWithSemiConfirm(
+        demandList.add(RelativeDemand(
           relativePersonName: demandRaw["target"],
           filter: (
               {required Seat filteringSeat,
@@ -538,9 +539,16 @@ Person? parsePersonObj(dynamic personRawObj) {
           },
         ));
         break;
+      case "compromise":
+      demandList.add(CompromiserDemand(targetPersonNames: List<String>.from(demandRaw["targets"])));
+        break;
       default:
         print("Unknown Demand Type in $demandRaw");
     }
+  }
+
+  if(addCompromiseDemandAfterDemandsOfEveryone) {
+    demandList.add(CompromiserDemand(targetPersonNames: []));
   }
 
   return Person(

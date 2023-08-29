@@ -222,6 +222,25 @@ class Person {
     }
   }
 
+  // 由其他人调用，负责获取主动服从调剂者的座位范围
+  Set<Seat> getCompromiserSeats(Person compromiser) {
+    Set<Seat> compromiserSeats = {};
+    if (nowDemand == null) return compromiserSeats;
+    for (int i = 0; i < nowDemand!; ++i) {
+      var tempPromiserSeats = demandList[nowDemand!]
+          .getCompromiserSeats(compromiser: compromiser, range: targetSet);
+      if (compromiserSeats.isEmpty) {
+        compromiserSeats = tempPromiserSeats;
+      } else {
+        var intersection = compromiserSeats.intersection(tempPromiserSeats);
+        if (intersection.isNotEmpty) {
+          compromiserSeats = intersection;
+        }
+      }
+    }
+    return compromiserSeats;
+  }
+
   @override
   String toString() {
     return name;
@@ -269,6 +288,10 @@ abstract class Demand {
   bool update();
   Seat? resolve(Set<Seat> range);
   void drawHeatmap(Set<Seat> range);
+  // TODO 按需重载
+  Set<Seat> getCompromiserSeats(
+      {required Set<Seat> range, required Person compromiser});
+
   bool judgment(Seat finalSeat);
 }
 
@@ -303,6 +326,12 @@ class AbsoluteDemand extends Demand {
   }
 
   @override
+  Set<Seat> getCompromiserSeats(
+      {required Set<Seat> range, required Person compromiser}) {
+    return {};
+  }
+
+  @override
   Seat? resolve(Set<Seat> range) {
     return room?.chooseBestSeat(range: range);
   }
@@ -321,11 +350,12 @@ class AbsoluteDemand extends Demand {
   }
 }
 
-// 相对需求
+// TODO 带半确定状态的相对需求
 class RelativeDemand extends Demand {
   Seat? relativeSeat;
-  String relativePersonName;
+  Set<Seat>? tempRelativeTarget;
   Person? relativePerson;
+  String relativePersonName;
   bool Function(
       {required Seat filteringSeat,
       required Room room,
@@ -349,105 +379,7 @@ class RelativeDemand extends Demand {
       }
     }
     this.demander = demander;
-    target = room.getEmptySeat(source: Set.from(room.seats));
-  }
-
-  @override
-  void processArranged({required ArrangedInfo arrangedInfo}) {
-    if (arrangedInfo.person.name == relativePersonName) {
-      (core?.logger ?? print)("[提示]$demander的相对需求$this的目标个体已确定座位，监听响应");
-      relativeSeat = arrangedInfo.seat;
-      target = room?.getEmptySeat(
-              source: room?.findSeat((Seat seat) => filter(
-                      filteringSeat: seat,
-                      relativeSeat: relativeSeat!,
-                      room: room!)) ??
-                  {}) ??
-          {};
-    } else if (relativeSeat != null && target.contains(arrangedInfo.seat)) {
-      target = room?.getEmptySeat(
-              source: room?.findSeat((Seat seat) => filter(
-                      filteringSeat: seat,
-                      relativeSeat: relativeSeat!,
-                      room: room!)) ??
-                  {}) ??
-          {};
-    } else {
-      target = room?.getEmptySeat(source: target) ?? {};
-    }
-  }
-
-  @override
-  bool update() {
-    // TODO: implement update
-    return false;
-  }
-
-  @override
-  void drawHeatmap(Set<Seat> range) {
-    // TODO: 开发不均匀热图
-    if (relativeSeat == null) return;
-    for (var seat in range) {
-      if (room?.heatmap[seat] == null) continue;
-      room!.heatmap[seat] = room!.heatmap[seat]! + 1 / range.length;
-    }
-  }
-
-  @override
-  Seat? resolve(Set<Seat> range) {
-    // TODO: 融入最近理论？
-    return room?.chooseBestSeat(range: range);
-  }
-
-  @override
-  bool judgment(Seat finalSeat) {
-    if (relativeSeat == null) {
-      if (demander != null && demander!.stress >= maxStress) {
-        (core?.logger ?? print)(
-            "[提示]$demander选定的位置本不满足$this（监听对象还未确定位置），但迫于压力$demander只能先选择座位$filter");
-        return true;
-      } else {
-        (core?.logger ??
-            print)("[提示]$demander选定的位置不满足$this（监听对象还未确定位置），拒绝接受座位");
-        return false;
-      }
-    } else {
-      return true;
-    }
-  }
-}
-
-// TODO @beta 带半确定状态的相对需求
-class RelativeDemandWithSemiConfirm extends Demand {
-  Seat? relativeSeat;
-  Set<Seat>? tempRelativeTarget;
-  Person? relativePerson;
-  String relativePersonName;
-  bool Function(
-      {required Seat filteringSeat,
-      required Room room,
-      required Seat relativeSeat}) filter;
-  RelativeDemandWithSemiConfirm(
-      {required this.relativePersonName, required this.filter});
-
-  @override
-  void init(
-      {required Room room, required Person demander, ChaosSystemCore? core}) {
-    this.room = room;
-    if (core != null) {
-      this.core = core;
-      var temp =
-          core.personList.where((person) => relativePersonName == person.name);
-      if (temp.isEmpty) {
-        // TODO 处理不存在
-        core.logger(
-            "[错误]$demander的需求$this中指定的relativePerson:$relativePersonName不存在");
-      } else {
-        relativePerson = temp.first;
-      }
-    }
-    this.demander = demander;
-    target = room.getEmptySeat(source: Set.from(room.seats));
+    target = {};
   }
 
   @override
@@ -553,41 +485,161 @@ class RelativeDemandWithSemiConfirm extends Demand {
       return true;
     }
   }
+
+  @override
+  Set<Seat> getCompromiserSeats(
+      {required Set<Seat> range, required Person compromiser}) {
+    // TODO: implement getCompromiserSeats
+    // TODO 暴力解法 需要优化
+    Set<Seat> result = {};
+    if (room == null) return result;
+    if (compromiser.name == relativePersonName) {
+      Set<Seat> emptySeat = room!.getEmptySeat(source: Set.from(room!.seats));
+      for (Seat masterSeat in range) {
+        for (var compromiserSeat in emptySeat) {
+          if (filter(
+              filteringSeat: masterSeat,
+              relativeSeat: compromiserSeat,
+              room: room!)) {
+            result.add(compromiserSeat);
+          }
+        }
+      }
+    }
+    return result;
+  }
 }
 
-/// 妥协相对需求
-/// 其目的是为
-class RelativeCompromiserDemand extends Demand {
+/// 妥协需求
+/// 响应其它成员的需求 的协调请求
+class CompromiserDemand extends Demand {
+  late Set<Person> targetPersons;
+  late List<String> targetPersonNames;
+  CompromiserDemand({required this.targetPersonNames});
+  Map<Person, Set<Seat>> targetSeatMap = {};
+  Map<Person, Set<Seat>> targetSeatMapTemp = {};
   @override
   void init(
       {required Room room, required Person demander, ChaosSystemCore? core}) {
-    // TODO: implement init
+    this.room = room;
+    this.demander = demander;
+    if (core != null) {
+      this.core = core;
+      targetPersons = {};
+      for (var targetPersonName in targetPersonNames) {
+        var temp =
+            core.personList.where((person) => targetPersonName == person.name);
+        if (temp.isEmpty) {
+          // TODO 处理不存在
+          core.logger(
+              "[错误]$demander的需求$this中指定的targetPersonName:$targetPersonName");
+        } else {
+          targetPersons.add(temp.first);
+        }
+      }
+      // 若targetPersonNames为空 targetPerson为所有人
+      if (targetPersonNames.isEmpty) targetPersons = Set.from(core.personList);
+    }
+    target = room.getEmptySeat(source: Set.from(room.seats));
   }
+
   @override
   void drawHeatmap(Set<Seat> range) {
-    // TODO: implement drawHeatmap
+    // TODO: 开发不均匀热图
+    if (targetPersons.isEmpty ||
+        range.containsAll(room!.getEmptySeat(source: Set.from(room!.seats)))) {
+      return;
+    }
+    // TODO 更合理的热图绘制
+    // for (var seat in range) {
+    //   if (room?.heatmap[seat] == null) continue;
+    //   room!.heatmap[seat] = room!.heatmap[seat]! + 0.7 / range.length;
+    // }
   }
+
   @override
   bool judgment(Seat finalSeat) {
     // TODO: implement judgment
-    throw UnimplementedError();
+    // bool result = false;
+    // if(target.isEmpty || target.containsAll(room!.getEmptySeat(source: Set.from(room!.seats)))) return true;
+    // targetSeatMap.forEach((person, seats) {
+    //   if (person.resolved && seats.contains(finalSeat)) result = true;
+    // });
+    // if(!result) {
+    //   if (demander != null && demander!.stress >= maxStress) {
+    //     (core?.logger ?? print)(
+    //         "[提示]$demander选定的位置本不满足$this（监听对象还未确定位置），但迫于压力$demander只能先选择座位$finalSeat");
+    //     return true;
+    //   } else {
+    //     (core?.logger ??
+    //         print)("[提示]$demander选定的位置不满足$this（监听对象还未确定位置），拒绝接受座位");
+    //     return false;
+    //   }
+    // }
+    return true;
   }
 
   @override
   Seat? resolve(Set<Seat> range) {
-    // TODO: implement resolve
-    throw UnimplementedError();
+    return room?.chooseBestSeat(
+        range: range,
+        getRankFunc: (seat, room) {
+          int times = 1000000; // TODO
+          targetSeatMap.forEach((key, value) {
+            if (value.contains(seat)) --times;
+          });
+          return times;
+        });
   }
 
   @override
   void processArranged({required ArrangedInfo arrangedInfo}) {
     // TODO: implement update
+    if (room == null) return;
+    target = room!.getEmptySeat(source: target);
   }
 
   @override
   bool update() {
-    // TODO: implement update
-    throw UnimplementedError();
+    bool result = false;
+    if (demander == null) return false;
+    for (var person in targetPersons) {
+      targetSeatMapTemp[person] = person.getCompromiserSeats(demander!);
+    }
+    for (var person in targetSeatMapTemp.keys) {
+      if (!targetSeatMap.containsKey(person)) {
+        targetSeatMap[person] = targetSeatMapTemp[person]!;
+        result = true;
+      }
+      if (!targetSeatMapTemp[person]!.containsAll(targetSeatMap[person]!) ||
+          !targetSeatMap[person]!.containsAll(targetSeatMapTemp[person]!)) {
+        result = true;
+        targetSeatMap[person] = targetSeatMapTemp[person]!;
+      }
+    }
+    if (result) {
+      // 刷新target
+      Set<Seat> targetBefore = Set.from(target);
+      target = {};
+      targetSeatMap.forEach((key, value) {
+        for (var seat in value) {
+          target.add(seat);
+        }
+      });
+      if (target.isEmpty) {
+        target = room?.getEmptySeat(source: target) ?? {};
+      }
+      return !target.containsAll(targetBefore) ||
+          !targetBefore.containsAll(target);
+    }
+    return false;
+  }
+
+  @override
+  Set<Seat> getCompromiserSeats(
+      {required Set<Seat> range, required Person compromiser}) {
+    // TODO: implement getCompromiserSeats
+    return {};
   }
 }
 
