@@ -3,12 +3,18 @@ import 'dart:math' as math;
 const maxUpdateLoopTimes = 10;
 const maxStress = 5; // TODO
 
+// ChaosSystemCore类是一个用于安排人员座位的系统
 class ChaosSystemCore {
+  // personList属性是一个包含所有参与人员的列表
   List<Person> personList;
+  // room属性是一个表示房间的对象
   Room room;
+  // logger属性是一个用于打印日志信息的函数，默认为print
   void Function(String) logger;
+  // ChaosSystemCore类的构造函数，接受personList, room, logger作为参数
   ChaosSystemCore(
       {required this.personList, required this.room, this.logger = print});
+  // arrange方法是系统的主要方法，它负责初始化人员，更新人员的需求和目标，排序人员的优先级，绘制热图，解决冲突，判断座位是否满足需求等
   void arrange() {
     // Init All Person
     logger("[提示]初始化...");
