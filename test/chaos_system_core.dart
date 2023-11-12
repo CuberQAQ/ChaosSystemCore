@@ -131,11 +131,11 @@ void main() {
     personList.add(parsePersonObj(personRawObj)!);
   }
   // // TODO random personList
-  // Map<Person, int> randomValue = {};
-  // for (var person in personList) {
-  //   randomValue[person] = Random.secure().nextInt(10000000);
-  // }
-  // personList.sort(((a, b) => randomValue[a]! - randomValue[b]!));
+  Map<Person, int> randomValue = {};
+  for (var person in personList) {
+    randomValue[person] = Random.secure().nextInt(10000000);
+  }
+  personList.sort(((a, b) => randomValue[a]! - randomValue[b]!));
   String log = '';
   var chaosSystemCore = ChaosSystemCore(
       personList: personList,
