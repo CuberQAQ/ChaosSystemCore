@@ -2,929 +2,260 @@
   {
     "name": "秦浩朗",
     "gender": "unknown",
-    "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(3,4)",
-          "(4,4)"
-        ]
-      }
-    ]
+    "demands": [{ "type": "absolute", "data": ["(3,4)", "(4,4)"] }]
   },
   {
     "name": "韩凤阁",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(,2~4)"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "游欣",
-        "data": [
-          "(0,0)1"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "黄嘉如",
-        "data": [
-          "(0,0)1"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(2~5,)"
-        ]
-      }
+      { "type": "absolute", "data": ["(,2~4)"] },
+      { "type": "relative", "target": "游欣", "data": ["(0,0)1"] },
+      { "type": "relative", "target": "黄嘉如", "data": ["(0,0)1"] },
+      { "type": "absolute", "data": ["(2~5,)"] }
     ]
   },
   {
     "name": "利宇涛",
     "gender": "unknown",
-    "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(2~5,2~4)"
-        ]
-      }
-    ]
+    "demands": [{ "type": "absolute", "data": ["(2~5,2~4)"] }]
   },
   {
     "name": "孙江坤",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(2~5,4)"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "段星同",
-        "data": [
-          "(0,0)1"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "林子越",
-        "data": [
-          "(0,0)2~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "林子越",
-        "data": [
-          "(0,0)3~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "林子越",
-        "data": [
-          "(0,0)4~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "林子越",
-        "data": [
-          "(0,0)5~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "林子越",
-        "data": [
-          "(0,0)6~"
-        ]
-      }
+      { "type": "absolute", "data": ["(2~5,4)"] },
+      { "type": "relative", "target": "段星同", "data": ["(0,0)1"] },
+      { "type": "relative", "target": "林子越", "data": ["(0,0)2~"] },
+      { "type": "relative", "target": "林子越", "data": ["(0,0)3~"] },
+      { "type": "relative", "target": "林子越", "data": ["(0,0)4~"] },
+      { "type": "relative", "target": "林子越", "data": ["(0,0)5~"] },
+      { "type": "relative", "target": "林子越", "data": ["(0,0)6~"] }
     ]
   },
   {
     "name": "文泽豪",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(,3~5)"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(1~2,)",
-          "(5~6,)"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "秦浩朗",
-        "data": [
-          "(0,0)~3"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(6,4)"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(6,5)"
-        ]
-      }
+      { "type": "absolute", "data": ["(,3~5)"] },
+      { "type": "absolute", "data": ["(1~2,)", "(5~6,)"] },
+      { "type": "relative", "target": "秦浩朗", "data": ["(0,0)~3"] },
+      { "type": "absolute", "data": ["(6,4)"] },
+      { "type": "absolute", "data": ["(6,5)"] }
     ]
   },
   {
     "name": "曹柏圳",
     "gender": "unknown",
-    "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(,4~)"
-        ]
-      }
-    ]
+    "demands": [{ "type": "absolute", "data": ["(,4~)"] }]
   },
-  {
-    "name": "郑泽铭",
-    "gender": "unknown",
-    "demands": []
-  },
+  { "name": "郑泽铭", "gender": "unknown", "demands": [] },
   {
     "name": "单思远",
     "gender": "unknown",
-    "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(1,2~4)",
-          "(6,2~4)"
-        ]
-      }
-    ]
+    "demands": [{ "type": "absolute", "data": ["(1,2~4)", "(6,2~4)"] }]
   },
   {
     "name": "古恩宇",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(,2~4)"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "尤静宜",
-        "data": [
-          "(0,1)"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "韩凤阁",
-        "data": [
-          "(0,0)~2"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(5,5)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(4,5)1~"
-        ]
-      }
+      { "type": "absolute", "data": ["(,2~4)"] },
+      { "type": "relative", "target": "尤静宜", "data": ["(0,1)"] },
+      { "type": "relative", "target": "韩凤阁", "data": ["(0,0)~2"] },
+      { "type": "absolute", "data": ["(5,5)1~"] },
+      { "type": "absolute", "data": ["(4,5)1~"] }
     ]
   },
   {
     "name": "林子越",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(1,3)"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(6,3)"
-        ]
-      }
+      { "type": "absolute", "data": ["(1,3)"] },
+      { "type": "absolute", "data": ["(6,3)"] }
     ]
   },
   {
     "name": "游欣",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(,2~4)"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "韩凤阁",
-        "data": [
-          "(0,0)~1"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "韩凤阁",
-        "data": [
-          "(0,0)~2"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "韩凤阁",
-        "data": [
-          "(0,0)~3"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "韩凤阁",
-        "data": [
-          "(0,0)~4"
-        ]
-      }
+      { "type": "absolute", "data": ["(,2~4)"] },
+      { "type": "relative", "target": "韩凤阁", "data": ["(0,0)~1"] },
+      { "type": "relative", "target": "韩凤阁", "data": ["(0,0)~2"] },
+      { "type": "relative", "target": "韩凤阁", "data": ["(0,0)~3"] },
+      { "type": "relative", "target": "韩凤阁", "data": ["(0,0)~4"] }
     ]
   },
   {
     "name": "李金言",
     "gender": "unknown",
-    "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(3,2)",
-          "(3,3)"
-        ]
-      }
-    ]
+    "demands": [{ "type": "absolute", "data": ["(3,2)", "(3,3)"] }]
   },
   {
     "name": "陈霞",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(,2~3)"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "曹柏圳",
-        "data": [
-          "(0,0)2~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "曹柏圳",
-        "data": [
-          "(0,0)3~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "曹柏圳",
-        "data": [
-          "(0,0)4~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "曹柏圳",
-        "data": [
-          "(0,0)5~"
-        ]
-      }
+      { "type": "absolute", "data": ["(,2~3)"] },
+      { "type": "relative", "target": "曹柏圳", "data": ["(0,0)2~"] },
+      { "type": "relative", "target": "曹柏圳", "data": ["(0,0)3~"] },
+      { "type": "relative", "target": "曹柏圳", "data": ["(0,0)4~"] },
+      { "type": "relative", "target": "曹柏圳", "data": ["(0,0)5~"] }
     ]
   },
   {
     "name": "罗云媛",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(2,4)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(5,4)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(3,2)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(4,6)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(4,2)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(3,6)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(2~5,~4)"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "谢谦益",
-        "data": [
-          "(0,0)2~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "秦浩朗",
-        "data": [
-          "(0,0)~2"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "田敏德",
-        "data": [
-          "(0,0)2~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "孙江坤",
-        "data": [
-          "(0,0)~1"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "谢谦益",
-        "data": [
-          "(0,0)3~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "秦浩朗",
-        "data": [
-          "(0,0)~2"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "田敏德",
-        "data": [
-          "(0,0)3~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "孙江坤",
-        "data": [
-          "(0,0)~2"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "谢谦益",
-        "data": [
-          "(0,0)4~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "秦浩朗",
-        "data": [
-          "(0,0)~3"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "田敏德",
-        "data": [
-          "(0,0)4~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "孙江坤",
-        "data": [
-          "(0,0)~3"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "谢谦益",
-        "data": [
-          "(0,0)5~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "秦浩朗",
-        "data": [
-          "(0,0)~4"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "田敏德",
-        "data": [
-          "(0,0)5~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "孙江坤",
-        "data": [
-          "(0,0)~4"
-        ]
-      }
+      { "type": "absolute", "data": ["(2,4)1~"] },
+      { "type": "absolute", "data": ["(5,4)1~"] },
+      { "type": "absolute", "data": ["(3,2)1~"] },
+      { "type": "absolute", "data": ["(4,6)1~"] },
+      { "type": "absolute", "data": ["(4,2)1~"] },
+      { "type": "absolute", "data": ["(3,6)1~"] },
+      { "type": "absolute", "data": ["(2~5,~4)"] },
+      { "type": "relative", "target": "谢谦益", "data": ["(0,0)2~"] },
+      { "type": "relative", "target": "秦浩朗", "data": ["(0,0)~2"] },
+      { "type": "relative", "target": "田敏德", "data": ["(0,0)2~"] },
+      { "type": "relative", "target": "孙江坤", "data": ["(0,0)~1"] },
+      { "type": "relative", "target": "谢谦益", "data": ["(0,0)3~"] },
+      { "type": "relative", "target": "秦浩朗", "data": ["(0,0)~2"] },
+      { "type": "relative", "target": "田敏德", "data": ["(0,0)3~"] },
+      { "type": "relative", "target": "孙江坤", "data": ["(0,0)~2"] },
+      { "type": "relative", "target": "谢谦益", "data": ["(0,0)4~"] },
+      { "type": "relative", "target": "秦浩朗", "data": ["(0,0)~3"] },
+      { "type": "relative", "target": "田敏德", "data": ["(0,0)4~"] },
+      { "type": "relative", "target": "孙江坤", "data": ["(0,0)~3"] },
+      { "type": "relative", "target": "谢谦益", "data": ["(0,0)5~"] },
+      { "type": "relative", "target": "秦浩朗", "data": ["(0,0)~4"] },
+      { "type": "relative", "target": "田敏德", "data": ["(0,0)5~"] },
+      { "type": "relative", "target": "孙江坤", "data": ["(0,0)~4"] }
     ]
   },
   {
     "name": "房莉婷",
     "gender": "unknown",
-    "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(2~5,2~4)"
-        ]
-      }
-    ]
+    "demands": [{ "type": "absolute", "data": ["(2~5,2~4)"] }]
   },
   {
     "name": "王枫睿",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "relative",
-        "target": "林子越",
-        "data": [
-          "(0,0)2~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(2~5,)"
-        ]
-      }
+      { "type": "relative", "target": "林子越", "data": ["(0,0)2~"] },
+      { "type": "absolute", "data": ["(2~5,)"] }
     ]
   },
-  {
-    "name": "陈维钧",
-    "gender": "unknown",
-    "demands": []
-  },
-  {
-    "name": "朱志涛",
-    "gender": "unknown",
-    "demands": []
-  },
+  { "name": "陈维钧", "gender": "unknown", "demands": [] },
+  { "name": "朱志涛", "gender": "unknown", "demands": [] },
   {
     "name": "尤静宜",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(,2~4)"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(2,4)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(5,4)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(3,2)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(4,6)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(4,2)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(3,6)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(2,2)",
-          "(4,2)"
-        ]
-      }
+      { "type": "absolute", "data": ["(,2~4)"] },
+      { "type": "absolute", "data": ["(2,4)1~"] },
+      { "type": "absolute", "data": ["(5,4)1~"] },
+      { "type": "absolute", "data": ["(3,2)1~"] },
+      { "type": "absolute", "data": ["(4,6)1~"] },
+      { "type": "absolute", "data": ["(4,2)1~"] },
+      { "type": "absolute", "data": ["(3,6)1~"] },
+      { "type": "absolute", "data": ["(2,2)", "(4,2)"] }
     ]
   },
   {
     "name": "黄嘉如",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(,2~4)"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "韩凤阁",
-        "data": [
-          "(0,0)1"
-        ]
-      }
+      { "type": "absolute", "data": ["(,2~4)"] },
+      { "type": "relative", "target": "韩凤阁", "data": ["(0,0)1"] }
     ]
   },
   {
     "name": "覃莹",
     "gender": "unknown",
-    "demands": [
-      {"type":"absolute","data":["(,4~)"]}
-    ]
+    "demands": [{ "type": "absolute", "data": ["(,4~)"] }]
   },
   {
     "name": "阮丽颖",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(2~5,2~5)"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(2,4)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(5,4)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(3,2)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(4,6)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(4,2)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(3,6)1~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "王铭晟",
-        "data": [
-          "(0,0)~3"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "王铭晟",
-        "data": [
-          "(0,0)~2"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "王铭晟",
-        "data": [
-          "(0,0)~1"
-        ]
-      }
+      { "type": "absolute", "data": ["(2~5,2~5)"] },
+      { "type": "absolute", "data": ["(2,4)1~"] },
+      { "type": "absolute", "data": ["(5,4)1~"] },
+      { "type": "absolute", "data": ["(3,2)1~"] },
+      { "type": "absolute", "data": ["(4,6)1~"] },
+      { "type": "absolute", "data": ["(4,2)1~"] },
+      { "type": "absolute", "data": ["(3,6)1~"] },
+      { "type": "relative", "target": "王铭晟", "data": ["(0,0)~3"] },
+      { "type": "relative", "target": "王铭晟", "data": ["(0,0)~2"] },
+      { "type": "relative", "target": "王铭晟", "data": ["(0,0)~1"] }
     ]
   },
-  {
-    "name": "冼郸",
-    "gender": "unknown",
-    "demands": []
-  },
+  { "name": "冼郸", "gender": "unknown", "demands": [] },
   {
     "name": "周奥灵",
     "gender": "unknown",
-    "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(,2~4)"
-        ]
-      }
-    ]
+    "demands": [{ "type": "absolute", "data": ["(,2~4)"] }]
   },
   {
     "name": "李锐涛",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(,2~4)"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(2,4)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(5,4)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(3,2)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(4,6)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(4,2)1~"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(3,6)1~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "文泽豪",
-        "data": [
-          "(0,0)~5"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "文泽豪",
-        "data": [
-          "(0,0)~4"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "文泽豪",
-        "data": [
-          "(0,0)~3"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "陈维钧",
-        "data": [
-          "(0,0)3~"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "文泽豪",
-        "data": [
-          "(0,0)~2"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "文泽豪",
-        "data": [
-          "(0,0)~1"
-        ]
-      }
+      { "type": "absolute", "data": ["(,2~4)"] },
+      { "type": "absolute", "data": ["(2,4)1~"] },
+      { "type": "absolute", "data": ["(5,4)1~"] },
+      { "type": "absolute", "data": ["(3,2)1~"] },
+      { "type": "absolute", "data": ["(4,6)1~"] },
+      { "type": "absolute", "data": ["(4,2)1~"] },
+      { "type": "absolute", "data": ["(3,6)1~"] },
+      { "type": "relative", "target": "文泽豪", "data": ["(0,0)~5"] },
+      { "type": "relative", "target": "文泽豪", "data": ["(0,0)~4"] },
+      { "type": "relative", "target": "文泽豪", "data": ["(0,0)~3"] },
+      { "type": "relative", "target": "陈维钧", "data": ["(0,0)3~"] },
+      { "type": "relative", "target": "文泽豪", "data": ["(0,0)~2"] },
+      { "type": "relative", "target": "文泽豪", "data": ["(0,0)~1"] }
     ]
   },
   {
     "name": "谭旭君",
     "gender": "unknown",
-    "demands": []
+    "demands": [{ "type": "absolute", "data": ["(,4~5)"] }]
   },
   {
     "name": "王元元",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(2,~3)",
-          "(5,~3)",
-          "(3,2~3)",
-          "(4,2~3)"
-        ]
-      }
+      { "type": "absolute", "data": ["(2,~3)", "(5,~3)", "(3,2~3)", "(4,2~3)"] }
     ]
   },
   {
     "name": "张宝怡",
     "gender": "unknown",
-    "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(2~5,3~5)"
-        ]
-      }
-    ]
+    "demands": [{ "type": "absolute", "data": ["(2~5,3~5)"] }]
   },
-  {
-    "name": "陈子伶",
-    "gender": "unknown",
-    "demands": []
-  },
-  {
-    "name": "冉懋鑫",
-    "gender": "unknown",
-    "demands": []
-  },
-  {
-    "name": "段星同",
-    "gender": "unknown",
-    "demands": []
-  },
-  {
-    "name": "曾可",
-    "gender": "unknown",
-    "demands": []
-  },
-  {
-    "name": "王铭晟",
-    "gender": "unknown",
-    "demands": []
-  },
-  {
-    "name": "邱建华",
-    "gender": "unknown",
-    "demands": []
-  },
-  {
-    "name": "周晗",
-    "gender": "unknown",
-    "demands": []
-  },
+  { "name": "陈子伶", "gender": "unknown", "demands": [] },
+  { "name": "冉懋鑫", "gender": "unknown", "demands": [] },
+  { "name": "段星同", "gender": "unknown", "demands": [] },
+  { "name": "曾可", "gender": "unknown", "demands": [] },
+  { "name": "王铭晟", "gender": "unknown", "demands": [] },
+  { "name": "邱建华", "gender": "unknown", "demands": [] },
+  { "name": "周晗", "gender": "unknown", "demands": [] },
   {
     "name": "雷利",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "absolute",
-        "data": [
-          "(1,7)",
-          "(6,7)"
-        ]
-      },
-      {
-        "type": "absolute",
-        "data": [
-          "(1,6~7)"
-        ]
-      }
+      { "type": "absolute", "data": ["(1,7)", "(6,7)"] },
+      { "type": "absolute", "data": ["(1,6~7)"] }
     ]
   },
-  {
-    "name": "田敏德",
-    "gender": "unknown",
-    "demands": []
-  },
-  {
-    "name": "古兆康",
-    "gender": "unknown",
-    "demands": []
-  },
+  { "name": "田敏德", "gender": "unknown", "demands": [] },
+  { "name": "古兆康", "gender": "unknown", "demands": [] },
   {
     "name": "钟元彪",
     "gender": "unknown",
     "demands": [
-      {
-        "type": "relative",
-        "target": "雷利",
-        "data": [
-          "(0,0)1"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "罗云媛",
-        "data": [
-          "(0,0)1"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "李金言",
-        "data": [
-          "(0,0)1"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "利宇涛",
-        "data": [
-          "(0,0)1"
-        ]
-      },
-      {
-        "type": "relative",
-        "target": "李锐涛",
-        "data": [
-          "(0,0)1"
-        ]
-      }
+      { "type": "relative", "target": "雷利", "data": ["(0,0)1"] },
+      { "type": "relative", "target": "罗云媛", "data": ["(0,0)1"] },
+      { "type": "relative", "target": "李金言", "data": ["(0,0)1"] },
+      { "type": "relative", "target": "利宇涛", "data": ["(0,0)1"] },
+      { "type": "relative", "target": "李锐涛", "data": ["(0,0)1"] }
     ]
   },
-  {
-    "name": "谢谦益",
-    "gender": "unknown",
-    "demands": []
-  }
+  { "name": "谢谦益", "gender": "unknown", "demands": [] }
 ]

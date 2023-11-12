@@ -15,7 +15,7 @@ class ChaosSystemCore {
   ChaosSystemCore(
       {required this.personList, required this.room, this.logger = print});
   // arrange方法是系统的主要方法，它负责初始化人员，更新人员的需求和目标，排序人员的优先级，绘制热图，解决冲突，判断座位是否满足需求等
-  void arrange() {
+  num arrange() {
     // Init All Person
     logger("[提示]初始化...");
     for (var person in personList) {
@@ -90,11 +90,31 @@ class ChaosSystemCore {
       // Finish Arrangement
       if (loopTimes >= 200) {
         logger("循环次数过多，终止程序");
-        break;
+        return 0;
       }
       if (arrangeQuene.isEmpty) {
-        logger("座位编排完成，终止程序");
-        break;
+        // 输出happiness
+        for (Person person in personList) {
+          int demandCount = person.demandList.length;
+          person.happiness = 0;
+          for (Demand demand in person.demandList) {
+            if (demand.resolved) person.happiness += 1.0 / demandCount;
+          }
+          if (person.demandList.isEmpty) person.happiness = 1;
+        }
+        var persons = List<Person>.from(personList);
+        persons.sort(
+          (a, b) => (a.happiness * 10000 - b.happiness * 10000).toInt(),
+        );
+        num totalHappiness = 0;
+        for (var person in persons) {
+          logger("[${person.name}] 成功值：${person.happiness}");
+          totalHappiness += person.happiness;
+        }
+        logger("成功率：${totalHappiness / personList.length}");
+        print("\n成功率：${totalHappiness / personList.length}\n");
+        logger("座位编排完成");
+        return totalHappiness / personList.length;
       }
     }
   }
@@ -123,7 +143,7 @@ class ArrangedInfo {
 class Person {
   ChaosSystemCore? core;
   Room? room;
-
+  num happiness = 0;
   String name;
   Gender gender;
   int stress = 0;
@@ -200,14 +220,18 @@ class Person {
     if (finalSeat == null) return null;
     // Judgment
     for (var demand in demandList) {
+      if (demand.target.contains(finalSeat)) {
+        demand.resolved = true;
+        (core?.logger ?? print)("[提示]$name的需求$demand已被满足");
+      } else {
+        demand.resolved = false;
+        (core?.logger ?? print)("[提示]$name的需求$demand未被满足");
+      }
+    }
+    for (var demand in demandList) {
       if (!demand.judgment(finalSeat)) {
         (core?.logger ?? print)("[提示]$this选择的座位被$demand拒绝");
         return null;
-      }
-      if (demand.target.contains(finalSeat)) {
-        (core?.logger ?? print)("[提示]$name的需求$demand已被满足");
-      } else {
-        (core?.logger ?? print)("[提示]$name的需求$demand未被满足");
       }
     }
     return finalSeat;

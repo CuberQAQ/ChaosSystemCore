@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'dart:math';
 import 'package:excel/excel.dart';
 import '../bin/chaos_system_core.dart';
 
@@ -129,16 +130,12 @@ void main() {
     // "personRawObjType: ${personRawObj.runtimeType} personRawObj:$personRawObj");
     personList.add(parsePersonObj(personRawObj)!);
   }
-
-  // TODO test
-  AbsoluteDemand testDemand = personList
-      .firstWhere((element) => element.name == "秦浩朗")
-      .demandList
-      .first as AbsoluteDemand;
-  print(testDemand.filter(
-      Seat(location: Location(column: 3, row: 1), nullable: false, empty: true),
-      Room(seats: seats)));
-
+  // // TODO random personList
+  // Map<Person, int> randomValue = {};
+  // for (var person in personList) {
+  //   randomValue[person] = Random.secure().nextInt(10000000);
+  // }
+  // personList.sort(((a, b) => randomValue[a]! - randomValue[b]!));
   String log = '';
   var chaosSystemCore = ChaosSystemCore(
       personList: personList,
@@ -540,14 +537,15 @@ Person? parsePersonObj(dynamic personRawObj) {
         ));
         break;
       case "compromise":
-      demandList.add(CompromiserDemand(targetPersonNames: List<String>.from(demandRaw["targets"])));
+        demandList.add(CompromiserDemand(
+            targetPersonNames: List<String>.from(demandRaw["targets"])));
         break;
       default:
         print("Unknown Demand Type in $demandRaw");
     }
   }
 
-  if(addCompromiseDemandAfterDemandsOfEveryone) {
+  if (addCompromiseDemandAfterDemandsOfEveryone) {
     demandList.add(CompromiserDemand(targetPersonNames: []));
   }
 
