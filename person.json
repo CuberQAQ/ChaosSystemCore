@@ -22,7 +22,7 @@
   {
     "name": "古恩宇",
     "gender": "unknown",
-    "demands": [{ "type": "absolute", "data": ["(2~5,2~3)","(1~5,4)","(2~5,4)"] }]
+    "demands": [{ "type": "absolute", "data": ["(2~5,2~3)","(1~5,4)"] }]
   },
   {
     "name": "林子越",
